@@ -1,0 +1,2300 @@
+/* @group Basic Elements */
+*{margin:0;padding:0;outline:none;}
+*:focus { outline:0;}
+html{vertical-align:bottom;font-size:100%;}
+a{color:#149cb7;text-decoration:none;font-weight:bold;cursor:pointer;vertical-align:baseline;}
+a:hover{color:#0a6e88;text-decoration:none;}
+h1, h2, h3, h4, h5, h6{padding:0;margin:0}
+h2{font:26px normal Georgia,"Times New Roman",Times,serif}
+h3{font:20px normal Georgia,"Times New Roman",Times,serif}
+h4{font:14px normal Georgia,"Times New Roman",Times,serif}
+h5{	margin:0px; padding:0px; font-family:normal Georgia,"Times New Roman",Times,serif; font-size:26px; font-size-adjust:none; font-weight:normal; line-height:normal; color:#0a6e88;}
+h6{font:bold 14px normal Georgia,"Times New Roman",Times,serif;}
+p{font:12px/18px Verdana,Geneva,sans-serif}
+li{padding:5px 0;}
+ol{margin-left:5px;padding-left:2em;} /*-- Needs to be deleted after the transformation.css get updated. This used to make the numericals inline with --*/
+ul{list-style:none;}
+ul.default{list-style-image:none;list-style-type:disc;list-style-position:outside;margin-left:5px;padding-left:2em;}
+fieldset{border:none}
+img{border:none;}
+form th{background-color:#EEF9FB;}
+.lowOpacity{filter:alpha(opacity=30);-moz-opacity:0.3;-khtml-opacity: 0.3;opacity: 0.3;}
+textarea {resize: none;}
+/* @end */
+
+/* @group Progress */
+#progress {background: #eef9fb;border: 1px solid #23afc4;border-top: none;margin: 0 !important;position: fixed;padding: 5px;top: -30px;right: 1px;z-index: 999999;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;}
+#progress img {	vertical-align: middle;margin: 0 2px;}
+/* @end */
+
+/* @group Tender App */
+div #tender_toggler{position:fixed;}
+#tender_toggle < div {color:red;}
+.clusterList .mathml{vertical-align:middle}
+div #tender_window {height:585px;position:fixed;}
+/*div #tender_window #discussion_body{height:150px;}
+div #tender_window .content{height:435px;}*/
+/* @end */
+
+/* @group Generalised Elements */
+.resetContent{}
+.resetContent ol{list-style: decimal outside;}
+.resetContent ul{list-style: disc outside;}
+.resetContent {}
+.moveCursor{cursor:move;}
+.cursorDefault{cursor:default;}
+.monotype{font-family:courier;}
+.beta{background:url(/images/solaroTeens/theme1/icons/betaIcon.png) no-repeat 0 0;width:85px;height:85px;position:fixed;top:0;left:0;z-index:99999;}
+.title1{background-color:#EEF9FB;border:1px solid #BDE5EE;padding:5px 5px 5px 10px;position:relative;margin:10px 0;}
+.title3{font:20px normal Georgia,"Times New Roman",Times,serif;display:block;}
+.title4{font-size:16px;font-family:"Gill Sans","Myriad Pro",Calibri,"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;font-weight:normal;display:block;}
+.title5{font-size:14px;font-family:"Gill Sans","Myriad Pro",Calibri,"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;font-weight:normal;}
+.legendTitle{font-size:16px;font-family:"Gill Sans","Myriad Pro",Calibri,"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;font-weight:normal;margin-left:40px;}
+.sqBullet li{background:url(/images/solaroTeens/theme1/icons/bullet-desc.gif) no-repeat 0 1em;list-style-position:outside;padding-left:15px;}
+.squareBullets{background:url(/images/solaroTeens/theme1/icons/bullet-desc.gif) no-repeat 0 6px;padding-left:15px;font:14px/18px "Gill Sans","Myriad Pro",Calibri,"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;display:block;color:#149cb7;text-decoration:none;}
+.attentionIco{background:url(/images/solaroTeens/theme1/icons/notification24x24.png) no-repeat scroll 0 50%;padding-left:30px;}
+.blueBg{background-color:#B9F2F7;}
+.whiteTint{border:1px solid #bde5ee;background-color:#fff}
+.blueTint{background-color:#EEF9FB;border:1px solid #bde5ee}
+.blueTintHead{background-color:#b0f1f5; border:1px solid #a3c6ce}
+.yellowTint{background-color:#fffdbb;border:1px solid #f7f1ac}
+.blueTB{background-color:#f8fdfd;border-top:1px solid #e6f6f9;border-bottom:1px solid #e6f6f9}
+
+a.linkButton{background:url(/images/solaroTeens/theme1/buttons/buttonBg.png) no-repeat 0 0;line-height:22px;font-size:10px;color:#FFF;display:block;float:left;height:22px;padding:0 0 0 10px;text-decoration:none;cursor:pointer;}
+a.linkButton span{background:url(/images/solaroTeens/theme1/buttons/buttonBg.png) no-repeat right 0;overflow:hidden;display:block;height:22px;padding-right:10px}
+a:hover.linkButton{background:url(/images/solaroTeens/theme1/buttons/buttonBg.png) no-repeat 0 -22px;text-decoration:none;color:white}
+a:hover.linkButton span{background:url(/images/solaroTeens/theme1/buttons/buttonBg.png) no-repeat right -22px;}
+
+.roundedTop_layer1{padding:0;}
+.layer1_topLeft,.layer1_topRight,.layer1_top,.layer1_botLeft,.layer1_botRight,.layer1_content{display:block;background:transparent url(/images/solaroTeens/theme1/global/rounded_layer1.png) no-repeat;}
+.layer1_topLeft{background-position:0 0;float:left;width:5px;height:5px;}
+.layer1_topRight{background-position:-15px 0;float:right;width:5px;height:5px;}
+.layer1_top{background-position:0 -15px;background-repeat:repeat-x;margin:0 5px;height:5px;}
+.layer1_botLeft{background-position:-30px -5px;height:5px;width:5px;float:left;}
+.layer1_botRight{background-position:-35px -5px;height:5px;width:5px;float:right;}
+.layer1_bot{display:block;background-color:#b9f2f7;height:5px;margin:0 5px;}
+.layer1_content{background-position:0 -25px;background-color:#b9f2f7;background-repeat:repeat-x;padding:0 5px 5px;min-height:30px;zoom:1;}
+.layer1_content:after{content: ".";display: block;height: 0;clear: both;visibility: hidden}
+
+.layer2_topLeft,.layer2_topRight,.layer2_botLeft,.layer2_botRight{display:block;background:transparent url(/images/solaroTeens/theme1/global/rounded_layer2.png) no-repeat;height:10px;width:10px;}
+.layer2_topLeft{background-position:0 0;float:left;}
+.layer2_topRight{background-position:-10px 0;float:right;}
+.layer2_botLeft{background-position:0 -10px;float:left;}
+.layer2_botRight{background-position:-10px -10px;float:right;}
+.layer2_top{display:block;background:url(/images/solaroTeens/theme1/global/layer2_top_bottom.png) repeat-x left top;height:10px;margin:0 10px;}
+.layer2_bot{display:block;background:url(/images/solaroTeens/theme1/global/layer2_top_bottom.png) repeat-x left bottom;height:10px;margin:0 10px;}
+.layer2_body{background:url(/images/solaroTeens/theme1/global/rounded_layer2.png) repeat-y -20px 0;}
+.layer2_innerBody{background:url(/images/solaroTeens/theme1/global/rounded_layer2.png) repeat-y right 0;}
+.layer2_content{background-color:#daf8fb;margin:0 10px;}
+
+.layer3{background:url(/images/solaroTeens/theme1/global/layer3.png) repeat-x left top;padding:5px;line-height:normal;font-size:11px;zoom:1;}
+.layer3:after{content: ".";display: block;height: 0;clear: both;visibility: hidden}
+
+.minMax{width:16px;height:16px;cursor:pointer}
+.minimise{background:url(/images/solaroTeens/theme1/icons/minimizeBtn.png) no-repeat}
+.maximise{background:url(/images/solaroTeens/theme1/icons/maximizeBtn.png) no-repeat}
+.close{background:url(/images/solaroTeens/theme1/icons/closeBtn.png) no-repeat;cursor:pointer;width:16px;height:16px;}
+.close:hover{background:url(/images/solaroTeens/theme1/icons/closeBtnHover.png) no-repeat}
+.title1 .minMax{position:absolute;top:5px;right:5px}
+
+/* @group Needs to be deleted */
+.roundedBlock{background:url(/images/solaroTeens/theme1/global/roundedBlock.png) no-repeat;}
+.roundedBlock > div {display:block;background:url(/images/solaroTeens/theme1/global/inner_roundedBlock.png) no-repeat right top;margin-left:15px;}
+.roundedBlock > div .rounded_block_content{margin-right:15px;padding-top:15px;min-height:50px;}
+.rounded_block_content{zoom:1}
+.rounded_block_content:after{content: ".";display: block;height: 0;clear: both;visibility: hidden}
+span.roundedBlock_bot {display:block;background:url(/images/solaroTeens/theme1/global/roundedBlock_bot.png) no-repeat;height:10px;}
+span.roundedBlock_bot > span{display:block;background:url(/images/solaroTeens/theme1/global/inner_roundedBlock_bot.png) no-repeat right top;height:10px;margin-left:15px;}
+/* @end */
+
+.curvedHeader1,
+.curvedHeader2,
+.curvedHeader3,
+.curvedHeader1 > span,
+.curvedHeader2 > span,
+.curvedHeader3 > span {background:url(/images/solaroTeens/theme1/global/titleHeader.png) no-repeat 0 0;height:35px;display:block;color:#fff;line-height:35px;}
+.curvedHeader1{background-position:0 0;padding-left:20px;}
+.curvedHeader2{background-position:0 -70px;padding-left:20px;}
+.curvedHeader3{background-position:0 -140px;padding-left:20px;}
+.curvedHeader1 > span{background-position:right -35px;}
+.curvedHeader2 > span{background-position:right -105px;}
+.curvedHeader3 > span{background-position:right -175px;}
+
+.lilFloat li {float:left;margin-right:5px;margin-bottom:5px;}
+.correct1{background:url(/images/solaroTeens/theme1/icons/croosandTick.png) no-repeat 0 0;padding:0;width:24px;height:24px;}
+.inCorrect1{background:url(/images/solaroTeens/theme1/icons/croosandTick.png) no-repeat 0 -50px;padding:0;width:24px;height:24px;}
+/* @end */
+
+/* @group Body */
+body{background:#2cb6d2 url(/images/solaroTeens/theme1/global/page-BG.png) repeat-x top;font:11px/18px Verdana,Geneva,sans-serif;}
+#container{width:100%;background:#f2f2f2 url(/images/solaroTeens/theme1/global/body-BG.jpg) no-repeat 50% 0}
+#contentWrapper{margin:0 auto;width:980px;position:relative}
+#outerMainBody{background:url(/images/solaroTeens/theme1/global/mainBody_bg.png) no-repeat top;position:relative;width:960px;padding:20px 10px 0}
+#mainBody{background-color:#fff;position:relative;padding:5px 15px;min-height:500px;width:930px}
+#leftBodyPart{width:510px;float:left;margin:20px 30px 0 0;padding-left:20px}
+#rightBodyPart{width:360px;float:left;margin-top:20px}
+#login{width:30%;margin:30px auto 10px;border:1px solid #BDE5EE;padding:30px;background-color:#EEF9FB;}  
+#login label{font:normal 16px "Gill Sans","Myriad Pro",Calibri,"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;}
+#login input{background-color:#fff;border:1px solid #bde5ee;font:normal 16px "Gill Sans","Myriad Pro",Calibri,"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;padding:5px;} 
+#login .iButton{padding:0 0 2px 0;border:none;font:normal 12px verdana,helvetica,sans-serif;margin:10px 0;}
+#login h2{background:url(/images/solaroTeens/theme1/icons/login-icon.png) no-repeat;padding:15px 0 0 80px;margin-bottom:10px;line-height:50px;}
+#smallDescription{width:50%;float:left;margin:30px 0 0 30px}
+#smallDescription h2{background:url(/images/solaroTeens/theme1/icons/description-icon.png) no-repeat;padding:15px 0 25px 80px}
+#smallDescription ul{padding:10px 0 10px 15px;line-height:20px}
+
+.registerForm div.registerAs{padding:10px;background-color:#EEF9FB;border:1px solid #BDE5EE;/*margin-bottom:20px;*/font-size:12px;}
+.registerForm{background:url(/images/solaroTeens/theme1/global/registerForm.jpg) no-repeat 70% top;}
+.registerForm h3{background:url(/images/solaroTeens/theme1/icons/regIcon.gif) no-repeat 15px 0;height:69px;padding-left:80px;line-height:100px;}
+.studentReg,.parentReg{border:1px solid #BDE5EE;margin:10px 0 0 0;padding:10px;min-height:350px;}
+.studentReg{background:url(/images/solaroTeens/theme1/global/studentsPic.png) no-repeat right bottom;}
+.parentReg{background:url(/images/solaroTeens/theme1/global/parentsPic.png) no-repeat right bottom;}
+.registerForm label{font:14px Georgia,"Times New Roman",Times,serif;width:35%;text-align:right;display:block;float:left;margin-right:15px;}
+.registerForm input[type=text],.registerForm input[type=password]{border:1px solid #bde5ee;background-color:#eef9fb;padding:3px;font:12px Georgia,"Times New Roman",Times,serif;width:53%;}
+.registerForm fieldset{width:580px;padding:20px;margin:0;}     
+#new_school	.registerForm input[type=text],#new_school .registerForm input[type=password] {width:25%;}
+#new_school .registerForm h3{line-height:50px;}
+/*.registerForm fieldset{width:580px;border:1px solid #bde5ee;padding:20px;margin:20px 0 20px 20px;}*/
+/*.registerForm #newStudentUserForm fieldset{width:auto;margin:0;}*/
+.registerForm fieldset>div{margin-bottom:10px;}
+.textInfo{text-align:right;}
+.textInfo,.textInfo a{font-size:12px;font-weight:normal;}
+.registerForm label.error{font-size:12px;}
+.registerForm input.iButtonL{position:relative;left:50%;margin-left:-50px;}  
+#recaptcha_table input,#recaptcha_table label{position:static;float:none;}
+.registerForm div.registerAs label{float:left;width:auto;display:inline;}
+.registerForm div.registerAs label.w70{width:70px;}
+.registerForm div.registerAs label.w130{width:130px;}
+.registerAs > div {width:365px;margin:0 auto;}
+/* @end */
+
+/* @group Logo */
+#contentWrapper h1.logoHome{background:url(/images/solaroTeens/theme1/logo/logo.png) no-repeat;width:398px;height:155px;position:absolute;top:50px;left:20px}
+#contentWrapper h1.logoHome span{display:none}
+.logo{height:90px;}
+h1.logo a{display:block;background:url(/images/solaroTeens/theme1/logo/logoSmall.png) no-repeat;width:229px;height:69px;}
+h1.logo span{display:none}
+#tagInfo{background:url(/images/solaroTeens/theme1/logo/tagImage.png) no-repeat;height:55px;width:352px;position:absolute;left:600px;top:10px}
+/* @end */
+
+/* @group Header and Navigation */
+#header{background:url(/images/solaroTeens/theme1/global/friendsBanner.png) no-repeat;height:246px;width:607px;position:relative;top:10px;left:340px}
+
+.mainNavigation,.mainNavigation ul,.mainNavigation ul li,.mainNavigation li>a:hover, .mainNavigation a.selected,.mainNavigation li>a:hover span, .mainNavigation a.selected span{background:url(/images/solaroTeens/theme1/buttons/mainNavBg.png) no-repeat 0 0;}
+
+.mainNavigation{background-position:0 -100px; height:50px; position:absolute; padding-left:7px; top:-45px; right:20px; }
+.mainNavigation ul{list-style:none;background-position:right -200px; height:50px; padding-right:7px;}
+.mainNavigation ul li{margin:0;background-position:0 -150px;background-repeat:repeat-x;height:43px; float:left; padding:7px 0 0 0;}
+.mainNavigation li>a{display:block; height:30px; line-height:normal; color:#000;cursor:pointer; padding-left:10px;}
+.mainNavigation li>a span{display:block; height:23px; padding-right:10px;padding-top:7px;}
+.mainNavigation li>a:hover, .mainNavigation a.selected{background-repeat:repeat-x;color:#fff;text-decoration:none;}
+.mainNavigation li>a:hover span, .mainNavigation a.selected span{background-position:right -40px;}
+.mainNavigation li>a.selected{cursor:default;}
+.mainNavigation>a{color:#000;}
+.mainNavigation>a:hover{text-decoration:none;color:#fff;}
+
+.mainNavigation li>a.disable{color:#ccc;}	
+.mainNavigation li>a.disable:hover,.mainNavigation li>a.disable:hover span{background:none;cursor:default;}
+
+/* @end */
+
+/* @group Main Navigations for Old Pages ... Needs to be Deleted */
+#mainNavigations_old{background:url(/images/solaroTeens/theme1/global/mainNavigations_bg.gif) no-repeat;width:930px;height:67px;text-align:center}
+#mainNavigations_old ul{text-align:left;width:910px;margin:0 auto}
+#mainNavigations_old ul li{float:left}
+#mainNavigations_old ul li a{display:block;background:url(/images/solaroTeens/theme1/global/divider.png) no-repeat;color:#fff;height:50px;padding:17px 0 0 20px;overflow:hidden}
+#mainNavigations_old ul li a span.navSubBlock{display:block;font-size:24px;font-weight:normal;padding-right:20px;font-family:Arial,Helvetica,sans-serif}
+#mainNavigations_old ul li a span{font-size:11px;font-weight:bold;font-family:Arial,Helvetica,sans-serif;display:block;line-height:1.5em;}
+#mainNavigations_old ul li a:hover{text-decoration:none;background:url(/images/solaroTeens/theme1/global/mainNavigations_hover.gif) no-repeat}
+#mainNavigations_old ul li a#selected{background:url(/images/solaroTeens/theme1/global/mainNavigations_hover.gif) no-repeat}
+#mainNavigations_old ul li a#selected span{color:#f9c72e}
+#mainNavigations_old ul li a#selected span span{color:#fff}
+/* @end */
+
+/* @group Lesson Browser */
+#lessonBrowser li{background:none;padding:0;zoom:1;}
+#lessonBrowser li:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+#lessonBrowser li a {color:#000;display:block;background-color:#c8f5fa;margin-bottom:2px;padding:8px 5px 8px 35px;text-align:left;}
+#lessonBrowser li a:hover{text-decoration:none;background-color:#8CE9FF;}
+#lessonBrowser .layer3 {padding:0 0 5px;}
+#lessonBrowser .layer3 ul{margin:5px;height:170px;overflow:auto;}
+#lessonBrowser #passages .layer3 ul,#lessonBrowser #lessons .layer3 ul{margin-left:0;}
+#lessonBrowser .layer3 h3{background-color:#d9f8fd;padding:0 5px 5px 10px;}
+#lessonBrowser li a.selected{text-decoration:none;background-color:#8CE9FF;}
+
+.courseIcon,.topicIcon,.clusterIcon,.lessonIcon{list-style:none;}
+
+.courseIcon li,.courseIcon li.viewed,.courseIcon li.notViewed,.courseIcon li.completed,
+.topicIcon li,.topicIcon li.viewed,.topicIcon li.notViewed,.topicIcon li.completed,
+.clusterIcon li,.clusterIcon li.viewed,.clusterIcon li.notViewed,.clusterIcon li.completed,
+.lessonIcon li,.lessonIcon li.viewed,.lessonIcon li.notViewed,.lessonIcon li.completed{background:none;padding:0;margin:0;}
+
+.courseIcon li span{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat 5px 5px;width:19px;height:19px;float:left;padding:5px;}
+.courseIcon li.viewed span{background-position:5px -115px;text-align:left;}
+.courseIcon li.notViewed span{background-position:5px 5px;text-align:left;}
+.courseIcon li.completed span{background-position:5px -55px;text-align:left;}
+
+.topicIcon li span{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat;width:24px;height:24px;float:left;padding:5px;}
+.topicIcon li.viewed span{background-position:5px -295px;text-align:left;}
+.topicIcon li.notViewed span{background-position:5px -175px;text-align:left;}
+.topicIcon li.completed span{background-position:5px -235px;text-align:left;}
+
+.clusterIcon li span{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat;width:24px;height:24px;float:left;padding:5px;}
+.clusterIcon li.available span{background-position:5px -955px;text-align:left;}
+.clusterIcon li.inProgress span{background-position:5px -1015px;text-align:left;}
+.clusterIcon li.completed span{background-position:5px -1075px;text-align:left;}
+
+.lessonIcon li span{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat;width:24px;height:24px;float:left;padding:5px;}
+.lessonIcon li.viewed span{background-position:5px -475px;text-align:left;}
+.lessonIcon li.notViewed span{background-position:5px -355px;text-align:left;}
+.lessonIcon li.completed span{background-position:5px -415px;text-align:left;}
+
+#lessonBrowser .width70{position:relative;}
+#lessonBrowser .width70 .rounded_layer2{margin-left:36px;}
+
+ul.courseTab{position:absolute; width:37px; height:210px;left:4px;top:20px;padding:0;margin:0;list-style:none;}
+#lessonBrowser ul.courseTab li{width:37px; background:none; padding:0;margin:0;line-height:0;font-size:0;}
+#lessonBrowser ul.courseTab li a{background:none;padding:0;margin:0;height:98px; display:block; text-indent:-9000px;}
+#lessonBrowser ul.courseTab li.lessons a{background:url(/images/solaroTeens/theme1/global/passageLesson.png) no-repeat 0 0; }
+#lessonBrowser ul.courseTab li.lessons a:hover{ background-position:-38px 0;}
+#lessonBrowser ul.courseTab li.lessons a.select{ background-position:-38px 0; cursor:default;}
+#lessonBrowser ul.courseTab li.passages a{background:url(/images/solaroTeens/theme1/global/passageLesson.png) no-repeat -38px -98px;}
+#lessonBrowser ul.courseTab li.passages a:hover{ background-position:0 -98px;}
+#lessonBrowser ul.courseTab li.passages a.select{ background-position:0 -98px; cursor:default;}
+.viewedLesson,.notViewedLesson{display:block;width:24px;height:24px;background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat;}
+
+.viewedLesson>span,.notViewedLesson>span{display:none;}
+.viewedLesson{background-position:0 -415px;}
+.notViewedLesson{background-position:0 -355px;}
+
+.courseBrowse h3, .topicBrowse h3, .lessonBrowse h3{margin:7px 0 0 15px;}
+.courseBrowse ul, .topicBrowse ul, .lessonBrowse ul{margin:10px 10px 0 10px;overflow:auto;height:125px;}
+.courseBrowse ul li, .topicBrowse ul li, .lessonBrowse ul li{cursor:pointer;padding:5px 0 5px 25px;margin:2px 0;}
+.courseBrowse ul li a, .topicBrowse ul li a, .lessonBrowse ul li a{color:#000;display:block;padding-right:18px;}
+.courseBrowse ul li p, .topicBrowse ul li p, .lessonBrowse ul li p{padding-right:18px;}
+.courseBrowse ul li a:hover, .topicBrowse ul li a:hover, .lessonBrowse ul li a:hover{text-decoration:none;color:#000;}
+.courseBrowse ul li:hover, .courseBrowse ul li.itemSelected, .topicBrowse ul li:hover, .topicBrowse ul li.itemSelected, .lessonBrowse ul li:hover, .lessonBrowse ul li.itemSelected{background-color:#a7eef3}
+.courseBrowse ul li.itemSelected a, .topicBrowse ul li.itemSelected a, .lessonBrowse ul li.itemSelected a{background:url(/images/solaroTeens/theme1/icons/rightArrow.png) no-repeat right 2px;}
+
+.courseBrowse, .topicBrowse{background:url(/images/solaroTeens/theme1/global/course_topic_browse_bg.png) no-repeat;width:278px;float:left;margin-left:1px;}
+.courseBot, .topicBot{background:url(/images/solaroTeens/theme1/global/course_topic_browse_bot.png) no-repeat;width:278px;height:15px;}
+
+.courseBrowse ul li{background:url(/images/solaroTeens/theme1/icons/courseIcon.png) no-repeat 5px 5px;}
+.topicBrowse ul li{background:#caf5f8 url(/images/solaroTeens/theme1/icons/topicIcon.png) no-repeat 5px 5px;}
+.lessonBrowse ul li{background:#caf5f8 url(/images/solaroTeens/theme1/icons/lessonIcon.png) no-repeat 5px 5px;}
+
+.lessonBrowse{background:url(/images/solaroTeens/theme1/global/lesson_browse_bg.png) no-repeat;width:350px;float:left;margin-left:1px;}
+.lessonBot{background:url(/images/solaroTeens/theme1/global/lesson_browse_bot.png) no-repeat;width:350px;height:15px;}
+
+.collapse{background:url(/images/solaroTeens/theme1/global/collapseBg.png) no-repeat;margin-bottom:10px;height:26px;position:relative}
+a.hideBtn,a.showBtn{display:block;position:absolute;width:179px;height:26px;background:url(/images/solaroTeens/theme1/buttons/collapseBtnBg.png) no-repeat;right:10px;top:0;text-align:center;color:#000;font-size:10px}
+.collapse a:hover{text-decoration:none}
+a.hideBtn span{background:url(/images/solaroTeens/theme1/buttons/hideBtn.png) no-repeat 20px 7px;display:block;padding-top:4px;}
+a.showBtn span{background:url(/images/solaroTeens/theme1/buttons/showBtn.png) no-repeat 20px 7px;display:block;padding-top:4px;}
+.selectedName{background-color:#EEF9FB;border:1px solid #bde5ee}
+/* @end */
+
+/* @group Footer */
+#footer{background:#2cb6d2 url(/images/solaroTeens/theme1/global/footer-Shaddow.jpg) no-repeat center top;color:#FFF;text-align:center;padding:10px 0}
+#footer a{color:#fff;font-size:12px;font-weight:normal;font-family:verdana,geneva,arial;}
+#footer a:hover{color:#0a6e88}
+#footer h3{background:url(/images/solaroTeens/theme1/global/footer-logo.png) no-repeat;height:46px;width:160px;margin:0 auto;text-indent:-9999px}
+/* @end */
+
+/* @group Scroll To Top */
+a#toTop{background:url(/images/solaroTeens/theme1/icons/up.gif) no-repeat;width:48px;height:48px;position:fixed;bottom:10px;right:10px;cursor:pointer;display:block}
+a#toTop span{display:none}
+/* @end */
+
+/* @group Tool Tip Info */
+a.toolTipInfo{text-decoration:none}
+#tooltip{position:absolute;z-index:3000;padding:10px;opacity:0.9;background-color:#d0fcfe;border-radius:5px;-moz-border-radius:5px;border:1px solid #93dbe6;width:120px;text-align:center;
+	box-shadow: 0px 0px 8px #000;
+	-webkit-box-shadow: 0px 0px 8px #000;
+	-moz-box-shadow: 0px 0px 8px #000;
+	filter: progid:DXImageTransform.Microsoft.dropShadow(color=#000, offX=0, offY=0, positive=true);
+	}
+#tooltip h3, #tooltip div{margin:0;font-size:16px}
+/* @end */
+
+/* TOPICS/LESSONS/QUESTION PAGE */
+/*-----------------------TOPIC VIEW------------------------------*/
+#topics{width:170px;float:left;background-color:#a1f0f6;border:1px solid #bde5ee}
+#innerTopics{background:url(/images/solaroTeens/theme1/global/topicRepeat.png) repeat-x left top}
+
+/*-----------------------COURSE VIEW >LESSON HEADING------------------------------*/
+#lessonHeadingTest{background:url(/images/solaroTeens/theme1/global/lessonHeading.gif) no-repeat;width:715px;height:70px;padding:10px 15px 0 15px;margin-bottom:20px}
+#lessonHeadingTest h2{background:url(/images/solaroTeens/theme1/icons/chapterIcon.png) no-repeat;height:50px;padding-left:40px;font-size:240%;font-weight:normal;color:#000;line-height:35px}
+#lessonHeading{background:url(/images/solaroTeens/theme1/global/lessonsHeading.gif) no-repeat;width:860px;height:48px;padding:10px 15px 0 15px;margin-bottom:10px}
+#lessonHeading h2{background:url(/images/solaroTeens/theme1/icons/chapterIcon.png) no-repeat;height:50px;padding-left:40px;font-size:240%;font-weight:normal;color:#000;line-height:30px;text-align:left}
+.breadCrumb{background-color:#cef2f7;border:1px solid #48dde0;position:relative;top:-10px;padding:2px 2px 2px 10px;color:#000;height:15px;line-height:14px}
+.breadCrumb a:hover{text-decoration:none}
+/*-----------------------COURSE VIEW >LESSON CONTENT------------------------------*/
+.section h3{border:1px solid #bde5ee;padding:5px 10px}
+.section ul{margin-left:10px;line-height:30px}
+.section ul li{padding:0}
+.section ul li a:hover{text-decoration:none}
+.accepted{background-image:url(/images/solaroTeens/theme1/icons/tick.png);background-position:99% 50%;background-repeat:no-repeat;}
+.tick{background-image:url(/images/solaroTeens/theme1/icons/tick.png);background-position:2px 50%;background-repeat:no-repeat;padding-left:30px;}
+.acceptedL{background-image:url(/images/solaroTeens/theme1/icons/tickL.png);background-repeat:no-repeat;width:32px;height:32px;}
+.rejected{background-image:url(/images/solaroTeens/theme1/icons/cross.png);background-position:99% 50%;background-repeat:no-repeat;}
+.rejectedL{background-image:url(/images/solaroTeens/theme1/icons/crossL.png);background-repeat:no-repeat;width:32px;height:32px;}
+.reminder{background-image:url(/images/solaroTeens/theme1/icons/reminder.png);background-position:99% 50%;background-repeat:no-repeat;}
+.notAnswered{background-image:url(/images/solaroTeens/theme1/icons/unAnswered.png);background-position:99% 50%;background-repeat:no-repeat;}
+.unknown{background-image:url(/images/solaroTeens/theme1/icons/exclamation.gif);background-position:99% 50%;background-repeat:no-repeat;}
+/*-----------------------SEARCH ITEM-----------------------------*/
+.searchItem{margin-bottom:20px}
+/*-----------------------APPROVE ITEM-----------------------------*/
+#approval{position:fixed;right:10px;bottom:90px}
+/*-----------------------QUESTION VIEW------------------------------*/
+#questionContent{margin-bottom:10px}
+.source{border:1px solid #bde5ee;background-color:#EEF9FB;padding:5px 15px}
+
+/* INSTRUCTION PAGE */
+.instDescription{background-color:#EEF9FB;border:1px solid #bde5ee;padding:10px 10px 0 10px;margin-bottom:10px}
+.block1{background:#A5F1F7 url(/images/solaroTeens/theme1/global/solaroInfoBg.png) repeat-x;border:4px solid #A5F1F7}
+/* QUESTION TYPE PAGE */
+
+/* @group User Account Profile */
+#userAccountProfile .rounded_layer2 .layer3 {position:relative;}
+#userAccountProfile .width40 .rounded_layer2 .layer3 > ul {margin:10px 0;}
+#userAccountProfile .width40 .rounded_layer2 .layer3 > a {float:none;margin-bottom:10px;}
+/* @end */
+
+/* @group User Short Summary */
+#userShortSummary {margin-bottom:10px;}
+#userShortSummary .layer3{font-size:11px;min-height:77px;}
+#userShortSummary .layer3 #child_selection{float:left;margin-left:10px;}
+#child_detail_information_nav {margin-bottom:10px;}
+#child_detail_information_nav .width65 .layer3{min-height:285px;}
+#child_detail_information_nav .width35 {height:315px;overflow:auto;}
+#flipChildBox > ul .progressBarHolder{width:460px;margin:1px 10px 0 0;}
+#child_detail_information_nav .layer3 {background-color:#fff;}
+#child_detail_information_nav .layer3.selectedChild{background-color:#FFFFCC;border:1px solid #999999;}
+#requestedChanges{clear:both;}
+/* @end */
+
+/* @group Star Rating */
+.star-rating, .star-rating a:hover, .star-rating a:active, .star-rating a:focus, .star-rating .current-rating{background:url(/images/solaroTeens/theme1/notes/starRating.png) left -1000px repeat-x}
+.star-rating{position:relative; width:85px; height:17px; overflow:hidden; list-style:none; margin:0; padding:0; background-position:top left; float:left}
+.star-rating li{display:inline; list-style:none;padding:0;}
+.star-rating a, .star-rating .current-rating{position:absolute; top:0; left:0; text-indent:-1000em; height:17px; line-height:17px; outline:none; overflow:hidden; border:none;margin:0;padding:0;}
+.star-rating a:hover, .star-rating a:active, .star-rating a:focus{background-position:center left}
+.star-rating a.one-stars{width:20%; z-index:6}
+.star-rating a.two-stars{width:40%; z-index:5}
+.star-rating a.three-stars{width:60%; z-index:4}
+.star-rating a.four-stars{width:80%; z-index:3}
+.star-rating a.five-stars{width:100%; z-index:2}
+.star-rating .current-rating{z-index:1; background-position:bottom left}
+.star-ratings-block{width:100%}
+.result-value{font-size:.75em; text-align:left}
+/* @end */
+
+/* @group My SOLARO Page ... Needs Review and DELETED */
+.achievementsIcon, .bookmarkIcon, .forumReplyIcon, .dollarosIcon, .rewardsIcon{height:16px;display:block;padding-left:20px;margin-right:20px}
+.milestonesIcon, .goalsIcon, .progressIcon{height:16px;display:block;padding-left:5px;margin-right:5px}
+a.achievementsIcon, a.bookmarkIcon, a.forumReplyIcon, a.dollarosIcon, a.rewardsIcon, a.milestonesIcon, a.goalsIcon, a.progressIcon{text-decoration:none;color:#000;margin-bottom:5px}
+a.achievementsIcon span, a.bookmarkIcon span, a.forumReplyIcon span, a.dollarosIcon span, a.rewardsIcon span, a.milestonesIcon span, a.goalsIcon span, a.progressIcon span{color:#0a6e88}
+a.achievementsIcon:hover, a.bookmarkIcon:hover, a.forumReplyIcon:hover, a.dollarosIcon:hover, a.rewardsIcon:hover, a.milestonesIcon:hover, a.goalsIcon:hover, a.progressIcon:hover{text-decoration:none}
+.achievementsIcon{background:url(/images/solaroTeens/theme1/icons/achievementsIcon.png) no-repeat}
+.bookmarkIcon{background:url(/images/solaroTeens/theme1/icons/bookmarkIcon.gif) no-repeat}
+.forumReplyIcon{background:url(/images/solaroTeens/theme1/icons/forumReplyIcon.gif) no-repeat}
+.dollarosIcon{background:url(/images/solaroTeens/theme1/icons/dollarosIcon.png) no-repeat;padding-left:20px;}
+.rewardsIcon{background:url(/images/solaroTeens/theme1/icons/rewardsIcon.png) no-repeat}
+.createGoal{display:block;background:url(/images/solaroTeens/theme1/icons/createGoals-Btn.png) no-repeat 0 0;width:275px;height:35px;text-align:center;}
+.createGoal:hover{background-position:0 -35px;text-decoration:none;}
+.createGoal span{color:#000;line-height:30px;}
+.table {overflow-x:hidden;}
+.table >h2{color:#108796}
+.tableRow, .tableRow1, .tableRow_alt{width:890px;border-top:2px solid #fff}
+.tableRow{background-color:#dcfafb}
+.tableRow1{background-color:#f8f8f8}
+.tableRow_alt{background-color:#caf5f8}
+.tableCell_1, .tableCell_2, .tableCell_3, .tableCell_4, .tableCell_6, .tableCell_7, .tableCell_8, .tableCell_9{min-height:60px;float:left;padding:10px}
+.tableCell_1{width:650px}
+.tableCell_2, .tableCell_3{width:90px}
+.tableCell_4{width:50px}
+.tableCell_5{float:left;padding:10px;width:480px}
+.tableCell_6{width:150px}
+.tableCell_7{width:125px}
+.tableCell_8{width:710px}
+.tableCell_9{width:210px}
+.tableCell_1 a, .tableCell_2 a, .tableCell_3 a, .tableCell_4 a, .tableCell_5 a, .tableCell_6 a, .tableCell_7 a, .tableCell_8 a, .tableCell_9 a{color:#000;font-size:10px}
+.tableCell_1 a:hover, .tableCell_2 a:hover, .tableCell_3 a:hover, .tableCell_4 a:hover, .tableCell_5 a:hover, .tableCell_6 a:hover, .tableCell_7 a:hover, .tableCell_8 a:hover, .tableCell_9 a:hover{text-decoration:none}
+.tableCell_1 p, .tableCell_2 p, .tableCell_3 p{margin-left:25px}
+#toggleTitle > h3{border:1px solid #BDE5EE;background-color:#EEF9FB;padding:3px 3px 3px 10px;font-size:16px;font-family:"Gill Sans","Myriad Pro",Calibri,"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;font-weight:normal;}
+#toggleTitle{position:relative;}
+#toggleTitle > .minMax{top:7px;right:7px;position:absolute;}
+.scienceIco{background:url(/images/solaroTeens/theme1/icons/scienceIco.png) no-repeat 18px 24%}
+.chemistryIco{background:url(/images/solaroTeens/theme1/icons/chemistryIco.png) no-repeat 18px 24%}
+.mathematicsIco{background:url(/images/solaroTeens/theme1/icons/mathIco.png) no-repeat 18px 24%}
+.physicsIco{background:url(/images/solaroTeens/theme1/icons/physicsIco.png) no-repeat 18px 24%}
+.englishIco{background:url(/images/solaroTeens/theme1/icons/elaIco.png) no-repeat 18px 24%}
+.biologyIco{background:url(/images/solaroTeens/theme1/icons/biologyIco.png) no-repeat 18px 24%}
+.socialIco{background:url(/images/solaroTeens/theme1/icons/socialIco.png) no-repeat 18px 24%}
+.tableCell_1 a.lessonTitle{font-size:11px}
+.lessonTitle{background:url(/images/solaroTeens/theme1/icons/courseIcon.png) no-repeat;padding-left:25px;margin:2px 0;display:block}
+.lessonTitle h4 p{font-weight:bold;}
+
+.read{background:url(/images/solaroTeens/theme1/icons/readIcon.png) no-repeat center top;text-align:center;display:block;padding-top:30px}
+.done{background:url(/images/solaroTeens/theme1/icons/doneIcon.png) no-repeat center top;text-align:center;display:block;padding-top:30px}
+.certified{background:url(/images/solaroTeens/theme1/icons/certifiedIcon.png) no-repeat center top;text-align:center;display:block;padding-top:30px}
+.reward{background:url(/images/solaroTeens/theme1/icons/rewards.png) no-repeat;height:160px;width:130px;margin-left:20px}
+.info{margin:20px 0 0 180px}
+/* @end */
+
+/* @group Avatars ...  Needs to be Deleted */
+.avatar{padding:5px;border:1px solid #63bfc8;background-color:#fff;float:left}
+.avatarHolder{float:left}
+.avatarM{background:#fff url(/images/solaroTeens/theme1/avtars/avatarM.jpg) no-repeat;width:55px;height:62px}
+.avatarL{background:#fff url(/images/solaroTeens/theme1/avtars/avatarL.jpg) no-repeat;width:80px;height:90px}
+/* @end */
+
+.rotateEdit{background:url(/images/solaroTeens/theme1/icons/editField.png) no-repeat;display:block;float:right;width:31px;height:31px}
+.rotateCancel{background:url(/images/solaroTeens/theme1/icons/editField.png) no-repeat 0 -37px;display:block;float:right;width:31px;height:31px;}
+.rotateCancelrequest{background:url(/images/solaroTeens/theme1/icons/cross.png) no-repeat 0 0;display:block;float:right;width:16px;height:16px;}
+
+.prfoileIcons{clear:both;margin-top:5px;}
+.prfoileIcons li{background:#ECFAFD url(/images/solaroTeens/theme1/icons/profileIcons.png) no-repeat 0 0;padding-left:0;margin-bottom:5px;}
+.prfoileIcons .icoDollaro{background-position:0 -88px;padding-left:20px;}
+.prfoileIcons .icoReward{background-position:0 -174px;padding-left:20px;}
+.prfoileIcons .icoAchieve{background-position:0 -268px;padding-left:20px;}
+.prfoileIcons .icoGoal{background-position:0 -448px;padding-left:20px;}
+.prfoileIcons .icoPrgoress{background-position:0 -356px;padding-left:20px;}
+
+.fullCart, .emptyCart{background:url(/images/solaroTeens/theme1/icons/cart.png) no-repeat;width:150px;height:125px;top:-20px}
+.fullCart{background-position:0 0}
+.emptyCart{background-position:0 -125px}
+#solaroSaysWrapper{background-color:#076373;width:960px;margin:0 auto;position:relative}
+#solaroSaysWrapper a.closeBut{position:absolute; right:15px; top:20px; width:24px; height:24px; display:block; text-indent:-5000px; background:url(/images/solaroTeens/theme1/buttons/closeBtn_24x24.png) repeat-x 0 0;}
+#solaroSaysWrapper a.closeBut:hover{background:url(/images/solaroTeens/theme1/buttons/closeBtnHover_24x24.png) repeat-x 0 0;}
+#solaroSays{background:url(/images/solaroTeens/theme1/global/solaroSaysBg.png) repeat-x;margin:0 4px;padding:10px;}
+.aloud{background:url(/images/solaroTeens/theme1/global/logoStdntProf.png) no-repeat;width:auto;height:30px; padding:10px 0 0 170px; color:#fff;}
+.aloud span{font-size:1.5em; color:#ff9900;}
+.aloud a{ color:#42d6e7; font-weight:normal;}
+.dateTime{background:url(/images/solaroTeens/theme1/global/timeBg.png) no-repeat;width:133px;height:62px;}
+.solaroInfoWrapper{background-color:#a5f1f7;padding:4px}
+.solaroInfo{background:url(/images/solaroTeens/theme1/global/solaroInfoBg.png) repeat-x;min-height:30px}
+.solaroBtnHolder{width:960px;margin:0 auto;border-top:2px solid #076373}
+.solaroBtnHide{display:block;width:60px;height:18px;text-align:center;background:url(/images/solaroTeens/theme1/buttons/solaroBtn.png) no-repeat;position:relative;left:870px;top:-2px;color:#fff;}
+.solaroBtnHide:hover{text-decoration:none;color:#fff;}
+.myDetails{float:left;margin-top:10px}
+.details{margin-left:100px;width:220px;position:relative}
+.details a{margin-right:10px;margin-top:15px}
+.profile div.details{margin-left:75px;width:auto}
+.leftWidgetHolder{float:left;width:455px;margin-right:20px}
+.rightWidgetHolder{float:right;width:455px}
+.widgets{background-color:#B9F2F7;margin-bottom:10px;padding:10px;width:435px}
+.widgets >div >h3{background-color:#fff;padding:5px 30px 5px 10px;}
+.widgets >div >.minMax{position:absolute;top:8px;right:5px;}
+.infoHolder{background-color:#fff;padding:10px;margin-top:10px}
+.ht186{height:186px;}
+.mHeight602{min-height:602px;}
+.infoHolder div p{margin-bottom:10px}
+.widgets .whatnewIcon{background:url(/images/solaroTeens/theme1/global/whatNew.jpg) no-repeat;width:105px;height:106px;float:left;margin-right:10px}
+.widgets .messageIcon{background:url(/images/solaroTeens/theme1/icons/messageIcon.jpg) no-repeat;width:105px;height:106px;float:left;margin-right:10px}
+.courseName{width:35%;float:left;overflow:auto;}
+.courseName ul li{background:url(/images/solaroTeens/theme1/icons/courseIcon.png) no-repeat 0 7px;padding-left:25px;line-height:10px}
+.courseName ul li a{display:block;padding:5px;color:#000;font-weight:normal}
+.courseName ul li a:hover, .selectedCourse{background-color:#a7eef3;text-decoration:none}
+.subjectName{margin:0 0 10px 0;height:283px;overflow:auto;width:58%;padding:5px 5px 5px 10px;float:right;}
+.subjectName ul li{background:none;padding-left:0}
+.button{clear:both;float:right;margin-right:20px}
+.footnote{background:url(/images/solaroTeens/theme1/global/widgitBtnBg.png) repeat-x;border:1px solid #ccc;height:21px;font-weight:bold;padding:10px 0 5px 10px;margin-top:10px}
+/* For Rails error messages */
+#errorExplanation{background-color:#eef9fb;border:1px solid #bde5ee;padding:10px;margin-bottom:10px;min-height:0;}
+#errorExplanation p{color:#FF5D4A}
+#errorExplanation ul{background:#fff;list-style-type:none;padding:5px;font-weight:bold}
+#errorExplanation ul li{background:url(/images/solaroTeens/theme1/icons/cross-bullet.gif) no-repeat left top;padding:0 0 0 30px;margin-bottom:5px;list-style:none;font:normal 14px verdana;}
+/*-------------------- Reporting Page ----------------------*/
+.report{background:url(/images/solaroTeens/theme1/global/reportBg.png) no-repeat top;padding-top:5px;}
+.innerReport{background:url(/images/solaroTeens/theme1/global/innerReportBg.gif) repeat-y;padding:5px 10px;}
+.reportWrapper{background-color:#fff;padding:10px;}
+.reportWrapper h3>p{font:inherit;padding:5px 5px 5px 10px;}
+.testTitle > a,
+.testTitle > a:hover,
+.testTitle > a > p {font:inherit;color:#000;font-weight:normal;text-decoration:none;}
+ul.lessonList li{float:none;}
+ul.lessonList li a {background:none;height:auto;line-height:19px;padding:0;}
+ul.lessonList li a:hover {background:none;}
+.headBg{background:url(/images/solaroTeens/theme1/global/headBg.gif) repeat-x;height:50px;border:1px solid #eaeaea;clear:both;margin:0 20px;}
+.alert{background:url(/images/solaroTeens/theme1/icons/notification24x24.png) 5px -1px no-repeat;padding:3px 0 0 30px;}
+.alertL{background-image:url(/images/solaroTeens/theme1/icons/alert.png);background-repeat:no-repeat;background-position:0 60%;padding-left:40px;line-height:40px;}
+.customizeReport{padding:15px 0 0 15px;height:35px;}
+.customizeReport h3{float:left;margin-right:10px;}
+.reportContent h3{color:#2382a0;margin:10px 0;}
+.reportContent ul li{padding:5px 0;}
+.botReport{background:url(/images/solaroTeens/theme1/global/botReportBg.png) no-repeat bottom;height:5px;}
+.drag{background:url(/images/solaroTeens/theme1/global/dragDropBg.png) no-repeat;width:445px;float:left;margin:15px 0 10px 5px;}
+.dragContent{height:715px;margin:5px;overflow:auto;}
+.lessonHeader{background:#caf5f8 url(/images/solaroTeens/theme1/icons/courseIcon.png) no-repeat 5px 5px;padding-left:25px;margin:2px 0;line-height:25px;border:1px solid #b5e2e5;position:relative}
+.lessonHeader:after{content:".";display: block;height: 0;clear: both;visibility:hidden;}
+.lessonHeader > strong{display:block;float:left;}
+.lessonHeader:hover, .topics ul li.topicSelected{background-color:#a7eef3}
+.lessonHeader .minMax{float:right;margin:5px 5px 0 0;}
+.lessonHeader .close{float:right;margin:5px 5px 0 0;}
+.lessonHeader .close span{display:none}
+.dragContent a, .dropContent a{display:block;color:#000}
+.dragContent a:hover, .dropContent a:hover{text-decoration:none}
+.drop{background:url(/images/solaroTeens/theme1/global/dragDropBg.png) no-repeat;width:445px;margin-left:10px;float:left;margin-top:15px;}
+.dropContent{height:186px;margin:5px;overflow:auto}
+.dropAreaWatermark{background:url(/images/solaroTeens/theme1/global/dropArea.png) no-repeat 50% 50%;}
+.drBot{background:url(/images/solaroTeens/theme1/global/drBot.png) no-repeat;width:445px;height:10px}
+.itemHeader{margin:0 0 2px 0;border:1px solid #b5e2e5;background-color:#d7f8fa;padding:5px 0 5px 10px;cursor:move;}
+.itemHeader a:hover{text-decoration:none}
+
+.quizLegend li{width:127px;line-height:1em;float:left;padding-left:35px;}
+
+/* @Topic, Section and Passage quizzes icons */
+.quizNew{background:url(/images/solaroTeens/theme1/icons/quizStatusIcons24x24.png) no-repeat 0 0;width:24px;height:24px;display:block;margin-left:10px;}
+.quizComplete{background:url(/images/solaroTeens/theme1/icons/quizStatusIcons24x24.png) no-repeat 0 -50px;width:24px;height:24px;display:block;margin-left:10px;}
+.quizAvailable{background:url(/images/solaroTeens/theme1/icons/quizStatusIcons24x24.png) no-repeat 0 -103px;width:24px;height:24px;display:block;margin-left:10px;}
+.quizForReview{background:url(/images/solaroTeens/theme1/icons/quizStatusIcons24x24.png) no-repeat 0 -150px;width:24px;height:24px;display:block;margin-left:10px;}
+.quizPerfect{background:url(/images/solaroTeens/theme1/icons/quizStatusIcons24x24.png) no-repeat 0 -200px;width:24px;height:24px;display:block;margin-left:10px;}
+.resultValue{position:absolute;top:-6px;left:29px;font-size:9px;font-weight:bold;}
+.quizNew > span, .quizPerfect > span, .quizForReview > span, .quizAvailable > span, .quizComplete > span {display:none;}
+.quizBg .quizNew,.quizBg .quizComplete,.quizBg .quizAvailable,.quizBg .quizForReview,.quizBg .quizPerfect{margin:0 auto;}
+.quizNotAttempted, .quizReviewRequired, .quizCompleted{display:block;height:30px;line-height:15px;padding-top:2px;text-align:center;}
+.quizNotAttempted{color:#000000;}
+.quizReviewRequired{color: red;}
+.quizCompleted{color: green;}
+/* @end*/
+
+.lessonNew{background:url(/images/solaroTeens/theme1/icons/lessonStatusIcons24x24.png) no-repeat 0 0;width:24px;height:24px;display:block;margin-right:5px;}
+.lessonComplete{background:url(/images/solaroTeens/theme1/icons/lessonStatusIcons24x24.png) no-repeat 0 -50px;width:24px;height:24px;display:block;margin-right:5px;}
+.lessonAvailable{background:url(/images/solaroTeens/theme1/icons/lessonStatusIcons24x24.png) no-repeat 0 -100px;width:24px;height:24px;display:block;margin-right:5px;}
+.lessonForReview{background:url(/images/solaroTeens/theme1/icons/lessonStatusIcons24x24.png) no-repeat 0 -150px;width:24px;height:24px;display:block;margin-right:5px;}
+.lessonPerfect{background:url(/images/solaroTeens/theme1/icons/lessonStatusIcons24x24.png) no-repeat 0 -200px;width:24px;height:24px;display:block;margin-right:5px;}
+.lessonNew>span,.lessonPerfect>span,.lessonForReview>span,.lessonAvailable>span,.lessonComplete>span{display:none;}
+
+/* @group Form Elements */
+.iText,
+.iTextArea,
+.iSelect{border:1px solid #bde5ee;background-color:#eef9fb;padding:3px;font:12px Georgia,"Times New Roman",Times,serif}
+.iText, .iTextArea, .iSelect{border:1px solid #bde5ee;background-color:#eef9fb;padding:3px;font:12px Georgia,"Times New Roman",Times,serif}
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0){
+.iSelect:focus{ outline: 1px dotted black; }
+}
+*/
+.iTextArea2{border:1px solid #bde5ee;background-color:#FFEEEC;padding:3px;font:12px Georgia,"Times New Roman",Times,serif}
+.iLabel{font:14px Georgia,"Times New Roman",Times,serif}
+
+input.iButton,input:hover.iButton,input.iButtonL,input:hover.iButtonL,.iButtonDisabled,input.iButtonXL,input:hover.iButtonXL,.iButtonLDisabled{background:url(/images/solaroTeens/theme1/buttons/buttonBg.png) no-repeat;font:bold 10px verdana,Helvetica,sans-serif;cursor:pointer;outline:none;border:none;padding-bottom:2px;color:#fff;height:22px;}
+
+input.iButton{background-position:0 -88px;width:70px;}
+input:hover.iButton{background-position:0 -110px}
+input.iButtonL{background-position:0 -44px;width:100px;}
+input:hover.iButtonL{background-position:0 -66px;}
+input.iButtonXL{background-position:0 -176px;width:130px;}
+input:hover.iButtonXL{background-position:0 -198px;}
+.iButtonDisabled{background-position:0 -132px;width:70px;}
+.iButtonLDisabled{background-position:0 -154px;width:100px;}
+.iButtonDisabled:hover,.iButtonLDisabled:hover{cursor:default;}
+/* @end */
+
+/* @group After Registration */
+.congratInfo{padding-top:170px}
+/* @end */
+
+/* @group Flash Message */
+.breakOut{position:absolute;bottom:-80px;left:0}
+.breakOut div .iButton{margin-top:10px}
+label.error{width:100%;display:block;color:#FF5D4A;font-style:italic}
+#newParentUserForm label.error, #newStudentUserDetailForm label.error, #newStudentUserForm label.error{text-align:right; padding-top:4px;width:92%;float:none;}
+#newStudentUserForm.addChildForm label.error{text-align:left;width:auto;}
+#screen-name-availability{width:92%;height:auto;display:none;}
+
+#notifications{top:-60px;overflow:visible;position:fixed;z-index:9999;width:100%;padding-left:30px;color:#fff;font-size:17px;border-bottom:1px solid #fff;background:#333;font-weight:normal}
+.notifications a{ color:#42d6e7; font-weight:normal;}
+.notification-bar{color:#000;cursor:pointer;left:0;position:absolute;top:0;width:100%}
+.notification-bar-bkg{background-color:#DDEAF3;border-bottom:1px solid #B8D1E3;opacity:0.95;position:static;overflow:hidden;display:block;height:25px;margin-top:0px;margin-bottom:0px;padding-top:15px;padding-bottom:15px}
+.notification-bar, .notification-bar-bkg{padding:1.2em 0}
+.notification-bar-container{display:block;overflow:visible;position:relative;width:100%}
+.notification-bar-contents{font-size:150%;margin:0 auto;position:relative;text-align:left;width:960px}
+.notificationIcon{background:url(/images/solaroTeens/theme1/icons/notification32x32.png) no-repeat 30px 0; color:#fff; font-size:1.1em; padding:5px; padding-left:40px; margin-bottom:10px;}
+
+.errorNotificationIcon{background:url(/images/solaroTeens/theme1/icons/alert.png) no-repeat 30px 0; color:#fff; font-size:1.1em; padding:5px; padding-left:40px; margin-bottom:10px;}
+#successExplanation{color:#000;background-color:#eef9fb;border:1px solid #bde5ee;padding:10px;margin-bottom:10px}
+#successExplanation ul{background:#fff;color:#666;list-style-type:none;padding:5px;font-weight:bold}
+/* @end */
+
+/*-------------------------------------- STAR PROGRESS ------------------------------------------------*/
+.noGoal, .easyGoal, .moderateGoal, .hardGoal{background:url(/images/solaroTeens/theme1/icons/stars.png) no-repeat;height:0;display:block;text-align:center;padding-top:30px}
+.noGoal{background-position:50% 0}
+.easyGoal{background-position:50% -30px}
+.moderateGoal{background-position:50% -60px}
+.hardGoal{background-position:50% -90px}
+.restartGoal{background:url(/images/solaroTeens/theme1/icons/restartGoal.png) no-repeat 50% 0;height:0;display:block;text-align:center;padding-top:30px;}
+.lesson_level0{background:#EEF9FB url(/images/solaroTeens/theme1/icons/lesson_level0.png) no-repeat 99% 50%;}
+.lesson_level1{background:#EEF9FB url(/images/solaroTeens/theme1/icons/lesson_level1.png) no-repeat 99% 50%;}
+.lesson_level2{background:#EEF9FB url(/images/solaroTeens/theme1/icons/lesson_level2.png) no-repeat 99% 50%;}
+.lesson_level3{background:#EEF9FB url(/images/solaroTeens/theme1/icons/lesson_level3.png) no-repeat 99% 50%;}
+.lesson_legend li{margin-right:5px;}
+.lesson_legend0{background:url(/images/solaroTeens/theme1/icons/lesson_level0.png) no-repeat 0 50%;padding-left:20px;}
+.lesson_legend1{background:url(/images/solaroTeens/theme1/icons/lesson_level1.png) no-repeat 0 50%;padding-left:20px;}
+.lesson_legend2{background:url(/images/solaroTeens/theme1/icons/cross.png) no-repeat 0 50%;padding-left:20px;}
+.lesson_legend3{background:url(/images/solaroTeens/theme1/icons/tick.png) no-repeat 0 50%;padding-left:20px;}
+
+/*--------------------------------------PREM ADDED... MODIFIED BY VIJAY 07/07/2009 ------------------------------------------------*/
+.setGoal{background:url(/images/solaroTeens/theme1/icons/goalsIcon.png) 0 0 no-repeat; padding:10px 0 0 35px;}
+.loginIcons{background:url(/images/solaroTeens/theme1/icons/loginM-icon.png) center top no-repeat}
+.dollarosS{background:url(/images/solaroTeens/theme1/icons/dollarosS.png) 50% 0 no-repeat;height:30px}
+.dollarosM{background:url(/images/solaroTeens/theme1/icons/dollarosM.png) 50% 0 no-repeat;height:30px}
+.dollarosL{background:url(/images/solaroTeens/theme1/icons/dollarosL.png) 50% 0 no-repeat;height:30px}
+.piggibankM{background:url(/images/solaroTeens/theme1/icons/piggibankM.jpg) left top no-repeat}
+.notCompletedIcon{background:url(/images/solaroTeens/theme1/icons/waitingIcon.png) 10px 5px no-repeat}
+.completedIcon{background:url(/images/solaroTeens/theme1/icons/completedIcon.png) 10px 5px no-repeat}
+.pLeft150{padding-left:150px}
+.W750{width:750px}
+.parentPoints{background:url(/images/solaroTeens/theme1/global/aboveNavParentBg.png) no-repeat;float:left;margin-left:7px;width:590px}
+.progressBarHolder{float:right;width:190px;}
+.linkContainer h2>p{font:26px normal Georgia,"Times New Roman",Times,serif}
+.launchPad_BG{background:url(/images/solaroTeens/theme1/global/inner_Level_1_top.png) no-repeat;}
+.launchPad{background:url(/images/solaroTeens/theme1/icons/launchPad.png) no-repeat right top; min-height:150px;}
+.LaunchPadBot{background:url(/images/solaroTeens/theme1/global/inner_Level_1_bot.png) no-repeat;width:910px;height:10px;}
+
+#profile{width:885px;}
+.parentInvitation{background:#047694 url(/images/solaroTeens/theme1/global/layer3.png) repeat-x left -146px; color:#fff; padding:10px; margin-bottom:10px; border:3px solid #047694;}
+.parentInvitation>.notifications{font-weight:bold;font-size:12px;font-family:verdana,helvetica,arial;}
+.parentInvitation>.notifications a{color:#ffff00;font:inherit;}
+.parentInvitation>.notifications a:hover{color:#000;text-decoration:none;}
+
+/* @group Account Page */
+.piggibank{background:url(/images/solaroTeens/theme1/icons/piggibank.png) no-repeat;padding-left:50px;line-height:55px;}
+.accounts{background:#b9f2f7 url(/images/solaroTeens/theme1/global/navPanelBg.png) repeat-x left top;padding-bottom:10px;}
+.level3Block{background:url(/images/solaroTeens/theme1/global/Level_3_top.png) no-repeat;width:303px;float:left;margin-top:10px;}
+.innerLevel3Block{height:285px;padding:15px 15px 10px 15px}
+.level3Block_bot{background:url(/images/solaroTeens/theme1/global/level_3_bot.png) no-repeat;height:10px;}
+
+.changePassword{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat 0 -600px;padding:5px 5px 5px 30px;}
+.changeEmail{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat 0 -540px;padding:5px 5px 5px 30px;}
+
+a.childApproval,
+a.addChild_parent,
+a.viewReport,
+a.password,
+a.idChange,
+a.accountInfo,
+a.billInfo,
+a.editprofile,
+a.closechild,
+a.editchild,
+a.region,
+a.upgradeAc,
+a.makePmt,
+a.suspendPmt,
+a.cancelPmt,
+a.changeCr,
+a.viewPmtHistory{height:50px;display:block;background:url(/images/solaroTeens/theme1/buttons/cngPassBg.png) no-repeat right 0;margin-left:70px;color:#000;cursor:pointer;}
+
+a.password_gray,
+a.idChange_gray,
+a.accountInfo_gray,
+a.billInfo_gray,
+a.editprofile_gray,
+a.closechild_gray, 
+a.editchild_gray,
+a.region_gray,
+a.upgradeAc_gray,
+a.makePmt_gray,
+a.suspendPmt_gray,
+a.cancelPmt_gray,
+a.changeCr_gray,
+a.viewPmtHistory_gray,
+a.childApproval_gray,
+a.addChild_parent_gray,
+a.viewReport_gray{height:50px;display:block;background:url(/images/solaroTeens/theme1/buttons/cngPassBg.png) no-repeat right -150px;margin-left:70px;cursor:default;color:#ccc;}
+
+a.childApproval:hover,
+a.addChild_parent:hover,
+a.viewReport:hover,
+a.password:hover,
+a.idChange:hover,
+a.accountInfo:hover,
+a.billInfo:hover,
+a.editprofile:hover,
+a.closechild:hover, 
+a.editchild:hover,
+a.region:hover,
+a.upgradeAc:hover,
+a.makePmt:hover,
+a.suspendPmt:hover,
+a.cancelPmt:hover,
+a.changeCr:hover,
+a.viewPmtHistory:hover{background-position:right -50px;}
+
+a.password_gray:hover,
+a.idChange_gray:hover,
+a.accountInfo_gray:hover,
+a.billInfo_gray:hover,
+a.editprofile_gray:hover,
+a.closechild_gray:hover, 
+a.editchild_gray:hover,
+a.region_gray:hover,
+a.upgradeAc_gray:hover,
+a.makePmt_gray:hover,
+a.suspendPmt_gray:hover,
+a.cancelPmt_gray:hover,
+a.changeCr_gray:hover,
+a.viewPmtHistory_gray:hover,
+a.childApproval_gray:hover,
+a.addChild_parent_gray:hover,
+a.viewReport_gray:hover{background-position:right -150px;}
+
+a.password.selected,
+a.idChange.selected,
+a.accountInfo.selected,
+a.billInfo.selected,
+a.editprofile.selected,
+a.closechild.selected, 
+a.editchild.selected,
+a.region.selected,
+a.upgradeAc.selected,
+a.makePmt.selected,
+a.suspendPmt.selected,
+a.cancelPmt.selected,
+a.changeCr.selected,
+a.viewPmtHistory.selected,
+a.childApproval.selected,
+a.addChild_parent.selected,
+a.viewReport.selected{background-position:right -100px;cursor:default;}
+
+span.innerBtn/*,span.innerBtn_gray*/{height:50px;display:block;background:url(/images/solaroTeens/theme1/buttons/cngPassBg.png) no-repeat;}
+span.innerBtn{background-position:right 0;font:bold 1em;line-height:50px;padding:0 10px 0 80px;margin-left:-70px;}
+/*span.innerBtn_gray{background-position:right -150px;font:bold 1em;color:#cccccc;line-height:50px;padding-right:10px; cursor:default;}*/
+span.moreTxt{display:block;line-height:14px;padding-top:12px;height:40px;}
+
+a.password>span{background-position:0 -200px;}
+a.idChange>span{background-position:0 -250px;}
+a.accountInfo>span{background-position:0 -300px;}
+a.billInfo>span{background-position:0 -350px;}
+a.editprofile>span {background-position:0 -400px;}
+a.closechild>span {background-position: 0 -450px;}
+a.editchild>span {background-position: 0 -500px;}
+a.region>span {background-position: 0 -550px;}
+a.upgradeAc>span{background-position: 0 -600px;}
+a.makePmt>span{background-position: 0 -650px;}
+a.suspendPmt>span{background-position: 0 -700px;}
+a.cancelPmt>span{background-position: 0 -750px;}
+a.changeCr>span{background-position: 0 -800px;}
+a.viewPmtHistory>span{background-position: 0 -850px;}
+a.childApproval>span{background-position: 0 -900px;}
+a.addChild_parent>span{background-position: 0 -950px;}
+a.viewReport>span{background-position: 0 -1000px;}
+
+a.password_gray>span{background-position: 0 -1600px;}
+a.idChange_gray>span{background-position: 0 -1650px;color:#ccc;}
+a.accountInfo_gray>span{background-position: 0 -1700px;color:#ccc;}
+a.billInfo_gray>span{background-position: 0 -1750px;color:#ccc;}
+a.editprofile_gray>span{background-position: 0 -1800px;color:#ccc;}
+a.closechild_gray>span{background-position: 0 -1850px;color:#ccc;}
+a.editchild_gray>span{background-position: 0 -1900px;color:#ccc;}
+a.region_gray>span{background-position: 0 -1950px;color:#ccc;}
+a.upgradeAc_gray>span{background-position: 0 -2000px;color:#ccc;}
+a.makePmt_gray>span{background-position: 0 -2050px;color:#ccc;}
+a.suspendPmt_gray>span{background-position: 0 -2100px;color:#ccc;}
+a.cancelPmt_gray>span{background-position: 0 -2150px;color:#ccc;}
+a.changeCr_gray>span{background-position: 0 -2200px;color:#ccc;}
+a.viewPmtHistory_gray>span{background-position: 0 -2250px;color:#ccc;}
+a.childApproval_gray>span{background-position: 0 -2300px;color:#ccc;}
+a.addChild_parent_gray>span{background-position: 0 -2350px;color:#ccc;}
+a.viewReport_gray>span{background-position: 0 -2400px;color:#ccc;}
+
+.redd1 {color:red;}
+.buttonSaveaccountText {color:#CCCCCC;cursor:pointer;text-decoration:none;}
+.noLock{background:none;padding:0;margin-bottom:5px;}
+
+.dollarosAccount{background:#b9f2f7 url(/images/solaroTeens/theme1/global/navPanelBg.png) repeat-x left top;padding-bottom:10px;}
+.level1Block{background:url(/images/solaroTeens/theme1/global/level_1_top.png) no-repeat;width:910px;float:left;margin-top:10px;}
+.innerLevel1Block{padding:15px 15px 10px 15px}
+.level1Block_bot{background:url(/images/solaroTeens/theme1/global/level_1_bot.png) no-repeat;height:10px;}
+
+.addDollaros, .minusDollaros, .balDollaros{background-image:url(/images/solaroTeens/theme1/icons/Dollaros.png);background-repeat:no-repeat;width:30px;height:30px;}
+.addDollaros{background-position:0 0;}
+.minusDollaros{background-position:0 -30px;}
+.balDollaros{background-position:0 -60px;}
+/* @end */
+
+/* @group FAQ page */
+#faqHead{background:url(/images/solaroTeens/theme1/global/lessonHeadingRepeat.png) repeat-x;height:48px;padding:10px 15px 0 15px;margin-bottom:10px;border-left:2px solid #d8f8fb;border-right:2px solid #d8f8fb}
+#faqHead h2{background:url(/images/solaroTeens/theme1/icons/faq.png) no-repeat;height:50px;padding-left:40px;font-size:240%;font-weight:normal;line-height:35px}
+.faqPost{background:#EEF9FB; border:1px solid #BDE5EE;padding:5px; font-weight:bold;}
+#contactHead{background:url(/images/solaroTeens/theme1/global/lessonHeadingRepeat.png) repeat-x;height:48px;padding:10px 15px 0 15px;margin-bottom:10px;border-left:2px solid #d8f8fb;border-right:2px solid #d8f8fb}
+#contactHead h2{background:url(/images/solaroTeens/theme1/icons/contact.png) no-repeat;height:50px;padding-left:40px;font-size:240%;font-weight:normal;line-height:35px}
+.contactWidgets{background-color:#daf8fb;margin-bottom:10px;padding:10px;width:420px;}
+.contactLeftWidgetHolder{float:left;width:420px;margin-right:20px;}
+.contactRightWidgetHolder{float:right;width:420px; margin-right:20px}
+.faq h2{background:url(/images/solaroTeens/theme1/icons/faq.png) no-repeat 5px 0; padding:0 0 10px 45px; font-size:240%; font-weight:normal; line-height:35px}
+.faq .faqContent{background:#FFF; padding:10px; padding-bottom:0;}
+.faq .faqContent .faqQus{position:relative;}
+.faq .faqContent .faqQus .minMax{right:9px; top:9px; position:absolute;}
+.faq .faqContent .faqQus a{background:#EEF9FB; border:1px solid #BDE5EE;padding:8px; padding-right:30px; font-weight:bold; display:block;}
+.faq .faqContent .faqAns{background-color:#fff;padding:8px 8px 0 8px; display:none;}
+.faq .faqContent .faqAns p{ padding-bottom:8px;}
+.faq .faqContent .faqAns p a{font-weight:normal;}
+.faq .padB10{padding-bottom:10px;}
+/* @end */
+
+/* @group Trial Account */
+.trialAccount{background-color:#333333; padding:4px; height:45px; color:#c0c0c0;}
+.trialAccountcase{border:1px solid #808080; padding:4px; height:35px;}
+.trialAccounticon{background:url(/images/solaroTeens/theme1/icons/alert.png) 0 0 no-repeat; width:35px; height:34px;}
+.buttonTrialaccountLeft{background:url(/images/solaroTeens/theme1/buttons/trial_accountImg.png) 0 0 no-repeat; display:block; width:8px; height:36px; float:left;}
+.buttonTrialaccountMid{background:url(/images/solaroTeens/theme1/buttons/trial_accountImg.png) 0 -52px repeat-x; display:block; line-height:36px; float:left; text-align:center; font-size:12px; font-weight:bold; padding:0 10px;}
+.buttonTrialaccountRight{background:url(/images/solaroTeens/theme1/buttons/trial_accountImg.png) -238px 0 no-repeat; display:block; width:8px; height:36px; float:left;}
+.buttonTrialaccountText{color:#000000; text-decoration:none; cursor:pointer;}
+.buttonTrialaccountText:hover{text-decoration:none;}
+/* @end */
+
+/* legends */
+.goal_legend{ border:1px solid #DAF8FB; background:#F1FBFB; padding-left:10px;}
+.goal_legend li{padding-left:22px; margin-right:10px; float:left;}
+.goal_legend01{background:url(/images/solaroTeens/theme1/icons/reminder.png) no-repeat 0 50%;}
+.goal_legend02{background:url(/images/solaroTeens/theme1/icons/tick.png) no-repeat 0 50%;}
+.goal_legend03{background:url(/images/solaroTeens/theme1/icons/cross.png) no-repeat 0 50%;}
+.goal_legend04{background:url(/images/solaroTeens/theme1/icons/inProgress.png) no-repeat 0 50%;}
+.lesson_statLegend{margin-top:5px;}
+.lesson_statLegend li{float:left;padding:0 0 0 26px;height:24px;margin-right:10px;width:65px;}
+.lesson_statLegend01{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat 0px -1140px;}
+.lesson_statLegend02{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat 0px -1200px;}
+.lesson_statLegend03{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat 0px -1260px;}
+.lesson_statLegend04{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat 0px -1320px;}
+.lesson_statLegend05{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat 0px -1380px;}
+.lesson_statLegend06{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat 0px -1440px;}
+
+.status1{background:url(/images/solaroTeens/theme1/icons/tick.png) no-repeat 0 50%;padding-left:30px;}
+.status2{background:url(/images/solaroTeens/theme1/icons/cross.png) no-repeat 0 50%;padding-left:30px;}
+
+ul.tabs{margin-left:20px;position:relative; z-index:1;display:block; top:1px;}
+ul.tabs li{float:left; margin-left:2px; height:47px; background:none; padding:0;}
+ul.tabs li a{display:block;color:#000;background:url(/images/solaroTeens/theme1/buttons/tabLinkBg.png) no-repeat 0 -190px; padding:0 0 0 10px; margin-top:10px; height:35px; font:bold 14px/35px Verdana,Geneva,sans-serif;}
+ul.tabs li a span{display:block;background:url(/images/solaroTeens/theme1/buttons/tabLinkBg.png) no-repeat right -55px; height:35px; padding-right:10px;white-space:nowrap;}
+ul.tabs li a:hover{text-decoration:none;background:url(/images/solaroTeens/theme1/buttons/tabLinkBg.png) no-repeat 0 -235px}
+ul.tabs li a:hover span{text-decoration:none;background:url(/images/solaroTeens/theme1/buttons/tabLinkBg.png) no-repeat right -100px; cursor:pointer;}
+ul.tabs li a.reportSelected{background:url(/images/solaroTeens/theme1/buttons/tabLinkBg.png) no-repeat 0 -135px; margin-top:2px; height:45px; cursor:default; line-height:45px;}
+ul.tabs li a.reportSelected span{background:url(/images/solaroTeens/theme1/buttons/tabLinkBg.png) no-repeat right 0; height:45px;}
+
+/* @group Search Box */
+#searchBox{background:url(/images/solaroTeens/theme1/buttons/search_bg.png) no-repeat 0 0;width:277px;height:29px;position:absolute;top:-84px;right:0;}
+#searchBox input{border:none;float:left;}
+#search{background:none;margin-top:8px;width:229px;padding:2px 2px 2px 15px;font-size:12px;vertical-align:middle;}
+input#go{background:url(/images/solaroTeens/theme1/buttons/searchBtn_bg.png) no-repeat 0 0;width:31px;height:29px;float:right;cursor:pointer;font-size:0;line-height:0;text-indent:-999px;}
+input#go:hover{background-position:0 -29px;}
+/* @end */
+
+/* @group Breadcrumb */
+#crummy{padding:10px 0;font:bold 12px Verdana, Geneva, sans-serif;zoom:1;height:24px;}
+#crummy:after{content: ".";display: block;height: 0;clear: both;visibility: hidden}
+#crummy > a,#crummy > span {font:inherit;color:#00707f;display:block;float:left;padding-top:5px;}
+#crummy  a:hover {color:#032A2F;}
+.cr_last{position:relative;z-index:1;float:left;}
+.cr_last>a,.cr_last>a>span,.cr_last>a:hover,.cr_last>a>span:hover{display:block;float:left;background:url(/images/solaroTeens/theme1/global/navCorners_top.png) no-repeat;color:#fff;cursor:pointer;}
+.cr_last>a{background-position:0 0;padding-left:5px;height:24px;}
+.cr_last>a>span{background-position:right -24px;padding-right:5px;height:21px;padding-top:3px;}
+.cr_last>a:hover,.cr_last:hover>a{background-position:0 -48px;}
+.cr_last>a:hover>span,.cr_last>a>span:hover,.cr_last:hover>a>span{background-position:right -72px;}
+
+.cr_top_left,.cr_top_right,.cr_bot_left,.cr_bot_right{display:block;background:url(/images/solaroTeens/theme1/global/navCorners.png) no-repeat;width:5px;height:5px;}
+
+.cr_top_left{float:left;background-position:left top;}
+.cr_top_right{float:right;background-position:right top;}
+.cr_bot_left{float:left;background-position:left bottom;}
+.cr_bot_right{float:right;background-position:right bottom;}
+
+div.cr_last:hover > div >.cr_bot_right,div.cr_last:hover > div > .cr_bot_left,.cr_hover .cr_top_right{background-color:#58c4e8;}
+div.cr_last:hover .cr_hover{display:block;}
+
+.cr_top,.cr_bot{background-color:#58c4e8;margin:0 5px;height:5px;display:block;}
+.cr_content{padding:0 10px;color:#fff;background-color:#58c4e8;margin:-1px 0;cursor:pointer;}
+
+.cr_hover{clear:both;width:500px;position:absolute;right:0;display:none;top:24px;}
+.cr_hover_content{background-color:#58c4e8;min-height:150px;padding:0 5px;}
+.cr_inner_content{padding:5px;background-color:#fff;}
+.cr_hover_content h4{color:#fff;font:14px Verdana, Geneva, sans-serif;padding-bottom:5px;}
+.cr_inner_content ul>li>a {font:normal 12px/2em Verdana, Geneva, sans-serif;color:#000;display:block;}
+.cr_inner_content ul>li {padding:0 5px;border:1px solid #fff;cursor:pointer;}
+.cr_inner_content ul>li:hover{background-color:#ececec;border:1px solid #c6c6c6;padding:0 5px;}
+.cr_inner_content ul>li.selected:hover{cursor:default;background-color:#fff;border:1px solid #fff}
+.cr_inner_content ul>li.selected>a,
+#crummy .cr_inner_content ul>li.selected>a:hover{color:#ccc;cursor:default;} 
+/* @end */
+
+/*Account Student Page*/
+#cancelEditProfileClk,#cancelParentEditProfileClk,#editParentProfileClk,#editProfileClk{background:url(/images/solaroTeens/theme1/icons/editField.png) no-repeat 0 0;position:absolute;top:12px;right:5px;width:32px;height:20px;text-indent:-99999px;}
+#editProfileClk,#editParentProfileClk{background-position:0 -5px;}
+#cancelEditProfileClk,#cancelParentEditProfileClk{background-position:0 -37px;}
+
+/* Written by Rajat */
+.hidden {display:none !important;}
+
+/*My Goals / Challenges widget profile page*/
+.Upcoming{background-image:url(/images/solaroTeens/theme1/icons/reminder.png);background-position:99% 50%;background-repeat:no-repeat;}
+.Restart{background-image:url(/images/solaroTeens/theme1/icons/cross.png);background-position:99% 50%;background-repeat:no-repeat;}
+.InProgress{background-image:url(/images/solaroTeens/theme1/icons/inProgress.png);background-position:99% 50%;background-repeat:no-repeat;}
+.Accomplished{background-image:url(/images/solaroTeens/theme1/icons/tick.png);background-position:99% 50%;background-repeat:no-repeat;}
+.Unaccomplished{background-image:url(/images/solaroTeens/theme1/icons/cross.png);background-position:99% 50%;background-repeat:no-repeat;}
+/*end*/
+
+/* @group Terms and Conditions */
+.termsCondition h2{padding-left:10px;}
+.termsConditionContent{background:#fff;padding:10px;border:1px solid #BDE5EE;line-height:18px;font-size:12px;}
+.termsConditionContent ul.default{line-height:0.8em;}
+.termsConditionContent p{margin-bottom:10px;}
+.termsCondition > a {margin-left:425px;}
+/* @end */
+
+/* Lesson Status */
+li.viewed,li.notViewed,li.completed{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat;padding:5px 0 0 5px;}
+li.viewed{background-position:5px -115px}
+li.notViewed{background-position:5px 0px}
+li.completed{background-position:5px -55px}
+/* End----Lesson Status */
+
+/* CSS added for 09/09/2009 cluster */
+ul.clusterList li{list-style:none;margin:0;display:block;zoom:1;}
+ul.clusterList li:after{content: ".";display: block;height: 0;clear: both;visibility: hidden}
+.textHead{font-size:16px;display:block;font-weight:normal;}
+.textHead:hover{text-decoration:none;}
+
+.milestoneInComplete,.milestoneComplete,
+.courseAvailable,.courseInProgress,.courseComplete,
+.clusterAvailable,.clusterInProgress,.clusterComplete,
+.topicAvailable,.topicComplete,.topicViewed{background:url(/images/solaroTeens/theme1/icons/32x32iconSet.png) no-repeat;width:32px;height:26px;display:block;}
+.milestoneInComplete{background-position:0 -400px;}
+.milestoneComplete{background-position:0 -450px;}
+
+.courseAvailable{background-position:0 -560px;}
+.courseInProgress{background-position:0 -620px;}
+.courseComplete{background-position:0 -680px;}
+
+.clusterAvailable{background-position:0 0;}
+.clusterInProgress{background-position:0 -50px;}
+.clusterComplete{background-position:0 -100px;}
+
+.topicAvailable{background-position:0 -200px;}
+.topicComplete{background-position:0 -250px;}
+.topicViewed{background-position:0 -300px;}
+
+.courseAvailable > span,.courseInProgress > span,.courseComplete > span,
+.clusterAvailable > span,.clusterInProgress > span,.clusterComplete > span,
+.topicAvailable > span,.topicComplete > span,.topicViewed > span{display:none}
+
+.lessonsForm{padding:10px;}
+.quizBg{background:url(/images/solaroTeens/theme1/icons/quizBg.png) no-repeat;width:84px;height:94px;padding:0;list-style:none;margin:0 10px 0 0;}
+.quizNumber{display:block;font:bold 1.5em  Georgia, "Times New Roman", Times, serif;color:#000;}
+
+ul.lessonLegendStat{list-style:none;margin:0;}
+ul.lessonStatusBar{background:url(/images/solaroTeens/theme1/icons/lessonViewStat.png) no-repeat;height:25px;}
+ul.lessonLegendStat li{background:url(/images/solaroTeens/theme1/icons/lessonViewStat.png) no-repeat;padding-left:25px;margin-right:10px;}
+ul.lessonStatusBar li{background:url(/images/solaroTeens/theme1/icons/lessonViewStat.png) no-repeat 0 -25px;width:27px;height:25px;padding:0;}
+ul.lessonStatusBar li.lessonNotAvailble,ul.lessonLegendStat li.lessonNotAvailble{background-position:-2px -232px;}
+ul.lessonStatusBar li.lessonAsterix,ul.lessonLegendStat li.lessonAsterix{background-position:-2px -262px;}
+ul.lessonStatusBar li.lessonViewed,ul.lessonLegendStat li.lessonViewed{background-position:-2px -52px;}
+ul.lessonStatusBar li.lessonClozed,ul.lessonLegendStat li.lessonClozed{background-position:-2px -112px;}
+ul.lessonStatusBar li.lessonPracticed,ul.lessonLegendStat li.lessonPracticed{background-position:-2px -172px;}
+/* CSS ended for cluster */
+
+/* @group Home-page */
+.yellowHighlight{background-color:#FFFF88;}
+.solaroRegister,.introParent,.introSolaro,.introStudent,.solaroTour{background:url(/images/solaroTeens/theme1/global/solaroBanners.jpg) no-repeat;}
+.solaroRegister span,.introParent span,.introSolaro span,.introStudent span,.solaroTour span{display:none}
+.solaroRegister{background-position:0 -200px;width:370px;height:87px; display:block;}
+.introParent{background-position:0 -300px;width:370px;height:87px; display:block;}
+.introSolaro{background-position:0 -400px;width:370px;height:87px; display:block;}
+.introStudent{background-position:0 0;width:370px;height:87px; display:block;}
+.solaroTour{background-position:0 -100px;width:370px;height:87px; display:block;}
+/* @end */
+
+/*added by Nandan*/
+.clusterAreaWatermark{background:url(/images/solaroTeens/theme1/global/selectTopicWatermark.png) no-repeat 50% 50%;}
+.comingSoon{font-size:40px;color:#149CB7;padding:200px 0;font-family:georgia;line-height:normal;}
+
+.parentIntro{ background:url(/images/solaroTeens/theme1/global/parentsIntroPic.jpg) no-repeat left top;float:left;margin:30px 0 0 0px;width:30%; height:400px; display:block;}
+.studentIntro{ background:url(/images/solaroTeens/theme1/global/studentsIntroPic.jpg) no-repeat left top;float:left;margin:30px 0 0 0px;width:30%; height:400px; display:block;}
+.solaroIntro{ background:url(/images/solaroTeens/theme1/global/solaroIntroPic.jpg) no-repeat left top;float:left;margin:30px 0 0 0px;width:30%; height:542px; display:block;}
+.screenShot{width:200px;height:150px;border:1px solid;display:block;float:left;margin-right:10px;mrgin-bottom:10px;}
+
+ul.videoList{height:250px;overflow:auto;}
+ul.videoList li{background:url(/images/solaroTeens/theme1/global/preview.jpg) no-repeat left top;padding:5px 5px 5px 30px;border-bottom:1px solid #BDE5EE;margin:5px 0;}
+
+/* @group Pricing Information */
+.pricingInformation_banner{padding:10px;line-height: 0;background-color:#fff;margin:5px 2px 2px;border:1px solid #C6D8DB;}
+.pricingInformation_img{background:url(/images/solaroTeens/theme1/icons/priceinformation.jpg) 0 0 no-repeat;padding:0 0 0 40px;width: 70%;}
+.pricingInformation_price_visa{background:url(/images/solaroTeens/theme1/global/visa.jpg) 0 5px no-repeat; width:74px; height:35px; margin:0 10px 0 0;}
+.pricingInformation_price_master{background:url(/images/solaroTeens/theme1/global/ms_card.jpg) 0 0 no-repeat;width:55px; height:35px;}
+.pricingInformation_redtxt{color:#F00;}
+.pricingInformation_img,
+.pricingInformation_price_visa,
+.pricingInformation_price_master{float: left;line-height: 32px;font-weight: bold;font-size:12px;color: #000;}
+/* @end */
+
+.leftPart{background:url(/images/solaroTeens/theme1/solaro_intro/left_backbg.gif) left top repeat-y;margin:0 0 0 0; padding:0;}
+.left_img{ float:left; width:264px; padding-top:50px;}
+.img_left{background:url(/images/solaroTeens/theme1/solaro_intro/left_img.jpg) 0 0 no-repeat; float:left; margin:0px; padding:0px; width:264px; height:332px;}
+.solaroIntro_img{background:url(/images/solaroTeens/theme1/solaro_intro/solaroIntro_img.jpg) 0 0 no-repeat; float:left; margin:0px; padding:0px; width:264px; height:549px;}
+#rightPart{width:640px;float:left;margin:25px 0 0 22px; padding:0px;}
+.forParents{font-family:normal Georgia,"Times New Roman",Times,serif; font-size:22px; font-size-adjust:none; font-weight:normal; line-height:normal; color:#000000; float:left; padding:0 0 0 5px; margin-top:21px;}
+.solaro_parent{ background:url(/images/solaroTeens/theme1/solaro_intro/sl_h1img.jpg) 0 0 no-repeat; width:193px; height:60px; display:block; float:left; text-indent:-5000px;}
+.solaro_txt_cont{ width:640px; border-bottom:1px dashed #cccccc; padding:0 0 18px 0; margin:10px 0 10px 0; clear:both; font-size:12px;}
+.solaro_txt_bordernone{ width:640px; border-bottom:none; padding:0 0 18px 0; margin:10px 0 10px 0; clear:both; font-size:12px;}
+.img_am{ background:url(/images/solaroTeens/theme1/solaro_intro/img_am.jpg) 0 0 no-repeat; width:578px; height:328px; margin:10px 0 0 0;}
+.img_r{ background:url(/images/solaroTeens/theme1/solaro_intro/img_r.jpg) 0 0 no-repeat; width:619px; height:319px; margin:10px 0 0 0;}
+.img_cr{ background:url(/images/solaroTeens/theme1/solaro_intro/img_cr.jpg) 0 0 no-repeat; width:620px; height:231px; margin:10px 0 0 0;}
+.img_rewrd{ background:url(/images/solaroTeens/theme1/solaro_intro/img_rewrd.jpg) 0 0 no-repeat; width:606px; height:334px; margin:10px 0 0 0;}
+.img_solaroIntro{ background:url(/images/solaroTeens/theme1/solaro_intro/img_solarointro.jpg) 0 0 no-repeat; width:604px; height:361px; margin:10px 0 0 0;}
+
+/* @group Courses Available Table */
+/*.mainTab_div,.plans {-moz-border-radius:10px;-webkit-border-radius:10px;behavior:url(javascripts/border-radius.htc);}*/
+.mainTab_div {background-color:#f2f2f2;padding:5px 6px 5px 5px;}
+.tabHeadingSpl{list-style-type:none;padding:0;font: 12px Arial, Helvetica, sans-serif;display:block;background-image:none;text-align:center;}
+.tabHead{background-color:#dcfafb; border:1px solid #c6d8db;margin:2px;font-weight:bold;min-height:15px;}
+.tabHeaddwn{background-color:#fff; border:1px solid #c6d8db;margin:2px;height:16px;line-height:1.5em;}
+.image_right{background:url(/images/solaroTeens/theme1/icons/tick.png) center center no-repeat; height:16px;display:block;}
+.image_cross{background:url(/images/solaroTeens/theme1/icons/cross.png) center center no-repeat; height:16px;display:block;}
+.blocktabs{display:block;line-height:0;padding-left:10px;}
+
+.blocktabsLeft,
+.blocktabs li a:hover .blocktabsLeft,
+.blocktabs li.selected a .blocktabsLeft,
+.blocktabsMid,
+.blocktabs li a:hover .blocktabsMid,
+.blocktabs li.selected a .blocktabsMid,
+.blocktabsRight,
+.blocktabs li a:hover .blocktabsRight,
+.blocktabs li.selected a .blocktabsRight{background:url(/images/solaroTeens/theme1/buttons/tabcourses1.png) no-repeat;}
+
+.blocktabsLeft{background-position:0 -5px;width:10px;height:39px;float:left;}
+.blocktabs li a:hover .blocktabsLeft,
+.blocktabs li.selected a .blocktabsLeft{background-position:0 -91px;width:10px;height:39px;float:left;}
+.blocktabsMid{background-position:0 -48px;background-repeat:repeat-x;display:block;text-decoration:none;height:39px;border:none;color:#0c5f73;font-size:15px;text-align:center;float:left;}
+.blocktabs li a:hover .blocktabsMid,
+.blocktabs li.selected a .blocktabsMid{display:block;text-decoration:none;height:39px;border:none;color:#0c5f73;font-size:15px;text-align:center; padding:0 4px 0 0;background-position:0 -137px;background-repeat:repeat-x;float:left;}
+.blocktabsRight{background-position:right -5px;width:10px;height:39px;float:left;}
+.blocktabs li a:hover .blocktabsRight,
+.blocktabs li.selected a .blocktabsRight{background-position:right -91px;width:6px;height:39px;float:left;}
+.blocktabs li{list-style-type:none;background:none;height:39px;float:left;padding:0;line-height:4.5em;margin-right:2px;}
+.blocktabs li a{display:block;text-decoration:none;height:39px;border:none;color:#0c5f73;font-size:15px;text-align:center;font-weight:normal;cursor:pointer;}
+.blocktabs li.selected a{color:#000000; }
+
+.plans{background-color:#f2f2f2;padding:5px;margin-top:10px;}
+.plans table{font-size:12px;margin-bottom:0;}
+.plans th{background-color:#dcfafb;}
+.plans td{background-color:#fff;}
+.plans th,.plans td {border:1px solid #c6d8db;margin:2px;padding:5px;}
+.green{color:green;font-weight:bold;text-align:center;}
+.redd{color:red;font-weight:bold;text-align:center;}
+.maroon{color:maroon;font-weight:bold;text-align:center;}
+
+.btnHolder{float:right;padding:0 9px 0 0;}
+.trialBtn,.registerBtn{background:url(/images/solaroTeens/theme1/buttons/registerBtn.png) no-repeat;width:130px;height:45px;display:block;float:left;text-align:center;line-height:45px;color:#000;}
+.trialBtn{background-position:0 0;}
+.trialBtn:hover{background-position:0 -45px;color:#000;}
+.registerBtn{background-position:-130px 0;}
+.registerBtn:hover{background-position:-130px -45px;color:#000;}
+/* @end */
+
+/* @group Grayed Icon */
+#lessonBrowser li.grayicon a{ color:#666; cursor:default;}
+#lessonBrowser li.grayicon a:hover{background-color:#c8f5fa;}
+.topicIcon li.grayicon span{background-position:5px -1495px;text-align:left;}
+.clusterIcon li.grayicon span{background-position:5px -1555px;text-align:left;}
+.dollarosG{background:url(/images/solaroTeens/theme1/icons/dollarosG.png) 50% 0 no-repeat;height:30px;}
+/* @end */
+
+.itemList {min-height:162px;background-color:#fff;border:1px solid #BDE5EE;padding:5px;}
+
+/* @group Trail Badge */
+#trial_notice{top:0px;padding:8px;overflow:visible;position:fixed;z-index:9;width:100%;border-bottom:1px solid #132;background:#dfe;text-align:center;color:#132;font-size:17px;font-weight:bold}
+.trial_highlight{position:relative;}
+.trial_badge{position: absolute;top:4px;left:4px;width: 44px;height: 44px;padding: 0;background: url(/images/trialBadge.png) no-repeat 0 0;}
+.avatarHolder .trial_badge{top:-10px;right:-25px;left:auto;}
+/* @end */
+
+.flashHolder{background:url(/images/solaroTeens/theme1/global/flash-Holder.jpg) 0 0 no-repeat; width:495px; height:339px;}
+.widthBut{ width:485px;}
+.solarotourBlock{background:#9fd9e6 url(/images/solaroTeens/theme1/global/solaroTour.gif) 0 0 no-repeat;min-height:337px; width:375px;}
+.backButtonbg{background:url(/images/solaroTeens/theme1/global/widgitBtnBg.png) repeat-x;border:1px solid #ccc;height:21px;font-weight:bold; margin-top:10px;}
+.tourPanelIcon{background:url(/images/solaroTeens/theme1/icons/tourIcon.png) 5px 0 no-repeat; width:22px; height:21px; display:block; float:left; padding:0 5px;}
+.tourPanel{ width:267px; height:245px; float:right; margin:65px 15px 0 0; overflow:auto; font-weight:bold; list-style-type:none;}
+.tourPanel li{list-style-type:none; color:#000000; display:block; height:22px; margin:2px; background-image:none;}
+.tourPanel li a{border:1px solid #d6d5d5; padding:4px 0 0 0; background-color:#ffffff;  color:#000000; display:block; height:22px;}
+.tourPanel li a:hover{background:url(/images/solaroTeens/theme1/global/solaroTourhoverbg.gif) 0 0 repeat-x; display:block; color:#000000; text-decoration:none;}
+.img_course{ background:url(/images/solaroTeens/theme1/solaro_intro/img_course.jpg) 0 0 no-repeat; width:586px; height:401px; margin:10px 0 0 0;}
+.img_mysolaro{ background:url(/images/solaroTeens/theme1/solaro_intro/img_student.jpg) 0 0 no-repeat; width:600px; height:357px; margin:10px 0 0 0;}
+.img_studyroom{ background:url(/images/solaroTeens/theme1/solaro_intro/img_studyroom.jpg) 0 0 no-repeat; width:600px; height:357px; margin:10px 0 0 0;}
+.img_notes{ background:url(/images/solaroTeens/theme1/solaro_intro/img_notes.jpg) 0 0 no-repeat; width:600px; height:357px; margin:10px 0 0 0;}
+.student_img{background:url(/images/solaroTeens/theme1/solaro_intro/student_img.jpg) 0 0 no-repeat; float:left; margin:0px; padding:0px; width:260px; height:255px;}
+
+.nrSeperator{background-color:transparent;float:left;border:none;font-size:14px;font-weight:bold;padding:4px 5px 0;color:#000;}
+.w750{width:750px;}
+.mLeft273{margin-left:273px;}
+.grey{background-color:#e4e4e4;}
+
+.acceptPolicy{width:65%;margin:10px auto 0;}
+.addChildrenBanner{background:transparent url(/images/solaroTeens/theme1/buttons/addChildren.png) 0 0 no-repeat;display:block;height:183px;width:280px;}
+.outOfTrial {background:transparent url(/images/solaroTeens/theme1/buttons/trialBtn.png) no-repeat scroll 0 0;display:block;height:44px;margin:5px 0 0 75px;width:197px;}
+.outOfTrial span {color:#000;padding:15px 0 0 60px;display:block;}
+.outOfTrial:hover{text-decoration:none;}
+/*************************/
+.activitesIcon{
+	background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat scroll 0 -1602px;
+	float:left;
+	height:24px;
+ 	padding-left:30px;
+  line-height:28px;
+}
+/* ------------After Registrations--------------- */
+.thumbsUp{background:url(/images/solaroTeens/theme1/global/thumbsUp.jpg) no-repeat;width:320px;height:380px;float:left;margin-left:50px;margin-top:20px}
+.congratInfo{padding-top:170px}
+
+.addChildrenBanner{background:transparent url(/images/solaroTeens/theme1/buttons/addChildren.png) 0 0 no-repeat;display:block;height:183px;width:280px;}
+.blueHr{border-top:1px solid #BDE5EE;margin-left:100px;margin-right:100px;margin-top:30px;height:5px;}
+/*****************************for showing ajax indicator on updating profile screen_name****************/
+.checkingScreenNameIndicator{
+  background:transparent url(/images/ajax-loader-checking.gif) no-repeat; height:11px; width:16px;
+  padding-left:5px;
+}
+.checkingScreenNameText{
+  line-height:1;
+}
+  
+
+
+/*------------------------------------Flow promenency fix for Lesson Flow --------------------------------------*/
+.headTitle1{font-size:22px;}
+.headTitle2{font-size:20px;}
+.headTitle3{font-size:18px;line-height:23px;}
+.headTitle4{font-size:16px;}
+
+/* @group Daily Activities Report */
+th abbr{font:bold 12px/24px Verdana, Geneva, sans-serif;padding:5px 0;text-decoration:none;border-bottom:none;}
+.topBtn_left,.topBtn_mid,.topBtn_right{background:url(/images/solaroTeens/theme1/global/topActivities_buttons.png);height:40px;}
+.topBtn_left{background-position:0 0;}
+.topBtn_mid{background-position:0 -80px;background-repeat:repeat-x;}
+.topBtn_right{background-position:right -40px;}
+.topBtn_right .iNextSmall{float:right;}
+.topIconsbar{background:#f2f2f2;font-weight:bold;padding-left:15px;}
+.topIconsbar1 li{float:left;}
+.topIconsbar1_01{background:url(/images/solaroTeens/theme1/icons/activityIcons.png) 0 0 no-repeat;padding-left:30px;float:left;}
+.topIconsbar1_02{background:url(/images/solaroTeens/theme1/icons/activityIcons.png) 0 -42px no-repeat;padding-left:25px;float:left;}
+.topIconsbar1_03{background:url(/images/solaroTeens/theme1/icons/activityIcons.png) 0 -108px no-repeat;padding-left:30px;float:left;}
+.topIconsbar1_04{background:url(/images/solaroTeens/theme1/icons/activityIcons.png) 0 -142px no-repeat;padding-left:30px;float:left;}
+.topIconsbar1_05{background:url(/images/solaroTeens/theme1/icons/activityIcons.png) 0 -78px no-repeat;padding-left:30px;float:left;}
+.days{background:url(/images/solaroTeens/theme1/global/DailyActivitiesbg.jpg) 0 0 repeat-x;border:1px solid #cdcecf;display:block;height:24px;text-align:center;}
+.dayNames{text-align:center;padding:0 30px;text-transform:uppercase;font-weight:bold;font-size:11px;float:left;line-height:24px;}
+.rightPanel_Report{font-size:11px;font-weight:bold;}
+.rightpanelText_Bold{font-size:13px;font-weight:bold;}
+.rightPanelText_Regular{font-size:13px;padding-left:10px;}
+
+.monthBox{width:170px;margin:0 auto;}
+
+.monthBox_Left,
+.monthBox_Mid,
+.monthBox_Right,
+.monthBox a:hover .monthBox_Mid,
+.monthBox a:hover .monthBox_Left,
+.monthBox a:hover .monthBox_Right{background:url(/images/solaroTeens/theme1/testQuest/navTestIcons.png) no-repeat;height:25px;float:left;display:block;}
+.monthBox_Left{background-position:-725px 0px;width:10px;}
+.monthBox_Mid{background-position:-775px 0px;background-repeat:repeat-x;color:#fff;text-align:center;width:150px;font:bold 14px/25px Verdana, Geneva, sans-serif;}
+.monthBox_Right{background-position:-750px 0px;width:10px;}
+
+.monthBox a:hover .monthBox_Mid{background-position:-775px -80px;}
+.monthBox a:hover .monthBox_Left{background-position:-725px -80px;}
+.monthBox a:hover .monthBox_Right{background-position:-750px -80px;}
+
+.dateBox{background:url(/images/solaroTeens/theme1/global/calenderBg.jpg) 0 0 repeat-x;border:1px solid #cccccc;height:92px;width:89px;font-size:9px;margin:2px;}
+.dateBox_num{background:url(/images/solaroTeens/theme1/global/calenderNum.png) 0 0 no-repeat;background-position:top left;width:26px;height:25px;text-align:center;font-weight:bold;font-size:11px;}
+.dateBox_day{background:url(/images/solaroTeens/theme1/global/calenderNum.png) no-repeat 0 -24px;width:40px;height:25px;text-align:center;font-weight:bold;font-size:9px;line-height:22px;}
+.dateStar{background:url(/images/solaroTeens/theme1/icons/activityIcons.png) 0 -4px no-repeat;float:left;display:block;width:24px;margin-top:2px;height:22px;}
+.dateExclamation{background:url(/images/solaroTeens/theme1/icons/activityIcons.png) -5px -43px no-repeat;float:left;display:block;width:12px;height:24px;}
+.dateBox_num1{text-align:center;font-weight:bold;font-size:10px;float:left;margin:5px 0 0 3px;width:20px;}
+
+.lessonIcon{background:url(/images/solaroTeens/theme1/icons/activityIcons.png) 0 -116px no-repeat;float:left;display:block;width:20px;height:14px;margin-top:5px;}
+.lessonBg{background:url(/images/solaroTeens/theme1/global/dateRound_bg.jpg) 0 0 no-repeat;display:block;width:55px;height:14px;line-height:14px;float:left;margin-left:5px;margin-top:5px;}
+.lessonText{font-weight:bold;}
+
+.assementIcon{background:url(/images/solaroTeens/theme1/icons/activityIcons.png) 0 -148px no-repeat;float:left;display:block;width:20px;height:14px;margin-top:5px;}
+.assementBg{background:url(/images/solaroTeens/theme1/global/dateRound_bg.jpg) 0 0 no-repeat;display:block;width:55px;height:14px;line-height:14px;float:left;margin-left:5px;margin-top:5px;}
+
+.notesIcon{background:url(/images/solaroTeens/theme1/icons/activityIcons.png) 0 -84px no-repeat;float:left;display:block;width:20px;height:14px;margin-top:5px;}
+.notesBg{background:url(/images/solaroTeens/theme1/global/dateRound_bg1.jpg) 0 0 no-repeat;display:block;width:55px;height:14px;line-height:14px;float:left;margin-left:5px;margin-top:5px;}
+.today{background-color: #4682b4;}
+.listStyle{list-style-type:disc;}
+/* @end */
+/* @group Lesson Note and updated css*/
+.hasUpdate, .hasNotes{background:url(/images/solaroTeens/theme1/buttons/lessonsNote.png) no-repeat;float:left;margin-left:10px;}
+.hasUpdate{background-position:0 -116px;height:24px;width:68px;}
+.hasNotes{background-position:0 -49px;height:16px;width:45px;margin-top:4px;}
+/*@end*/
+
+/*******NEW NAVIGATION CHANGE ON 30.12.2009*********/
+.courseBg{background-color:#086a72; padding:5px 20px; -moz-border-radius:16px; color:#ffffff;}
+.topicBg{ background-color:#1993a7; padding:5px 20px; -moz-border-radius:16px; color:#ffffff;}
+.sectionBg{ background-color:#11bfc8; padding:5px 20px; -moz-border-radius:16px; color:#ffffff;}
+#lessonBrowser .layer3 h3{background-color:#d9f8fd; padding:0 5px 5px 0px;}
+#lessonBrowser {height:248px;}
+
+.navCourse, .navTopic, .navSection, .navTopic span, .navSection span{ background:url(/images/solaroTeens/theme1/global/navTopbg.png);background-repeat:no-repeat;display:block;color:#ffffff;line-height:28px; padding-left:10px;}
+.navCourse{background-position: -144px -36px; width:257px;}
+.navTopic{background-position: -120px -74px;}
+.navSection{background-position: -99px -1px; width:296px;line-height:28px; font-size:16px; margin-left:-10px;}
+
+/*******************New width created on 11th Jan*************************/
+/*.navCourse{background-position: 0 -144px; width:247px;font-size:22px;padding-left:10px;}
+.navTopic{background-position: 0 -71px; font-size:20px;padding-left:10px;}
+.navTopic span{background-position: right -102px; display:block;}
+.navSection{background-position: 0 -1px;font-size:18px; line-height:28px; padding-left:9px;}
+.navSection span{background-position: right -38px; display:block;}*/
+/*.navGenreT{background-position: -114px -198px; font-size:20px;}
+.navGenreS{background-position: -99px -157px; width:296px; margin-left:-10px; font-size:18px; line-height:23px;}*/
+
+/***********************************************************************/
+
+.mileStone_top{ position:relative; margin-top:-3px;}
+
+.goalStatus {border: 1px solid rgb(220, 107, 0);padding: 1px 10px; background-color: rgb(255, 170, 40); color: white; position: absolute; top: 43%; margin-top: -7px; height: 14px; right:25px; font-family: tahoma;font-size:10px;}
+.goalStatus:hover{background-color:#ffff00;}
+h2 a.goalStatus{right:0px}
+
+/*******************New width created on 6th Jan*************************/
+.w535 {width:535px;} 
+.w600 {width:600px;}  
+input.blur { color:gray !important; }
+.maxHeight400 {
+	max-height: 400px;
+}
+#outcome_report_container div ul{ width:100%; padding-bottom:10px;}
+
+/*********************************New Lesson Status View************************************/
+.lessonStatLegend,.lessonStat{float:right;width:325px;}
+.lessonStatLegend span,.lessonStat ul li{display:block;float:left;width:60px;border-right:1px solid #bde5ee;text-align:center;padding:0px 10px;}
+.lessonStat ul li{height:24px;}
+.lessonStatLegend strong span,.lessonStat ul li.completeLesson,.lessonStat ul li.inCompleteLesson,.lessonStat ul li.notViewedLesson{border-right:none;}
+.lessonStat ul li.viewed,
+.lessonStat ul li.notViewed,
+.lessonStat ul li.notPresent,
+.lessonStat ul li.inComplete,
+.lessonStat ul li.notViewedLesson,
+.lessonStat ul li.inCompleteLesson,
+.lessonStat ul li.completeLesson {background:url(/images/solaroTeens/theme1/global/lessonStat.png) no-repeat;}
+.lessonStat ul li.viewed{background-position:center 4px}
+.lessonStat ul li.notViewed,.lessonStat ul li.notViewedLesson{background-position:center -36px}
+.lessonStat ul li.notPresent{background:none;}
+.lessonStat ul li.inComplete{background-position:center -76px}
+.lessonStat ul li.inCompleteLesson{background-position:center -156px}
+.lessonStat ul li.completeLesson{background-position:center -116px}
+.lessonStat ul li.viewed a,
+.lessonStat ul li.notViewed a,
+.lessonStat ul li.notPresent a,
+.lessonStat ul li.inComplete a,
+.lessonStat ul li.notViewedLesson a,
+.lessonStat ul li.inCompleteLesson a,
+.lessonStat ul li.completeLesson a{display:block;height:18px;margin:0 auto;width:18px;}
+.lessonStat ul li.viewed a span,
+.lessonStat ul li.notViewed a span,
+.lessonStat ul li.notPresent a span,
+.lessonStat ul li.inComplete a span,
+.lessonStat ul li.notViewedLesson a span,
+.lessonStat ul li.inCompleteLesson a span,
+.lessonStat ul li.completeLesson a span{display:none;}
+/*********************************************************************/
+
+/* @group New Navigation System */
+.navWrapper{position:relative;z-index:99;}
+.newNavMenu{font:14px/18px Georgia, "Times New Roman", Times, serif;font-weight:normal;color:#c9c9c9; position:relative;}
+.newNavMenu a{text-decoration:none;color:#bbb;}
+li.active a{color:#555;}
+li.navSelected > a{color:#fff;}
+.defaultNav{background:url(/images/solaroTeens/theme1/buttons/NewNavBG) repeat-x #fff;height:33px; border:1px solid #cccccc;margin-bottom:10px;}
+.navSub_selected{background-color:#ffffff; color:#000; border:1px solid #fff; margin-bottom:1px; padding: 0; line-height:24px;}
+.navSub_selected a{color:#000; text-decoration:none; line-height:24px;display:block;padding:6px;font:normal 12px verdana;}
+.navSub_selected a:hover{background-color:#EEF9FB;}
+.navSub_selected p{color:#999;cursor:default;padding:6px;}
+.navSub_selected a>p{color:#555;cursor:default;padding:0;font:inherit;}
+.navSub_header{background-color:#58c4e7; color:#f8fdfe; margin-bottom:1px; padding: 6px 0; font-size:16px;}
+.navBody_Genre{background-color:#58c4e7; padding:10px; width:423px; font-family:Georgia, "Times New Roman", Times, serif; font-size:13px;position:absolute;left:-3px;top:30px;}
+.last.navSelected>.navBody_Genre{background-color:#58c4e7; padding:10px; width:423px; font-family:Georgia, "Times New Roman", Times, serif; font-size:13px;position:absolute;left:-3px;top:30px;}
+.navSelected{background:url(/images/solaroTeens/theme1/buttons/newNavHover.png) repeat-x #58c4e7; border:3px solid #58c4e7;  color:#fff; float:left;position:relative;padding:5px 5px 4px 5px;}
+/*.second.navSelected{width:236px;}*/
+.navGeneral{padding:8px 8px 7px 8px;float:left; color:#cccccc;}
+.second.navGeneral{width:242px;}
+.navGeneral>a,.navSelected>a{display:block;float:left;}
+.navGeneral_Blc{padding-right:20px; padding-left:20px; float:left; color:#000000;}
+.navArrow_icon{background:url(/images/solaroTeens/theme1/icons/navArrow.png) 0 0 no-repeat;width:24px;float:left;margin-left:5px;}
+.navblockButton{ background:url(/images/solaroTeens/theme1/buttons/buttonNav.png) 0 0 no-repeat;width:65px; height:11px;position:absolute;bottom:-21px;}
+.navblockButton a{display:block;width:65px;height:11px;}
+.lockIcon{position:relative;}
+.lockIcon,.lockIcon a:hover {background-color:#ddd;}
+.lockIcon a{cursor:default;}
+.lockIcon span{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat 0 -1912px; width:24px; display:block;height:24px;position:absolute;top:3px;right:7px;}
+.lockIconGeneral{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat 0 -1912px; width:30px; display:block;height:24px;}
+/* @end */
+/*********************************Print Icon************************************/
+.printIcon{background:url(/images/solaroTeens/theme1/icons/printIcon.png) no-repeat 0 0; padding:0 0 0 20px;height:15px;display:block;float:left;margin-left:10px;} 
+/*********************************************************************/  
+.lessonCompleteIcon{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat 0 -1807px; width:24px; height:24px; display:block; text-indent:-5000px;}  
+/*#todayContainer li,#yesterdayContainer li,#previousContainer li {border-bottom:1px dotted #A4E4EF;}
+#today,#yesterday,#previous{background-color:#fff;border:1px solid #BDE5EE;padding:5px;margin-bottom:10px;}
+#today h3,#yesterday h3,#previous h3{margin-bottom:5px;}
+#todayContainer ul,#yesterdayContainer ul,#previousContainer ul{margin-bottom:10px;}   
+#todayContainer ul a,#yesterdayContainer ul a,#previousContainer ul a{font:normal 14px/1.5em "Gill Sans","Myriad Pro",Calibri,"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;}       
+*/
+/****************************************************************************************************************/
+
+.formSecAddpadding{ padding-left:180px;}
+.formSecAddmargin{ margin-left:140px;}
+
+.solutionSection1{padding:10px;background-color:#ffffff;border:1px solid #BDE5EE;margin-bottom:10px;}
+.understandCheck{background-color:#f0fafc;border:1px solid #c4eaf2;padding:5px 10px;padding-bottom:10px;}
+.buttonLeft_panel{ float:left; padding-bottom:10px;}
+.link{ float:left; font-weight:bold; text-decoration:none; margin-right:20px;}
+.buttonLeft_panel .icongreenNotview{ background-position:left -1669px;  padding-left:24px;}
+.buttonLeft_panel .icongreenView{ background-position:left -1763px;  padding-left:24px;}
+.buttonLeft_panel .iconIncomplete { background-position:left -1716px; padding-left:24px;}
+
+.headPanel{ position:relative;margin-bottom:10px;border:1px solid #bde5ee;background-color:#fff;padding:5px 10px;}
+.headPanel .minMax{position:absolute;top:8px;right:5px;}
+
+.buttonRight_panel{ float:right; padding-bottom:10px;}
+.grayButton{ background:url(../images/solaroTeens/theme1/buttons/grayButton.jpg) 0 0 repeat-x; border:1px solid #bdbcbd; padding:8px 5px 0 7px; cursor:pointer; height:28px; float:left;}
+.icongreenNotview, .icongreenView, .iconIncomplete, .todoList, .iconnotes, .icondiscussion{ background:url(../images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat;}
+.icongreenNotview{ background-position:-6px -1669px; padding-left:18px;}
+.icongreenView{ background-position:-6px -1763px; padding-left:18px;}
+.iconIncomplete{ background-position:-6px -1716px; padding-left:18px;}
+.todoList{ background-position:left -2058px;}
+
+
+/* @group Pop Notes */
+.popNote,
+.innerPopNote,
+.popNote a.note,
+.popNote a.startDiscussion,
+.popNote a.flash-card {background:url(/images/solaroTeens/theme1/global/popNoteImage.png) no-repeat;}
+.popNote{background-position:0 0;padding:0 0 0 15px;height:40px;z-index:999;}
+.innerPopNote{background-position:100% -40px;padding:10px 15px 10px 0;height:20px;}
+.innerPopNote a{color:#fff;font:bold 12px Verdana, Geneva, sans-serif;cursor:pointer;}
+.innerPopNote a:hover{color:#eee;}
+.popNote a.note{background-position:0 -110px;padding-left:20px;padding-right:10px;}
+.popNote a.startDiscussion{background-position:7px -90px;padding-left:30px;}
+.seperator {border-left:1px solid #00A5B7;border-right:1px solid #00C5D0;width:0;}
+/*  @end */
+
+
+.buttonLeft_panel1{ float:right;padding-top:3px;}
+.buttonLeft_panel1 li{padding:0;}
+.link1{ float:left; font-weight:bold; margin-right:20px; color:#000000;}
+.icondiscussion{ background-position:left -1970px; padding-left:30px; display:block;}
+.iconnotes{ background-position:left -2014px; padding-left:30px; display:block; }
+.textDN a{ color:#000; text-decoration:none; font-weight:bold;}
+.todoList{ background-position:left -2058px;}
+
+/*********************************For teacher request of features ***************************************/
+
+.featureRequest{background:transparent url(/images/solaroTeens/theme1/icons/overlay_back.png) repeat scroll 0 0;position:fixed;height:130px;padding:3px 0 3px 3px;right:0;top:225px;width:33px;}
+.featureRequest_toogler{background:transparent url(/images/solaroTeens/theme1/icons/tab_feature.gif) repeat scroll 0 0;border:medium none;display:block;height:100%;text-decoration:none;text-indent:-9999px;width:100%;}
+.feature_window{background:transparent url(/images/solaroTeens/theme1/icons/overlay_back.png) repeat scroll 0 0;left:50%;margin-left:-200px;padding:3px;position:fixed;top:150px;width:500px;z-index:9999;display:none;}
+.feature_closer{border:none;color:#FFFFFF;font:bold 12px Helvetica,Arial,sans-serif;position:absolute;right:18px;text-decoration:none;top:18px;}
+.feature_closer:hover{color:#fff;}
+.featureWrap{background-color:#FFFFFF;height:100%;width:100%;}
+.featureHeader{background:#006699;padding:12px 15px;}
+.featureHeader h1{color:#FFFFFF;font-size:16px;font-weight:bold;margin:0;}
+.fetureForm{padding:10px;}
+.fetureForm label{padding-right:10px;font:14px Georgia, "Times New Roman", Times, serif;}
+.fetureForm input,.fetureForm textarea{background-color:#EEF9FB;border:1px solid #BDE5EE;font:12px Georgia,"Times New Roman",Times,serif;padding:3px;width:470px;margin-bottom:10px;}
+.fetureForm textarea{height:150px;overflow:auto;resize:none;}
+.fetureForm input.iButton,.fetureForm input.iButtonL{border:none;font:bold 10px Verdana, Geneva, sans-serif;padding-bottom:0 0 2px 0;position:relative;left:50%;}
+.fetureForm input.iButton{width:70px;margin:10px 0 10px -35px;}
+.fetureForm input.iButtonL{width:100px;margin:10px 0 10px -50px;}
+
+/* @group Notes Page */
+.grayTint{background-color:#fff;border:1px solid #ccc;}
+.notesNav,.dayHeader{background:url(/images/solaroTeens/theme1/notes/navBg.png) repeat-x left center;}
+.notesNav{height:60px;border:1px solid #ccc;margin-bottom:10px;padding:0 10px 10px;}
+.subjectNav{}
+.subjectNav li{float:left;padding:5px 10px;height:25px;}
+.subjectNav li.selected a,.subjectNav li.selected a span{background:url(/images/solaroTeens/theme1/notes/subNavBg.png) no-repeat;display:block;height:35px;float:left;}
+.subjectNav li.selected a{background-position:0 0;padding-left:10px;}
+.subjectNav li.selected a span{background-position:100% -50px;padding-right:20px;padding-left:10px;color:#00576d;}
+.dayHeader{padding:5px 10px;font:normal 16px "Gill Sans","Myriad Pro",Calibri,"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;border-bottom:1px solid #CCC;}
+.dayHeader a{font:inherit;}
+.noteTitle{font:normal 16px "Gill Sans","Myriad Pro",Calibri,"Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;background:url(/images/solaroTeens/theme1/global/popNoteImage.png) no-repeat 0 -106px;padding-left:20px;}
+.noteTitle a{font:inherit;}
+.noteBlock{margin-bottom:20px;border:1px solid #f1f1f1;background:url(/images/solaroTeens/theme1/notes/noteCurve.png) no-repeat right bottom;padding:50px 10px 10px;position:relative;}
+.noteContent{padding:10px 0 30px 20px;background:url(/images/solaroTeens/theme1/notes/noteContentBg.png) no-repeat bottom center;}
+.noteContent:last-child{background-image:none;}
+.courseTitle,.courseTitle span{background:url(/images/solaroTeens/theme1/notes/courseTitleBg.png) no-repeat;}
+.courseTitle {position:absolute;background-position:0 0;padding-left:40px;height:40px;top:5px;left:-10px;}
+.courseTitle span{display:block;background-position:right -40px;padding-right:30px;height:40px;font:bold 16px/35px "Times New Roman", Times, serif;float:left;}
+.noteNavContainer{background:#fff;border:1px solid #ccc;margin-bottom:10px;}
+.noteNavContainer li{padding:3px 0 2px 0;border-bottom:1px dotted #A4E4EF;}
+.noteNavContainer h4{margin-bottom:5px;border-bottom:1px solid #ccc;padding-bottom:5px;}
+.noteNavContainer ul{margin-bottom:10px;}
+.noteNavContainer ul a{font:normal 14px "Gill Sans",Calibri,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;vertical-align:text-bottom;}
+.noteLessonIcon{background:url(/images/solaroTeens/theme1/notes/lesson.png) no-repeat 0 0px; width:43px; height:15px; display:block; text-indent:-5000px;position:absolute;top:5px;left:210px;}  
+/* @end */
+
+/*Solaro Changelog*****/
+.textChangelogH{ padding:10px;background-color:#DCFAFB;border-bottom:1px solid #C6D8DB;font-weight:bold;}
+.textChangelog li{ padding:5px 10px;background-color:#fff;border-bottom:1px solid #ccc;}
+
+/**********************New Addition of Teacher Section***********************/
+.teacherpanelBG{ background-color:#caf6f9; border:none; margin-bottom:2px; padding:6px;}
+.subjectTxt{ padding-left:10px; width:400px; float:left;}
+.subjectTxtH{ padding-left:10px; width:414px; float:left;}
+.subjectTxt1{ padding-left:10px; width:400px;}
+.gradeTxt{ margin-left:5px; margin-top:1px; width:150px; float:left;}
+.studentTxt{ padding-right:10px; position:relative; float:right;}
+.studentTxtH{ padding-right:22px; position:relative; float:right;}
+.studentTxt1{ padding-right:5px; position:relative; float:right;}
+.panelheadBg{ background-color:#a8eff5; border:none; margin-bottom:2px; padding:5px;}
+.panelheadTxt{ float:left; width:400px; padding:0 0 5px 10px;}
+.panelhead1{ background-color:#a8eff5; border:1px solid #80d9df; padding:5px;}
+.panelhead2{ background-color:#b8eff4; border:1px solid #7fdadd; padding:5px; margin-top:2px;}
+.panelhead3{ padding:5px;}
+.marginTop_space{ margin-top:5px;}
+.specificPanel{ padding:10px 10px 5px 45px;}
+.specificPanelBg{background-color:#caf6f9; margin-top:2px;}
+.specificpanelRep{ padding:0 10px 5px 45px;}
+.specificWhite{ background-color:#FFF; margin-bottom:2px; padding:6px 6px 6px 20px;}
+.whiteBox{ background-color:#FFF; border:1px solid #80d9dd; padding:10px; margin-top:2px;}
+.inputFld{ background-color:#FFF; border:1px solid #cccccc; height:25px;}
+.iButtonGo{background:url(../images/solaroTeens/theme1/buttons/buttonBg.png) no-repeat 0 -88px;width:70px;height:22px;border:none;color:#FFF;font:bold 10px verdana,Helvetica,sans-serif;cursor:pointer;outline:none;padding-bottom:2px;}
+input:hover.iButtonGo{background-position:0 -110px;}
+.classpTop{ padding:0px 5px 5px 5px;}
+.classpTop1{ padding:0px 5px 5px 0;}
+
+/* Search Find Student */
+.searchStudent{background:url(../images/solaroTeens/theme1/buttons/search_bg.png) no-repeat 0 0;width:277px;height:29px;}
+.searchStudent input{border:none;float:left;}
+.search{background:none;margin-top:8px;width:229px;padding:2px 2px 2px 15px;font-size:12px;vertical-align:middle;}
+input.go{background:url(../images/solaroTeens/theme1/buttons/searchBtn_bg.png) no-repeat 0 0;width:31px;height:29px;float:right;cursor:pointer;font-size:0;line-height:0;}
+input.go:hover{background-position:0 -29px;}
+
+.iminiBut, .iminiBut.disabled{background:url(../images/solaroTeens/theme1/testQuest/navTestIcons.png) no-repeat;display:block;float:left;width:35px;height:25px;}
+.iminiBut span{display:none;}
+.iminiBut{background-position:-576px -212px;}
+.iminiBut:hover{background-position:-576px -292px;}
+.iminiBut.disabled,.iminiBut.disabled:hover{background-position:-576px -372px;cursor:default;}
+
+/* @group Launch pad */
+/*.tabHeaddwn1{background-color:#FBFBFB;border:1px solid #C6D8DB;line-height:1.5em;margin:3px; text-align:left; padding:5px;}
+.tabChanges{ background-color:#FBFBFB;border:1px solid #C6D8DB;line-height:1.5em;margin:3px; text-align:left;padding:10px 12px 10px 10px;}*/
+.launchPadTable{width:100%}
+.launchPadTable td,.launchPadTable th{margin:2px;border:1px solid #C6D8DB;}
+.launchPadTable th{background-color:#DCFAFB;padding:5px 10px;}
+.launchPadTable td{background-color:#fff;padding:10px;vertical-align:top;}
+.launchPadTable td div{height:200px;overflow:auto;}
+.launchPadTable h4{}
+.launchPadTable ul{margin-bottom:15px;margin-left:15px;}
+.launchPadTable ul li{padding:2px 0;border-bottom:1px solid #BDE5EE}
+.launchPadTable ul li a{font-weight:normal;}
+/* @end */
+
+.maxHt150{max-height:150px;}
+.maxHt400{max-height:400px;}
+
+/* @group Status Icons */
+.status_inComplte,.status_complete,.status_notViewed{background:url("/images/solaroTeens/theme1/global/lessonStat.png") no-repeat;height:20px;width:20px;display:block;margin-right:10px;}
+.status_inComplte{background-position:0 -80px;}
+.status_complete{background-position:0 0;}
+.status_notViewed{background-position:0 -40px;}
+/* @end */
+
+/* @group Payment */
+.trialAcc,.activeAcc,.expiredAcc,.failedAcc {border:1px solid #9b9494;padding:10px;position:relative;}
+.trialAcc .trial_badge,.failedAcc .trial_badge,.activeAcc .trial_badge,.expiredAcc .trial_badge{right:4px;left:auto;}
+
+.txtBlue {color:#00c}
+
+
+.trialAcc{background-color:#ffffc0;}
+.failedAcc{background-color: #ffccff;}
+.activeAcc{background-color:#c0ffc0;}
+.expiredAcc{background-color:#dedede;}
+
+.trialAcc > ul > li,
+.failedAcc > ul > li,
+.activeAcc > ul > li,
+.expiredAcc > ul > li {padding:0;}
+
+.trialAcc > ul > li > span,
+.failedAcc > ul > li > span,
+.activeAcc > ul > li > span,
+.expiredAcc > ul > li > span{font-weight:bold;width:200px;float:left;}
+
+.trialAcc > ul > li > div,
+.failedAcc > ul > li > div,
+.activeAcc > ul > li > div,
+.expiredAcc > ul > li > div{font-weight:bold;width:200px;float:left;}
+
+.cost{color:red;text-align:right;margin-top:10px;}
+.cost.disable{color:#CCC;}
+.mHeight550{min-height:550px;}
+.mHeight380{min-height:380px;}
+
+.costTotal {
+color:#333333; margin:0 0 0 21px;
+text-align:right;
+}
+.totalcost_Border{ border-top:double; float:right; padding:0px; width:50%;}
+.bTop-Dotted > ul > li{ padding:0px; padding-top:2px;}
+.cost {
+color:red;
+margin-top:5px;
+}
+.cost > ul > li { padding:0px;}
+.accountDetails{ margin-top:10px;}
+/* @end */
+
+/* @group Search Order */
+.iconcalender{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat 0 0;background-position:left -2060px;display:block;height:25px;width:24px;}
+/*.transactionTable{}
+.transactionTable li {border-bottom:1px solid #CCC;}
+.transactionTable li>div{padding:5px;}
+.transactionTable .header{font-weight:bold;border-bottom:1px solid #333;}*/
+.transactionTable{}
+.transactionTable td{border-bottom:1px solid #CCC; padding:10px; font-size:11px;}
+.transactionTable th{padding:10px; border-bottom:1px solid #333;}
+/* @end */
+.pmtSteps{background:url(/images/solaroTeens/theme1/payment/pmtBg.png) repeat-x;height:40px;border:1px solid #ccc;width:100%;margin-left:-1px;}
+.pmtSteps > li{float:left;padding:0;height:40px;line-height:40px;width:33%;text-align:center;background-image:url(/images/solaroTeens/theme1/payment/arrowBg.png);background-repeat:no-repeat;background-position:right -120px;padding-right:24px;position:relative;font-size:18px;}
+.pmtSteps > li > span {display:block;height:40px;background-image:url(/images/solaroTeens/theme1/payment/arrowBg.png);}
+
+.pmtSteps > li.rtArrow_current{background-position:right -200px;}
+.pmtSteps > li.rtArrow_current > span{background-repeat:repeat-x;background-position:left -80px;}
+
+.pmtSteps > li.rtArrow_done{background-position:right -160px;}
+.pmtSteps > li.rtArrow_done > span{background-repeat:repeat-x;background-position:left -40px;}
+
+.pmtSteps > li.first{z-index:2}
+.pmtSteps > li.second{z-index:1;margin-left:-24px;}
+.pmtSteps > li.last{padding-right:0;background:none;margin-left:-24px;width:34%;float:right;}
+.lp35{left:35%}
+
+.betaBadge{background:url(/images/solaroTeens/theme1/payment/betaBadge.png) no-repeat;display:block;width:44px;height:44px;position:absolute;top:-8px;right:-8px;} 
+
+.linkBtnLarge{zoom:1;}
+.linkBtnLarge:after{content:'.';display:block;visibility:hidden;clear:both;height:0;} 
+.linkBtnLarge,.linkBtnLarge > span{background-image:url(/images/solaroTeens/theme1/buttons/linkBtnLargeBg.png);display:block;height:34px;cursor:pointer;float:left;color:black;}
+.linkBtnLarge{background-position:0 0;padding-left:10px;}
+.linkBtnLarge > span{background-position:right -34px;padding-right:10px;line-height:34px;}
+.linkBtnLarge > span:hover{color:#0a6e88;}
+.margin-right-20{margin-right:-20px;}
+.subBtn,.subBtnL,.subBtnXL,subBtn150px{background-image:url(/images/solaroTeens/theme1/buttons/linkBtnLargeBg.png);height:34px;font:bold 12px arial,verdana,sans-serif;color:#000;border:0;cursor:pointer;display:block;background-color:transparent;}
+.subBtn:hover,.subBtnL:hover,.subBtnXL:hover{color:#0a6e88;}
+.subBtn{background-position:0 -68px;width:70px;}
+.subBtnL{background-position:0 -102px;width:100px;}
+.subBtnXL{background-position:0 -136px;width:130px;}
+/* @end */
+
+/* @group Login New */
+.login{background:url(/images/solaroTeens/theme1/global/orBg.png) 50% 50% no-repeat;margin-top:20px;}
+.loginTop,.loginTopRight,.loginBot,.loginBotRight{background:url(/images/solaroTeens/theme1/global/loginBg.png) 0 0 no-repeat; }
+.loginTopRight{background-position:right -100px;height:76px;margin-right:-1px;}
+.loginTop{background-position:0 0;display:block;height:76px;padding-left:10px;}
+.loginTop h3{color:#FFF;background:url(/images/solaroTeens/theme1/icons/login-icon.png) -5px 0 no-repeat;font-size:21px;padding-left:65px;height:56px;padding-top:10px;}
+.loginTop h3 span{font-size:14px;display:block;line-height:1.25em;}
+.loginTop p{color:#FFF;margin-left:-10px;}
+.loginMid{ border-left:1px solid #149bb8; border-right:1px solid #149bb8;min-height:180px;}
+.loginMid ul{ font-family:Verdana, Geneva, sans-serif; font-size:13px; color:#122b30;}
+.loginBot{background-position:0 -75px;height:11px;display:block;padding-left:10px;}
+.loginBotRight{background-position:right -175px;height:11px;margin-right:-1px;}
+.forgetText{ font-size:12px; text-align:center; color:#54666a; padding-top:20px;}
+/*.forgetText a{ color:#54666a;}*/
+.signText{color:#d56604; font-weight:bold;}
+/*.signText a{ color:#d56604;}*/
+
+.parentChildImage{background:#fff url(/images/solaroTeens/theme1/global/parentChildImage.jpg) no-repeat scroll right 20px; height:339px;}
+
+.activityChild{background-color:#FFFFFF;border:1px solid #BDE5EE;width:82%;padding:5px;float:right;}
+.activityChild .dateBox{margin:0;}
+.activityLegend{float:right;margin-right:10px;}
+.activityLegend > li{background-image:url(/images/solaroTeens/theme1/payment/activityIcons_small.png);background-repeat:no-repeat;padding:0 0 0 18px;height:17px;}
+.al_starsEarned{background-position:0 0;margin-bottom:2px;}
+.al_less50{background-position:0 -40px;margin-bottom:2px;}
+.al_lessons{background-position:0 -120px;margin-bottom:2px;}
+.al_assessment{background-position:0 -160px;margin-bottom:2px;}
+.al_note{background-position:0 -80px;}
+/* @end */
+/* Lesson Status Text Icons */
+.textStatusCompleted, .textStatusPracticed, .textStatusRead, .textStatusNotstarted{ background:url(/images/solaroTeens/theme1/buttons/lessonsNote.png) no-repeat; height:17px; width:71px; display:block;}
+.textStatusCompleted{background-position:0 -250px;}
+.textStatusPracticed{background-position:0 -300px;}
+.textStatusRead{background-position:0 -350px;}
+.textStatusNotstarted{background-position:0 -400px;}
+
+/*New batch is added*/
+.newBatch{ background:url(/images/solaroTeens/theme1/icons/newBatch.png) 0 bottom no-repeat; width:20px;position:absolute;top:16px;height:24px;}
+.assessmentTick{background:url(/images/solaroTeens/theme1/icons/tick.png) no-repeat scroll center center transparent; height:16px; background-color:#fff;}
+.assessmentCross{background:url(/images/solaroTeens/theme1/icons/cross.png) no-repeat scroll center center transparent; height:16px; background-color:#fff;}
+.assessmentTotal{background:url(/images/solaroTeens/theme1/icons/totalIcon.png) no-repeat scroll center center transparent; height:16px; background-color:#fff;}
+
+/* @group Home Page, Available Courses Table */
+.selectGrade,.selectGrade h3{font:22px Arial, Helvetica, sans-serif;color:#8a8a8a;line-height:40px;}
+.selectGrade h3{}
+.selectGrade ul{margin-left:50px;float:left;}
+.selectGrade ul li{float:left;width:40px;height:40px;padding:0;margin:0 10px;}
+.selectGrade ul li>a{font:inherit;color:#8a8a8a;text-align:center;display:block;}
+.selectGrade ul li.selected > a:hover{color:#fff;cursor:default;}
+.selectGrade ul li>a:hover,.selectGrade ul li.selected>a{color:#fff;}
+.selectGrade ul li.selected,
+.selectGrade ul li:hover{background:url(/images/solaroTeens/theme1/global/SselectedGradeBg.png)}
+
+.courseTable{padding:0;background:#f5f5f5 url(/images/solaroTeens/theme1/global/gradeBot.png) no-repeat left bottom;padding:10px 0;margin:10px 5px;}
+.innerCourseTable{background:url(/images/solaroTeens/theme1/global/innerCourseTableBg.png) repeat-y left top;}
+.grade3,.grade4,.grade5,.grade6,.grade7,.grade8,.grade9,.grade10,.grade11,.grade12{background-repeat:no-repeat;background-position:left top;position:relative;top:-10px;min-height:155px;padding:0 10px 0 50px;} 
+.grade3{background-image:url(/images/solaroTeens/theme1/global/grade3.png);}  
+.grade4{background-image:url(/images/solaroTeens/theme1/global/grade4.png);} 
+.grade5{background-image:url(/images/solaroTeens/theme1/global/grade5.png);}
+.grade6{background-image:url(/images/solaroTeens/theme1/global/grade6.png);}
+.grade7{background-image:url(/images/solaroTeens/theme1/global/grade7.png);}
+.grade8{background-image:url(/images/solaroTeens/theme1/global/grade8.png);}
+.grade9{background-image:url(/images/solaroTeens/theme1/global/grade9.png);}
+.grade10{background-image:url(/images/solaroTeens/theme1/global/grade10.png);}
+.grade11{background-image:url(/images/solaroTeens/theme1/global/grade11.png);}
+.grade12{background-image:url(/images/solaroTeens/theme1/global/grade12.png);}
+
+.courseTable table{font:12px Arial, Helvetica, sans-serif;width:100%;position:relative;top:10px;margin:0;}
+.courseTable table .th{background-color:#fbfbfb;border:1px solid #ccc;text-align:left;padding:5px;text-align:center;font-weight:bold;}
+.courseTable table .td{background-color:#fff;border:1px solid #ccc;text-align:left;padding:5px;margin-top:3px;}
+.blockHead{background:url(/images/solaroTeens/theme1/notes/navBg.png) repeat-x scroll left center transparent;border:1px solid #ccc;padding:10px;margin:10px 5px;}
+.regionState,.regionState>span{background:url(/images/solaroTeens/theme1/global/regionBg.png) no-repeat 0 0;display:block;height:30px;float:left;cursor:default;}
+.regionState{background-position:0 0;padding-left:15px;}
+.regionState>span{background-position:right -30px;padding-right:15px;font:16px/30px Arial, Helvetica, sans-serif;color:#fff;}
+.downArrow{background:url(/images/solaroTeens/theme1/global/callDwnArrow.png) no-repeat;width:22px;height:10px;position:absolute;top:30px;left:50%;margin-left:-11px;}
+/* @end */
+
+/* @group Lightbox */
+.lightboxinner{float:right;}
+.lightboxinner a.close {background:none repeat scroll 0 0 transparent !important;color:#1E8FB7 !important;right:30px;top:11px;}
+ul.lightboxTop{margin:0px; padding:0px; font-size:14px;position:relative;top:-10px;}
+.lightboxTop li{list-style-type:none;float:left;background:url(/images/solaroTeens/theme1/icons/iconBredcrm.png) right 10px no-repeat; width:auto;margin-right:10px;padding-right:20px;}
+.lightboxTop .selected{ font-size:18px; color:#fff;}
+.lightboxTop li.withoutIcon{list-style-type:none; background:none; }
+ul.stateLightbox{padding:0px;font-size:12px;font-weight:bold;overflow-y:auto;height:300px;}
+.stateLightbox li{list-style-type:none;background:url(/images/solaroTeens/theme1/icons/lightIcon1.jpg) 0 14px no-repeat; margin-left:20px;padding:10px 0 0 14px;}
+.stateLightbox li > ul.lightboxSub{margin:5px;}
+.stateLightbox li > ul.lightboxSub li{list-style-type:none;background:url(/images/solaroTeens/theme1/icons/lightIcon2.jpg) 0 16px no-repeat;padding:10px 0 0 14px;}
+.stateLightbox li > ul.lightboxSub li > ul.lightboxSub2{margin:0px; padding:0 0 0 25px;}
+.stateLightbox li > ul.lightboxSub li > ul.lightboxSub2 li {list-style-type:none;background:url(/images/solaroTeens/theme1/icons/lightIcon3.jpg) 0 17px no-repeat;padding:10px 0 0 9px;}
+.wrap{cursor:pointer;}
+/* @end */
+
+/* @group Social Network */
+.socialNet{background:url("/images/solaroTeens/theme1/notes/navBg.png") repeat-x scroll left center transparent;border:1px solid #ccc;padding:10px;margin:10px 5px;}
+.twitterIco{background-image:url(/images/solaroTeens/theme1/icons/twitterIcon.png);background-repeat:no-repeat;background-position:0 0;display:block;width:100px;height:100px;float:left;}
+.twitterIco:hover{background-position:0 -100px;}
+.solaroBlog{background-image:url(/images/solaroTeens/theme1/icons/blogIcon.png);background-repeat:no-repeat;background-position:0 0;display:block;width:100px;height:100px;float:left;}
+.solaroBlog:hover{background-position:0 -100px;}
+/* @end */
+
+/* @group Flash Card */
+.boxy-wrapper.flashCardWrapper{filter:none;}
+.boxy-wrapper.flashCardWrapper .top-left,
+.boxy-wrapper.flashCardWrapper .top-left,
+.boxy-wrapper.flashCardWrapper .top-right,
+.boxy-wrapper.flashCardWrapper .bottom-left,
+.boxy-wrapper.flashCardWrapper .bottom,
+.boxy-wrapper.flashCardWrapper .bottom-right{background:transparent url(/images/solaroTeens/theme1/notes/flashCorners.png) no-repeat; width:20px; height:20px;}
+
+.boxy-wrapper.flashCardWrapper .top-left{background-position:0 0;}
+.boxy-wrapper.flashCardWrapper .top-right{background-position:right 0;}
+.boxy-wrapper.flashCardWrapper .bottom-left{background-position:0 -20px;}
+.boxy-wrapper.flashCardWrapper .bottom{background-position:0 bottom;background-repeat:repeat-x;}
+.boxy-wrapper.flashCardWrapper .bottom-right{background-position:right -20px;}
+
+.boxy-wrapper.flashCardWrapper .top{background:transparent url(/images/solaroTeens/theme1/notes/flash_top.png) no-repeat center 0;height:20px;}
+
+.boxy-wrapper.flashCardWrapper .left,
+.boxy-wrapper.flashCardWrapper .right{background:transparent url(/images/solaroTeens/theme1/notes/flash_left_right.png) no-repeat;width:20px;}
+
+.boxy-wrapper.flashCardWrapper .left{background-position:0 0;}
+.boxy-wrapper.flashCardWrapper .right{background-position:right 0;}
+
+.boxy-wrapper.flashCardWrapper .boxy-inner .title-bar {background:url(/images/solaroTeens/theme1/notes/flashContent.png) no-repeat;width:794px;height:20px;}
+.boxy-wrapper.flashCardWrapper .boxy-inner .title-bar h2 {background:none;text-align:center;color:#fff;font:normal 24px verdana, Geneva, sans-serif;}
+.boxy-wrapper.flashCardWrapper .boxy-inner .title-bar  a.close{width:50px;height:50px;background:url(/images/solaroTeens/theme1/notes/flash_close.png) no-repeat 0 0;text-indent:-9999px;right:0px;top:0px;position:absolute;top:-30px;right:-30px;}
+.boxy-wrapper.flashCardWrapper .boxy-inner .title-bar  a.close:hover{background-position:0 -50px;}
+.boxy-wrapper.flashCardWrapper .boxy-inner .boxy-content {background:#00b0d0 url(/images/solaroTeens/theme1/notes/flashContent.png) no-repeat center -20px;width:794px;min-height:275px;}
+.boxy-wrapper.flashCardWrapper .boxy-inner .boxy-content h2{color:#fff;background:none;font:normal 18px Verdana, Geneva, sans-serif;padding-bottom:10px;}
+
+.rnd{margin-top:10px;}
+.rnd:first-child{margin-bottom:0;}
+.rnd_top_left,.rnd_top_right,.rnd_bot_left,.rnd_bot_right{background:url(/images/solaroTeens/theme1/notes/flashContentRoundCorners.png) no-repeat;width:10px;height:10px;}
+.rnd_top_row{}
+.rnd_body{background-color:#dff9fc;padding:0 10px;}
+.rnd_bot_row{}
+.rnd_top_left{background-position:0 0;float:left;}
+.rnd_bot,.rnd_top{background-color:#dff9fc;margin:0 10px;height:10px;}
+.rnd_top_right{background-position:right 0;float:right;}
+.rnd_bot_left{background-position:0 bottom;float:left;}
+
+.rnd_bot_right{background-position:right bottom;float:right;}
+
+.rnd_content{border:1px solid #c5eaf2;background-color:#fff;padding:10px;}
+.flashText{border:none;height:70px;overflow:auto;width:750px;}
+
+a.swapButton,
+a.swapButton span,
+a:hover.swapButton,
+a:hover.swapButton span{background:url(/images/solaroTeens/theme1/buttons/buttonBg.png) no-repeat;line-height:25px;font-size:10px;color:#fff;height:25px;display:block;cursor:pointer;text-decoration:none;}
+
+a.swapButton{background-position:0 -220px;float:left;padding:0 0 0 10px;margin-top:-3px;}
+a.swapButton span{background-position:right -220px;overflow:hidden;padding-right:25px}
+a:hover.swapButton{background-position:0 -245px;}
+a:hover.swapButton span{background-position:right -245px;}
+
+.generalSmiley,
+.sadSmiley,
+.happySmiley{background:url(/images/solaroTeens/theme1/notes/flashIndicator.png) no-repeat;display:block;float:left;height:22px;padding-top:5px;width:50px;}
+
+.generalSmiley{background-position:15px -319px;}
+.sadSmiley{background-position:15px -269px;}
+.happySmiley{background-position:15px -369px;}      
+
+/******2nd July,2010 added by susmita*******/  
+.textFeel{color:#ffffff; float:left; margin:4px 10px 0 0; font-weight:bold;}
+
+/*work on date 9th may Susmita**************************/
+.innerFlashc { background-position:100% -40px; padding:12px 15px 10px 0;}
+.innerFlashc a {color:#FFFFFF; cursor:pointer; font:bold 12px Verdana, Geneva, sans-serif; display:block; height:23px; }
+.innerFlashc a:hover { color:#EEEEEE;}
+.popNote a.flash-card { background-position:0 -170px; padding-left:23px; padding-right:5px;margin-left:10px;}
+.flashc-indicator { background:url(/images/solaroTeens/theme1/notes/flashIndicator.png) no-repeat scroll 0 0 transparent; clear:both; display:block; position:absolute; font-size:12px; font-weight:bold; height:40px; line-height:50px; left:-60px; text-align:center; width:40px;}
+.flashcNav{ border:1px solid #CCCCCC; margin-bottom:10px; background:url(/images/solaroTeens/theme1/notes/navBg.png) repeat-x left center; }
+
+.flashc-num > a,.flashc-num > span,.flashc-num > a.current,
+.flashc-num >.happy,.flashc-num >.happy.current, 
+.flashc-num >.sad,.flashc-num >.sad.current,
+.flashc-num >.normal,.flashc-num >.normal.current,
+.flashcDel, 
+.flashcEdit{background:url(/images/solaroTeens/theme1/notes/flashIndicator.png) no-repeat; display:block; height:25px; float:left; width:40px; padding-top:24px; text-align:center; margin-left:10px;}
+.flashc-num > a:first-child{margin-left:5px;}
+
+.flashc-num > a,.flashc-num > span{background-position:0 -50px;}
+.flashc-num >.happy{background-position:0 -100px;}
+.flashc-num >.normal{background-position:0 -150px;}
+.flashc-num >.sad{background-position:0 -200px;}
+.flashcDel{background-position:0 -420px;width:55px;padding-top:0;margin-top:20px;}
+.flashcDel span{display:none;}
+.flashcEdit{background-position:0 -470px;width:45px;padding-top:0;margin-top:20px;}
+.flashcEdit span{display:none;}
+
+.flashc-num > a.current {background-position:0 -550px;}
+.flashc-num >.happy.current {background-position:0 -600px;} 
+.flashc-num >.sad.current {background-position:0 -700px;}
+.flashc-num >.normal.current {background-position:0 -650px;}
+
+.flashc-num>a.prev_page,.flashc-num>span.prev_page{background:none;width:80px;text-align:right;font-weight:bold;padding-right:5px;}
+.flashc-num>a.next_page,.flashc-num>span.next_page{background:none;width:80px;text-align:left;font-weight:bold;padding-left:5px;}
+.flashc-num>span.gap{background:none;width:30px;text-align:center;font-weight:bold;}
+
+.flashc_paginate_wrap{width:550px;float:left;padding-top:10px;}
+
+/* ----------- Flash Card Section ------------ */
+.flashCard{ background:url(/images/solaroTeens/theme1/notes/flashCardsWithBG.png) no-repeat; width:410px; height:241px; padding:10px 0px;}
+.flashCard h3{color:#fff; padding:10px 0px 25px 45px;font-size:24px;}
+.flashCard p{padding:0 50px 0px 60px;}
+.flashCard p a{ font-weight:normal;}
+
+/*-------------------Flip Button----------------*/
+.flipQues,
+.flipAns{background:url(/images/solaroTeens/theme1/notes/qaSprit.png) 0 0 no-repeat; display:block; width:60px; height:38px; cursor:pointer;position:absolute;bottom:10px;right:10px;} 
+.flipQues{}
+.flipQues:hover{background-position:0 -50px;}
+.flipQues span{display:none;}
+.flipAns{background-position:0 -100px;}
+.flipAns:hover{background-position:0 -150px;}
+.flipAns span{display:none;}
+
+
+/* @end */
+.feltFont{font-family:"Reenie Beanie","Marker Felt", "Comic Sans MS", serif;font-size:32px;line-height:26px;}
+
+/**-----------Lesson View--------------**/
+.lessonV{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat 0 -480px; display:block; padding-bottom:2px; padding-left:28px;}
+a.lessonV span { color:#ffffff;}
+a.lessonV span:hover{ color:#e8ebec;}
+
+/*---info icon----*/
+.iconInfo{background:url(/images/solaroTeens/theme1/icons/info.png) no-repeat 0 0; width:16px; height:16px; display:block; float:left; margin-left:5px; }
+input[name^="profile"] {*vertical-align:middle;}
+
+/*---------------------Parent Report Page ------------------*//*------------Premananda -----------------*/
+.lessonCompletedIcon, .lessonInProgressIcon, .lessonNotStartedIcon{background:url(/images/solaroTeens/theme1/icons/childStatusIcon.png) no-repeat; width:100px; height:17px; display:block; float:left;}
+.lessonNotStartedIcon{background-position:0 -100px;}
+.lessonInProgressIcon{background-position:0 0;}
+.lessonCompletedIcon{background-position:0 -50px;}
+ul.parentReportListStyle li{border-bottom:1px solid #c5eaf2; margin-bottom:5px;padding-bottom:10px;}
+ul.parentReportListStyle li span{color:#009900; background-color:transparent; font-weight:bold;}
+.parentReportLessonReviewed, .parentReportLessonIncomplete, .parentReportLessonNotReviewed{background:url(/images/solaroTeens/theme1/icons/parentReportLessonStatus.png) no-repeat; width:22px; height:17px; display:block; float:left;}
+.parentReportLessonReviewed{background-position:0 0}
+.parentReportLessonIncomplete{background-position:0 -100px}
+.parentReportLessonNotReviewed{background-position:0 -50px;}
+
+/*---------------------Parent account: Activity Report Page Css ------------------*/
+.subjectNav li.selectedBlue a {
+background-position:0 0;
+padding-left:10px;
+}
+.subjectNav li a {
+padding-left:10px;
+display:block;
+}
+.subjectNav li.selectedBlue a, .subjectNav li.selectedBlue a span {
+background:url("/images/solaroTeens/theme1/notes/subNavBgBlue.png") no-repeat scroll 0 0 transparent;
+display:block;
+float:left;
+height:35px;
+}
+.subjectNav li a span {
+display:block;
+float:left;
+line-height:19px;
+padding-right:10px;   
+white-space:nowrap;
+}
+.subjectNav li.selectedBlue a span {
+background-position:100% -50px;
+color:#00576D;
+padding-right:20px;
+padding-left:10px;
+}
+
+.divRow{display:table-row}
+.divLeftCell{padding:5px 10px;vertical-align:top;font:bold 12px Verdana,Geneva,sans-serif}
+.divRightCell,.divLeftCell{display:table-cell}
+
+
+
+
+/*CSS Outcome Report -  July 16 2010 Girish*/
+.Relative1px{position:relative;top:1px}
+/* @end */
+
+/* @group Logged Courses Navigation on My SOLARO page */
+.courseTableLoggedIn,.launchPadTable{width:100%;margin-bottom:-15px;}
+.courseTableLoggedIn td {width:33%;}
+.courseTableLoggedIn .th{border:1px solid #bedee2;background:url(/images/solaroTeens/theme1/global/tabHeadBg.png) repeat-x;height:24px;font:bold 14px/24px verdana;color:#013a55;text-align:center;}
+.courseTableLoggedIn .td{border:1px solid #C6D8DB;margin-top:2px;padding:5px;height:150px;overflow-y:auto;overflow-x:visible;}
+.courseTableLoggedIn .td li {padding:2px 0;}
+.courseTableLoggedIn .td li a{font:12px/18px Verdana,Geneva,sans-serif;border-bottom:1px solid #BDE5EE;display:block;margin-left:30px;}
+.topicAvailableS,.topicCompleteS,.topicViewedS{background:url(/images/solaroTeens/theme1/icons/24x24iconSet.png) no-repeat;width:24px;height:18px;display:block;}
+.topicAvailableS{background-position:0 -178px;}
+.topicCompleteS{background-position:0 -239px;}
+.topicViewedS{background-position:0 -299px;}
+.lastTr td{padding-top:5px;}
+#launch_pad_tab .innerReport > div {padding:5px;margin-bottom:30px;}
+.botInfo{position:relative;top:35px;}
+/* @end */
+
+/* Study New page designing by Premananda*/
+.blueTintBG{background:url(/images/solaroTeens/theme1/global/blueTintBG.png) repeat-x left top #d1ecfc; border:1px solid #a9ccde;}
+.testButtons,
+.quizButtons,
+.testButtonsGray,
+.quizButtonsGray{background:url(/images/solaroTeens/theme1/buttons/testNquizButtons.png) no-repeat; display:block;}
+.testButtons{background-position: 0 0; width:113px; height:32px;}
+.testButtons:hover{background-position: 0 -50px;}
+.quizButtons{background-position: -17px -100px; width:95px; height:19px;}
+.quizButtons:hover{background-position: -17px -150px;}
+.testButtonsGray{background-position:0 -200px;height:32px;width:113px;}/*New addition*/
+.quizButtonsGray{background-position:-17px -250px;height:19px;width:95px;}/*New addition*/
+.completeLessonNew, .inCompleteLessonNew, .notViewedLessonNew{background:url(/images/solaroTeens/theme1/global/lessonStat.png) no-repeat; display:block;height:24px;margin:0 auto;width:35px;}
+.completeLessonNew{background-position:center -116px}
+.inCompleteLessonNew{background-position:center -156px}
+.notViewedLessonNew{background-position:center -36px}
+/* added by Vijay */
+.lessonStatLegend.mod{width:385px;}
+.lessonStatLegend.mod span{width:75px;}
+.lessonStat.mod {width:290px;}
+.lessonStat.mod ul li {width:75px;}
+/* @end* /
+/* @end */
+
+
+/* ------ Activity Report CSS ----------- */
+.act_login,.act_Started,.act_Viewed,
+.act_Completed,.act_ReadPartial,.act_Read,.activityIcon6,.activityIcon7,.act_logout,
+.act_deactivated_discussion, .act_deactivated_answer, .act_deactivated_comment,
+.act_new_discussion, .act_new_discussion_answer, .act_new_discussion_comment,
+.act_flash_card_viewed, .act_flash_card_update, .act_flash_card_create ,.act_flash_card_destroy,
+.act_test_started,.act_test_review,.act_test_complete,.act_test_ended_early,.act_test_perfect,
+.act_quiz_started,.act_quiz_review,.act_quiz_complete,.act_quiz_ended_early,.act_quiz_perfect,
+.activityIcon2,.activityIcon3,.activityIcon4,.activityIcon5,
+.act_new_note, .act_update_note, .act_delete_note
+{
+background:url("../images/solaroTeens/theme1/icons/childActivity.png") no-repeat scroll 0 0 transparent;
+display:block;
+float:left;
+height:45px;
+width:130px
+}
+.act_login{background-position:0 0;}
+.act_Started{background-position:0 -50px;}
+.act_Viewed{background-position:0 -100px;}
+.act_Completed{background-position:0 -150px;}
+.activityIcon6{background-position:0 -250px;}
+.activityIcon7{background-position:0 -300px;}
+.act_logout{background-position:0 -350px;}
+.act_ReadPartial{background-position:0 -700px;}
+.act_Read{background-position:0 -750px;}
+.act_logout{background-position:0 -350px;}
+.act_flash_card_viewed{background-position:0 -100px;}
+.act_flash_card_create{background-position:0 -300px;}
+.act_flash_card_update{background-position:0 -800px;}
+.act_flash_card_destroy{background-position:0 -850px;}
+
+
+
+.act_test_started{background-position:0 -50px;}
+.act_test_review{background-position:0 -200px;}
+.act_test_complete{background-position:0 -150px;}
+.act_test_ended_early{background-position:0 -250px;}
+.act_test_perfect{background-position:0 -150px;}
+
+.act_quiz_started{background-position:0 -50px;}
+.act_quiz_review{background-position:0 -200px;}
+.act_quiz_complete{background-position:0 -150px;}
+.act_quiz_ended_early{background-position:0 -250px;}
+.act_quiz_perfect{background-position:0 -150px;}
+
+
+.activityIcon5{background-position:0 -200px;} /*Activity Report -> Needs Review Icon*/
+.act_new_discussion,.act_new_discussion_answer,.act_new_discussion_comment{background-position:0 -400px;} /*Activity Report -> New Discussion Icon*/
+.act_deactivated_discussion,.act_deactivated_answer,.act_deactivated_comment{background-position:0 -550px;}/*Activity Report -> Deactivated Discussion Icon*/
+.act_new_note{background-position:0 -900px;}
+.act_update_note{background-position:0 -950px;}
+.act_delete_note{background-position:0 -1000px;}
+
+
+.borderBotNone{border-width:1px 1px 0px 1px}
+
+
+/*CSS MySOLARO Show ALL Reports Page -  July 21 2010 Girish*/
+#avatar_boxy.boxy-wrapper{width: 400px}
+/*
+#avatar_boxy.boxy-wrapper .top-left{border: 1px solid #1E8FB7;-moz-border-radius-topleft: 12px;-webkit-border-top-left-radius: 12px;background: #1E8FB7}
+#avatar_boxy.boxy-wrapper .top-right{border: 1px solid #1E8FB7;-moz-border-radius-topright: 12px;-webkit-border-top-right-radius: 12px;background: #1E8FB7}
+#avatar_boxy.boxy-wrapper .bottom-left{border: 1px solid #1E8FB7;-moz-border-radius-bottomleft: 12px;-webkit-border-bottom-left-radius: 12px;background: #1E8FB7}
+#avatar_boxy.boxy-wrapper .bottom-right{border: 1px solid #1E8FB7;-moz-border-radius-bottomright: 12px;-webkit-border-bottom-right-radius: 12px;background: #1E8FB7}
+*/
+#avatar_boxy.boxy-wrapper .top-left, #avatar_boxy.boxy-wrapper .top-right, #avatar_boxy.boxy-wrapper .bottom-left, #avatar_boxy.boxy-wrapper .bottom-right{background:none url("/images/solaroTeens/theme1/buttons/imgBlueRoundedCorner20x20.png") no-repeat}
+
+#avatar_boxy.boxy-wrapper .top-left{background-position:top left}
+#avatar_boxy.boxy-wrapper .top-right{background-position:top right}
+#avatar_boxy.boxy-wrapper .bottom-left{background-position:bottom left}
+#avatar_boxy.boxy-wrapper .bottom-right{background-position:bottom right}
+
+#avatar_boxy.boxy-wrapper .top,
+#avatar_boxy.boxy-wrapper .left,
+#avatar_boxy.boxy-wrapper .right,
+#avatar_boxy.boxy-wrapper .bottom{background: none repeat scroll 0 0 #1E8FB7}
+#avatar_boxy.boxy-wrapper .boxy-inner{background-color: #fff;padding: 0}
+#avatar_boxy.boxy-wrapper .boxy-inner .title-bar{padding: 0}
+#avatar_boxy.boxy-wrapper .title-bar{background-color: #fff;padding: 6px;position: relative}
+#avatar_boxy.boxy-wrapper .title-bar h2{color: #000;font-size: 12px;font-weight: normal;line-height: 1;margin: 0;padding: 0;float: left}
+#avatar_boxy.boxy-wrapper .title-bar .close, table#avatar_boxy .boxy-inner .title-bar a.close{background: url("/images/solaroTeens/theme1/buttons/buttonBg.png") no-repeat scroll 0 0 transparent;color: #FFFFFF;cursor: pointer;display: block;float: Right;font-size: 10px;height: 22px;line-height: 22px;padding: 0 0 0 10px;text-decoration: none;width:39px;right:5px;top:5px}
+#avatar_boxy .boxy-content{width: 200px;margin: 0 auto;clear:both}
+table#avatar_boxy.boxy-wrapper .boxy-inner .title-bar h2{background: none repeat scroll 0 0 #fff;color: #000;font-size: 15px;font-weight: bold;padding:7px 5px 5px 7px}
+table#avatar_boxy .boxy-inner .title-bar a.close span{background: url("/images/solaroTeens/theme1/buttons/buttonBg.png") no-repeat scroll right 0 transparent;display: block;height: 22px;overflow: hidden;padding-right: 10px}
+table#avatar_boxy .boxy-inner .title-bar a.close:hover{background: url("/images/solaroTeens/theme1/buttons/buttonBg.png") no-repeat scroll 0 -22px transparent;color: white;text-decoration: none}
+table#avatar_boxy .boxy-inner .title-bar a.close:hover span{background: url("/images/solaroTeens/theme1/buttons/buttonBg.png") no-repeat scroll right -22px transparent}
+/* @end */
+
+.upgradeAcc{
+  background-color:#C0FFC0;
+}
+.upgradeAcc > ul > li > span{
+  background-color:#C0FFC0;
+	float:left;
+	font-weight:bold;
+	width:200px;
+}
+
+/*Status Badges*/
+.act_login,.activityIcon2,.activityIcon3,.activityIcon4,.activityIcon5,.activityIcon6,.activityIcon7,
+.act_logout,.act_deactivated_discussion, .act_deactivated_answer, .act_deactivated_comment,.act_new_discussion,
+.act_new_discussion_answer, .act_new_discussion_comment,.act_GoalCreated,.act_GoalCompleted,.act_GoalDeleted,
+.act_review, .review_completed{background:url(/images/solaroTeens/theme1/icons/childActivity.png) no-repeat scroll 0 0 transparent;display:block;float:left;height:40px;width:130px}
+
+.act_login{background-position:0 0;} /*Activity Report -> Login Icon*/
+.activityIcon2{background-position:0 -50px;} /*Activity Report -> Started Icon*/
+.activityIcon3{background-position:0 -100px;} /*Activity Report -> Viewed Icon*/
+.activityIcon4{background-position:0 -150px;} /*Activity Report -> Completed Icon*/
+.activityIcon5{background-position:0 -200px;} /*Activity Report -> Needs Review Icon*/
+.activityIcon6{background-position:0 -250px;} /*Activity Report -> Ended Early Icon*/
+.activityIcon7{background-position:0 -300px;} /*Activity Report -> Created Icon*/
+.act_logout{background-position:0 -350px;} /*Activity Report -> Logout Icon*/
+.act_new_discussion,.act_new_discussion_answer,.act_new_discussion_comment{background-position:0 -400px;} /*Activity Report -> New Discussion Icon*/
+.act_deactivated_discussion,.act_deactivated_answer,.act_deactivated_comment{background-position:0 -550px;}/*Activity Report -> Deactivated Discussion Icon*/
+.act_review{background-position:0 -900px;}
+.act_GoalCompleted,.act_GoalDeleted,.act_GoalCreated{background-position:0 -1050px;}
+.review_completed{background-position:0 -1100px;}
+
+/*---------------------Assessment Report Page CSS ------------------*/
+.borColorBlue{border-color:#BDE5EE}
+.txtNeedsReview{color:red}
+.txtReviewed{color:green}
+.txtPerfect{color:darkolivegreen}
+.txtBold{font-weight:bold}
+
+
+
+
+
+/*---------------------Discussion Report Page ------------------*//*------------Susmitha 27 July 2010 -----------------*/
+.discussion_main{background-color:#FFFFFF;border:1px solid #BDE5EE; padding:10px; margin-top:10px;}
+.discussionHeader{display:block;padding-top:4px;background-color:#fff;border:1px solid #80d9df; padding:5px;}
+.discussionHeader h4{background:url(../images/solaroTeens/theme1/notes/clipIcon.png) no-repeat 5px -67px;padding-left:45px;line-height:23px;font-weight:bold;}
+ul.discussionQues{ }
+ul.discussionQues li{ padding:5px; border-bottom:1px dotted #cccccc;cursor:pointer}
+/*.selected{ padding:5px; border-bottom:1px dotted #cccccc; background-color:#f3fafb;}*/
+ul.discussionQues li .avatarImg{ float:left; line-height:0px; display:block; margin-right:10px;}
+ul.discussionQues li h4{ margin-left:10px; font-size:14px; text-transform:capitalize;}
+ul.discussionQues li p{font-size:11px; text-transform:capitalize;margin-left:59px;padding:5px;}
+
+.commentPanel{font-family:Verdana, Geneva, sans-serif; margin-left:65px; margin-top:20px; border:1px solid #e8e8e8;}
+
+ul.discussionQues li .quesForm1{font-family:Verdana, Geneva, sans-serif; margin-left:65px; margin-top:20px;}
+ul.discussionQues li .quesForm1 h4{font-size:17px; margin:5px 0; padding:0px;}
+ul.discussionQues li .quesForm1 .iText{border:1px solid #bde5ee;background-color:#ffffff;padding:2px; width:99%; margin:0 0 5px 0;}
+ul.discussionQues li .quesForm1 .iTextArea{border:1px solid #bde5ee;background-color:#ffffff;padding:2px; width:99%; margin:0 0 5px 0; height:75px;}
+
+ul.discussionQues li .tip1{ background:url(../images/solaroTeens/theme1/notes/tooltipImg.png) no-repeat 0 0; height:154px; display:block; margin:40px 0 0 10px;}
+ul.discussionQues li .tip1 .tipClose1 a{ background:url(../images/solaroTeens/theme1/notes/tipClose.png) no-repeat left 0; width:22px; height:23px;}
+ul.discussionQues li .tip1 h2{ padding-left:60px; padding-top:19px; font-size:20px;}
+ul.discussionQues li .tip1 .text1{ font-size:11px; line-height:15px; /*padding:15px 24px 0 27px;*/ margin:10px 14px 0 18px;}
+
+a.linkButtonGray, a.linkButtonGray span{background:url(../images/solaroTeens/theme1/buttons/buttonBg.png) no-repeat 10px -132px;line-height:22px;font-size:10px;color:#FFF;display:block;float:left;height:22px;padding:0 0 0 10px;text-decoration:none; cursor:auto;}
+a.linkButtonGray span{ background-position:right -132px;overflow:hidden;display:block;height:22px;padding-right:10px}
+
+.quesForm{font-family:Verdana, Geneva, sans-serif; margin-top:20px;}
+.quesForm h4{font-size:17px; margin:5px 0;}
+.quesForm .text{color:#cccccc;}
+.quesForm .iText{border:1px solid #bde5ee;background-color:#ffffff;padding:2px; width:99%; margin:0 0 5px 0;}
+.quesForm .iTextArea{border:1px solid #bde5ee;background-color:#ffffff;padding:2px; width:99%; margin:0 0 5px 0; height:75px;}
+.tip{ background:url(../images/solaroTeens/theme1/notes/tooltipImg.png) no-repeat 0 0; height:154px; display:block; margin:50px 0 0 10px;}
+.tip .tipClose a{ background:url(../images/solaroTeens/theme1/notes/tipClose.png) no-repeat 0 0; width:22px; height:23px;}
+.tip h2{ padding-left:60px; padding-top:19px; font-size:20px;}
+.tip .text{ font-size:11px; line-height:15px; padding:15px 24px 0 27px; /*margin:10px 14px 0 18px;*/}
+.discussionHeader > h4 > p{display:inline;font:bold 12px/18px Verdana,Geneva,sans-serif;}
+.noteNavContainer div > ul > li.selected {background:url("../images/selected.png") repeat-x scroll 0 0 transparent;border:1px solid #64A5AB;padding:5px 0 0;}
+.noteNavContainer div > ul > li.selected a {color:#000000;/*font-weight:700;*/}
+.noteNavContainer ul a {padding-left:15px;}
+/*end*****************************************************************************************************************************/
+
+.oneChildinfo > div > fieldset > div > label{width:60%;}
+.multiChildinfo > div > fieldset > div > label{width:25%;}
+
+.oneChildinfo > div > fieldset > div > .classesList{margin-Left:362px;height:108px}
+.multiChildinfo > div > fieldset > div > .classesList{margin-Left:160px;height:108px}
+
+.oneChildinfo{
+    font-family:Georgia,"Times New Roman",Times,serif;
+    font-size:13px;
+    font-weight:normal;
+    background-color:#FFFFFF;
+    border:1px solid #BDE5EE;
+    margin-right:10px;
+    padding:30px;   
+}
+.multiChildinfo{
+    font-family:Georgia,"Times New Roman",Times,serif;
+    font-size:13px;
+    font-weight:normal;
+    background-color:#FFFFFF;
+    border:1px solid #BDE5EE;
+    margin-right:10px;
+    padding:30px;
+    width:360px;
+    float:left
+}
+
+
+/*------------Girish 28 July 2010 -----------------*/
+.avatarLeft{float:left;margin:5px 10px 5px 5px}
+.avatarLeft, .avatarRight{border:1px solid #63BFC8;font-size:0;line-height:0}
+.offensive > div{background:#f5f5cd;border:1px dotted red;}
+
+/*---------------- New School Registration Form (Premananda)---------------------*/
+.schoolRegSubHeading{margin-top:-45px; margin-bottom:20px; font-weight:normal; padding-left:80px;}
+                                  
+.txtBlue {color:#00c}
+.borColorBlue{border-color:#BDE5EE}
+.txtRed{color:red}
+.txtGreen{color:green}
+.txtLightGreen{color:darkolivegreen}
+.txtBold{font-weight:bold}
+.txt900{color:#900}
+/*-------------- New printicon class added excluding float named printiconOther ---------------*/
+.printiconOther{background:url("/images/solaroTeens/theme1/icons/printIcon.png") no-repeat scroll 0 0 transparent;display:block;height:15px;margin-left:10px;padding:0 0 0 20px;}
+
+/********** Add student => Teacher Section *************/
+.addStudent{background-color:#FFFFFF; border:1px solid #BDE5EE; width:460px; font-family:Verdana, Geneva, sans-serif; font-size:11px; color:#333333; padding:5px;}
+.addStudent_buttton, .addStudent_buttton:hover{ background:url(/images/solaroTeens/theme1/buttons/addstudentBtn.png) 0 0 no-repeat; width:170px; height:36px; display:block; border:none; cursor:pointer; font-size:16px; padding-right:20px; font-family:Verdana, Geneva, sans-serif;}
+.addStudent_buttton:hover{ background-position:0 -40px;}
+.addStudenttxt{background-color:#FFFFFF; border:1px solid #BDE5EE; width:273px; font-family:Verdana, Geneva, sans-serif; font-size:11px; color:#333333; padding:5px; margin-top:5px;}
+.studentlistIcon{ background:url(/images/solaroTeens/theme1/icons/studentList.png) 0 0 no-repeat; width:25px; height:39px; display:block; float:left;}
+.studentlistBg{ background-color:#f8fafa; border:1px solid #edf2f2; padding:10px;}
+
+.addStudentlhight{line-height:20px;}
+.studentlistshow{ float:left; border-right:1px dotted #c6c8c8; text-align:center; padding:0 5px;}
+
+.studentlistname{ float:left; border-right:1px dotted #c6c8c8; padding-left:20px; text-transform:capitalize;}
+.studentlistshow1{ border:none;float:left; text-align:center; padding:0 5px;}
+.studentlist{ border-bottom:1px dotted #c6c8c8; padding:8px 0;}
+.studentlist1{ border-bottom:none; margin-bottom:2px;}
+.stlistHead{ color:#d58b17; font-size:12px; font-weight:bold; text-transform:capitalize;}
+
+.resetPass, .stnremove, .deleteClass, .addStudentclass{ background:url(/images/solaroTeens/theme1/buttons/studentStatusbtn.png) 0 0 no-repeat; width:123px; height:20px; border:none; display:block; margin:0 auto;}
+.stnremove {background-image:url(/images/solaroTeens/theme1/icons/cross.png); background-position:90% 0;background-repeat:no-repeat;display:block;height:18px;width:50px; border:none; backgroung-color:none; cursor:pointer;}
+
+.deleteClass{ background-position:0 -50px; border:medium none; color:#706C6C; cursor:pointer; display:block; font-family:Verdana, Geneva, sans-serif; font-size:10px;font-weight:bold; height:26px; line-height:27px; padding-left:20px; width:100px;}
+.deleteClass:hover{background-position:0 -79px; color:#976d72;}
+
+.addStudentclass{ background-position:0 -109px; width:131px; height:33px; 
+display:block; cursor:pointer; float:left;}
+
+ul.discussionQues li:hover{background-color:#F3FAFB;border-color:#CCCCCC;border-style:dotted;border-width:0 0 1px;padding:5px;}
+.divDiscussionDetail > #discussionPad{width:750px;}
+
+.txt009{color:#009}
+
+.myAcc > ul > li > div > a.linkButton{float:right;}
+.mLeft200{margin-left:200px}  
+
+/* @group New Create Student Account */
+.blue_glow_bg{background:#79e1ec url(/images/solaroTeens/theme1/global/blue_glow_bg.jpg) no-repeat center top;margin-bottom:-5px;padding:20px;}
+h3.shadow {font:bold 26px "Arial Black", Gadget, sans-serif;color:#333;position:relative;margin:0 auto;width:410px;}
+h3.shadow > span {font:inherit;color:#fff;position:absolute;top:-2px;left:-1px;}
+
+.wrb_top_left,.wrb_top_right,.wrb_top,.wrb_bot_left,.wrb_bot_right,
+.brb_top_left,.brb_top_right,.brb_top,.brb_bot_left,.brb_bot_right,
+.grb_top_left,.grb_top_right,.grb_top,.grb_bot_left,.grb_bot_right,
+.free_badge_l,.premium_badge_s,.free_badge_s,.premium_badge_l,.guarantee_badge,.blue_registartion_badge,
+.solaro_blue,.solaro_green,.solaro_grey,
+.blue_tick_bullets > li,.green_tick_bullets > li,
+.free_account_btn,.free_account_diabled_btn,.premium_upgrade_btn,.premium_account_btn,
+.blue_badge_l,.blue_badge_m,.green_badge_l,.green_badge_m,
+form.left_aligned input[type="text"],
+form.left_aligned input[type="password"],
+form.left_aligned select,
+form.left_aligned input[type="submit"]{background-image:url(/images/solaroTeens/theme1/global/sprite_account.png);background-color:transparent;}
+
+.wrb_top_left,.wrb_top_right,.wrb_top,.wrb_bot_left,.wrb_bot_right,
+.brb_top_left,.brb_top_right,.brb_top,.brb_bot_left,.brb_bot_right,
+.grb_top_left,.grb_top_right,.grb_top,.grb_bot_left,.grb_bot_right,
+.free_badge_l,.premium_badge_s,.free_badge_s,.premium_badge_l,.guarantee_badge,.blue_registartion_badge,
+.blue_tick_bullets > li,.green_tick_bullets > li,
+.free_account_btn,.free_account_diabled_btn,.premium_upgrade_btn,.premium_account_btn{display:block;}
+
+.wrb_left,.wrb_right,.brb_left,.grb_left{background:url(/images/solaroTeens/theme1/global/sprite2_account.png) no-repeat;}
+.white_rounded_block,.blue_rounded_block,.green_rounded_block{position:relative;}
+.wrb_content_block,.brb_content_block,.grb_content_block{font:normal 14px Verdana, Geneva, sans-serif;color:#333;padding:10px;}
+.wrb_top_left{background-position:-120px 0;height:80px;width:30px;float:left;}
+.wrb_top_right{background-position:-150px 0;height:80px;width:30px;float:right;}
+.wrb_top{background-position:0 -320px;background-repeat:repeat-y;height:80px;margin:0 30px;}
+.wrb_left{background-position:-80px 0;background-repeat:repeat-y;}
+.wrb_right{background-position:right 0;background-repeat:repeat-y;}
+.wrb_content_block{background-color:#fff;margin:0 20px;}
+.wrb_bot_left{background-position:-120px -90px;height:20px;width:30px;float:left;}
+.wrb_bot_right{background-position:-150px -90px;height:20px;width:30px;float:right;}
+.wrb_bot{background-color:#fff;height:20px;margin:0 30px;display:block;}
+
+.brb_top_left{background-position:0 0;height:80px;width:30px;float:left;}
+.brb_top_right{background-position:-30px 0;height:80px;width:30px;float:right;}
+.brb_top{background-position:0 -120px;background-repeat:repeat-y;height:80px;margin:0 30px;}
+.brb_left{background-position:0 0;background-repeat:repeat-y;}
+.brb_right{background:url(/images/solaroTeens/theme1/global/wrb_blue_right.png) right top repeat-y;}
+.brb_content_block{background-color:#f4feff;margin:0 20px;}
+.brb_bot_left{background-position:0 -90px;height:20px;width:30px;float:left;}
+.brb_bot_right{background-position:-30px -90px;height:20px;width:30px;float:right;}
+.brb_bot{background-color:#f4feff;height:20px;margin:0 30px;display:block;}
+
+.grb_top_left{background-position:-60px 0;height:80px;width:30px;float:left;}
+.grb_top_right{background-position:-90px 0;height:80px;width:30px;float:right;}
+.grb_top{background-position:0 -220px;background-repeat:repeat-y;height:80px;margin:0 30px;}
+.grb_left{background-position:-40px 0;background-repeat:repeat-y;}
+.grb_right{background:url(/images/solaroTeens/theme1/global/wrb_green_right.png) right top repeat-y;}
+.grb_content_block{background-color:#f9ffed;margin:0 20px;}
+.grb_bot_left{background-position:-60px -90px;height:20px;width:30px;float:left;}
+.grb_bot_right{background-position:-90px -90px;height:20px;width:30px;float:right;}
+.grb_bot{background-color:#f9ffed;height:20px;margin:0 30px;display:block;}
+
+.free_badge_l{background-position:-820px -10px;;width:286px;height:90px;position:absolute;top:0;left:50%;margin-left:-143px;}
+.free_badge_s{background-position:-320px -10px;;width:240px;height:75px;position:absolute;top:0;left:50%;margin-left:-120px;}
+.premium_badge_s{background-position:-1105px -10px;;width:216px;height:75px;position:absolute;top:0;left:50%;margin-left:-108px;}
+.premium_badge_l{background-position:-560px -10px;;width:260px;height:90px;position:absolute;top:0;left:50%;margin-left:-130px;}
+.blue_registartion_badge{background-position:-1050px -420px;width:320px;height:80px;position:absolute;top:0;left:50%;margin-left:-160px;}
+.wrb_content_block > h4,.brb_content_block > h4,.grb_content_block > h4{font:normal 18px Verdana, Geneva, sans-serif;text-align:center;}
+.wrb_content_block > p,.brb_content_block > p,.grb_content_block > p{font:normal 14px Verdana, Geneva, sans-serif;padding:10px 0;}
+.wrb_content_block a,.brb_content_block a,.grb_content_block a{font:normal 12px Verdana, Geneva, sans-serif;color:#20a2d5;}
+.wrb_content_block > h4,.brb_content_block > h4{color:#00b8e7;}
+.grb_content_block > h4,.wrb_content_block > .green_badge_l+h4{color:#799f18;}
+.solaro_blue,.solaro_green{height:30px;width:122px;display:-moz-inline-stack;display:inline-block;zoom:1;vertical-align:text-bottom;}
+.solaro_blue{background-position:-180px 0;}
+.solaro_green{background-position:-180px -40px;}
+.content_block_title{font:normal 18px Verdana, Geneva, sans-serif;position:relative;top:-40px;}
+
+.blue_tick_bullets > li{background-position:0 -420px;padding-left:25px;}
+.green_tick_bullets > li{background-position:0 -500px;padding-left:25px;}
+
+.free_account_btn,.premium_upgrade_btn,.premium_account_btn,.free_account_diabled_btn{height:65px;outline:none;border:0;text-indent:-99999px;position:relative;left:50%;cursor:pointer;margin-top:20px;font:0;line-height:0;}
+.free_account_btn{background-position:-907px -580px;width:256px;margin-left:-128px;}
+.free_account_btn:hover{background-position:-907px -650px;}
+.free_account_diabled_btn{background-position:-359px -580px;cursor:default;width:258px;margin-left:-129px;}
+.premium_upgrade_btn{background-position:-633px -580px;width:256px;margin-left:-128px;}
+.premium_upgrade_btn:hover{background-position:-633px -650px;}
+.premium_account_btn{background-position:-10px -580px;width:332px;margin-left:-166px;}
+.premium_account_btn:hover{background-position:-10px -650px;}
+.right_link_txt{text-align:right;text-decoration:underline;float:right;}
+.right_link_txt:hover{color:#1587b4;}
+.guarantee_badge{background-position:-900px -420px;;width:140px;height:140px;position:absolute;top:-20px;right:-10px;}
+
+.blue_badge_l,.blue_badge_m,.green_badge_l,.green_badge_m{text-align:center;color:#fff;}
+.blue_badge_l > h2,.green_badge_l > h2{font:bold 30px/38px Verdana, Geneva, sans-serif;color:#333;position:relative;top:8px;height:35px;}
+.blue_badge_l > h2 > span,.green_badge_l > h2 > span{font:bold 30px/38px Verdana, Geneva, sans-serif;position:relative;top:-39px;left:-2px;display:block;color:#fff;}
+.blue_badge_l > p,.green_badge_l > p{font:bold 14px/18px Verdana, Geneva, sans-serif;position:relative;top:8px;color:#333;}
+.blue_badge_l > p > span,.green_badge_l > p > span{font:bold 14px/18px Verdana, Geneva, sans-serif;position:relative;top:-19px;left:-1px;color:#fff;display:block}
+.blue_badge_l {background-position:0 -855px;background-repeat:no-repeat;width:265px;height:85px;position:absolute;top:0;left:50%;margin-left:-130px;}
+.green_badge_l {background-position:0 -760px;background-repeat:no-repeat;width:265px;height:85px;position:absolute;top:0;left:50%;margin-left:-130px;}
+
+.green_badge_m > h2,.blue_badge_m > h2{font:bold 22px/28px Verdana, Geneva, sans-serif;color:#333;position:relative;top:7px;height:28px;}
+.green_badge_m > h2 > span,.blue_badge_m > h2 > span{font:bold 22px/28px Verdana, Geneva, sans-serif;position:relative;top:-29px;left:-1px;display:block;color:#fff;}
+.green_badge_m > p,.blue_badge_m > p{font:bold 12px/16px Verdana, Geneva, sans-serif;position:relative;top:4px;color:#333;}
+.green_badge_m > p > span,.blue_badge_m > p > span{font:bold 12px/16px Verdana, Geneva, sans-serif;position:relative;top:-17px;left:-1px;color:#fff;display:block}
+.green_badge_m {background-position:-275px -760px;background-repeat:no-repeat;width:225px;height:70px;position:absolute;top:0;left:50%;margin-left:-110px;}
+.blue_badge_m {background-position:-275px -855px;background-repeat:no-repeat;width:225px;height:70px;position:absolute;top:0;left:50%;margin-left:-110px;}
+/* @end */
+.mLeft200{margin-left:200px}
+div.bgNone .registerForm{background-image:none}
+h2.noWrap{white-space: nowrap;}
+label.w203{width:203px}
+
+/* Payment errors CSS */
+div.alertL {
+	line-height:normal;
+	padding-left:45px;
+	background-position:0 0
+}
+.paleYellowTintError {
+	background:#F5F5CD;
+	padding:10px;
+	margin:10px 0 15px 0;
+	border:1px solid #FFB940;
+	font:normal 12px Verdana, Geneva, sans-serif;
+	color:red
+}
+div.paleYellowTintError {
+	margin:10px 20px 15px 20px
+}
+.clearFix > .paleYellowTintError {
+	margin:10px 0 15px 0
+}
+.borderDotted_gray{ border-bottom:1px dotted #b5c5c7;}
+.addstuIcon{ background:url(/images/solaroTeens/theme1/icons/bullet.png) no-repeat 0 0; display:block; width:24px; height:24px;}

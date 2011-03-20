@@ -1,0 +1,117 @@
+<%= render :partial => '/parent_profiles/number_of_children' %>
+<div class="reportTabs clearFix">
+  <ul class="fLeft <%= @disable_child ? 'AddChildtabs' : 'tabs' -%> clearFix">
+    <li>
+      <%= link_to "<span style='background:url(/images/solaroTeens/theme1/buttons/linkBtnLargeBg.png) right -34px; font-size:11px'>Add child</span>", add_new_child_parent_profiles_path, :class =>"linkBtnLarge mTop11 mRight1", :style => "background:url(/images/solaroTeens/theme1/buttons/linkBtnLargeBg.png) 0 0;height:34px;cursor:default; color:#999; margin-top:11px" %>
+    </li>
+    <%= render :partial => '/parent_profiles/children_tab_nav' %>
+  </ul>
+</div>
+<div class="report">
+  <div class="innerReport">
+    <div class="clearFix">
+      <div class="whiteTint pAll5 clearFix" id="body_container">
+        <div id="parentOptions" class="width28">
+          <div class="rounded_layer2">
+            <%= render :partial => '/parent_profiles/parent_options_for_child' %>
+          </div>
+        </div>
+        <div class="width72">
+          <div id="backToChildDetailsPage">
+            <div id="childDetailInformation">
+              <div class="rounded_layer2">
+                <div><span class="layer2_topLeft"></span><span class="layer2_topRight"></span>
+                  <span class="layer2_top"></span></div>
+                <div class="layer2_body">
+                  <div class="layer2_innerBody">
+                    <div class="layer2_content">
+                      <div class="layer3">
+                        <!-- Left content -->
+                        <div class="clear" id="childDetailInformationBodyPart">
+                          <h2 class="mBot10 pAll5 w450"><%=t :title, :scope => [:parent_reports, :assessment_report] -%></h2>
+                          <%= render :partial => "shared/course_list", :locals => {:report_type => ASSESSMENT_REPORT} %>
+                          <div class="whiteTint borBotNone" id="topic_list">
+                            <div class="pRelative mTop5 pBot5">
+                              <div>
+                                <ul class="subjectNav clearFix topicList">
+                                  <li class="<%= 'selectedBlue' if @topic.blank? %>">
+                                    <%= link_to "<span>All</span>", assessment_reports_path(:course_id=> @course.id, :child_id=> @student.id), :class => "abc" %>
+                                  </li>
+                                  <% @course.topics.each do |topic| %>
+                                      <li class="<%= 'selectedBlue' if @topic and @topic.id == topic.id %>">
+                                        <%= link_to content_tag(:span, topic.title), assessment_reports_path(:topic_id=>topic.id, :course_id=> @course.id, :child_id=> @student.id) %>
+                                      </li>
+                                  <% end %>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="whiteTint pAll10">
+                            <h3><%= t :course_title, :scope => [:parent_reports, :assessment_report], :course_name =>  human_readable(@course.title) + (" : #{@topic.title}" if @topic).to_s -%></h3>
+                            <div class="blueTint clearFix pAll10 mTop10 pRelative top1">
+                              <div class="width14 pRight5 bRight borColorBlue"><strong><%=t :date, :scope => [:parent_reports, :assessment_report] -%></strong></div>
+                              <div class="width37 pRight10 bRight borColorBlue mLeft10"><strong><%=t :type, :scope => [:parent_reports, :assessment_report] -%></strong></div>
+                              <div class="width11 pRight10 bRight borColorBlue mLeft10"><strong><%=t :questions, :scope => [:parent_reports, :assessment_report] -%></strong></div>
+                              <div class="width8 pRight5 bRight borColorBlue mLeft10"><strong><%=t :score, :scope => [:parent_reports, :assessment_report] -%></strong></div>
+                              <div class="width16 pRight5 mLeft10"><strong><%=t :status, :scope => [:parent_reports, :assessment_report] -%></strong></div>
+                            </div>
+                            <div class="whiteTint clearFix pAll10">
+                              <ul class="parentReportListStyle">
+                                <% if @student_assessments.blank? %>
+                                  <li>
+                                    <div class="clear alert">No assessments found for this criteria.</div>
+                                  </li>
+                                <% else %>
+                                  <% @student_assessments.each do |student_assessment| %>
+                                    <li>
+                                      <div class="width14 pRight5 bRight borColorBlue"><%= student_assessment.date_associated_to_status -%></div>
+                                      <div class="width37 pRight10 bRight borColorBlue mLeft10"><%= student_assessment.title_with_type -%></div>
+                                      <div class="width11 pRight10 aCenter bRight borColorBlue mLeft10"><%= student_assessment.student_answers.count -%></div>
+                                      <div class="width8 pRight5 aCenter bRight borColorBlue mLeft10"><%= student_assessment.score_in_percent -%>
+                                        %
+                                      </div>
+                                      <div class="width16 pRight5 mLeft10 txt<%= student_assessment.status_to_sting.gsub(' ', '') -%> txtBold"><%= student_assessment.status_to_sting -%></div>
+                                      <div class="clear"> </div>
+                                    </li>
+                                  <% end %>
+                                <% end %>
+                              </ul>
+
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Left content -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div><span class="layer2_botLeft"></span><span class="layer2_botRight"></span>
+                <span class="layer2_bot"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="botReport"></div>
+<div class="report mTop10">
+  <div class="innerReport">
+    <div class="whiteTint pAll10 clearFix">
+      <p class="clear alert" id="comments_for_parent_options">
+        <% if @course.blank? %>
+            <%=t :select_hint, :scope => [:parent_reports, :assessment_report] -%>
+        <% else %>
+            <%=t :results_hint, :scope => [:parent_reports, :assessment_report] -%>
+        <% end %>
+    </div>
+  </div>
+  <div class="botReport"></div>
+</div>
+
+<script type="text/javascript">
+  jQuery(document).ready(function() {
+       select_report_tab();
+  });
+</script>

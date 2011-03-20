@@ -1,0 +1,7 @@
+<%= title("#{configatron.solaro_trade_mark} | Study", '') %>
+<%= render :partial => "navigation/navigation", :locals => {:courses => @student_all_courses, :selected_course => defined?(@selected_course) ? @selected_course : nil, :topics => defined?(@topics)? @topics : nil, :selected_topic => defined?(@selected_topic) ? @selected_topic : nil, :clusters => defined?(@clusters)? @clusters : nil, :selected_cluster => defined?(@cluster)? @cluster : nil, :lessons =>defined?(@lessons)? @lessons : nil, :selected_lesson =>defined?(@lesson)? @lesson : nil, :genres => defined?(@genres)? @genres : nil, :selected_genre => defined?(@selected_genre)? @selected_genre : nil, :passages => @passages, :selected_passage => defined?(@selected_passage) ? @selected_passage : nil, :levels => defined?(@levels) ? @levels : nil, :selected_level => defined?(@selected_level)? @selected_level : nil} %>
+
+<%= render :partial => "shared/search_box" %>
+<div id="course_tab_panel_container" class="preTransformation">
+  <%= render :partial => "report", :locals => {:course => @selected_course, :topic => @selected_topic, :cluster => @cluster, :passage => @selected_passage, :assessment => @assessment, :questions => @questions, :student_assessment =>  @student_assessment } %>
+</div>

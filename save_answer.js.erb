@@ -1,0 +1,8 @@
+$('#question_form').html("<%= escape_javascript(render(:partial => 'form', :locals => {:questions_links => @questions_links, :course => @selected_course, :topic => @selected_topic, :cluster => @cluster, :passage => @selected_passage, :assessment => @assessment ,:approved_questions => @approved_questions, :last_page => @last_page, :student_assessment => @student_assessment })) %>")
+Custom.init();
+<%if(@page == 1) %> 
+  $('#quiz_rules').css('display', 'block');
+<% else %>
+  $('#quiz_rules').css('display', 'none');
+<% end %>
+

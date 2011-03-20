@@ -1,0 +1,90 @@
+= title("#{configatron.solaro_trade_mark} | Payment", '')
+%div.report
+  %div.innerReport
+    %div.whiteTint.pAll10.clearFix
+      = render(:partial => "payment_sidebar")
+      %div.width70
+        %div.rounded_layer2
+          %div
+            %span.layer2_topLeft
+            %span.layer2_topRight
+            %span.layer2_top
+          %div.layer2_body
+            %div.layer2_innerBody
+              %div.layer2_content
+                %div.whiteTint.pAll10
+                  %h3 Children Accounts
+                  - @child_details.each do |child_detail|
+                    %div{:class => "#{get_payment_status_details(child_detail)['css_class']} mTop10"}
+                      = get_payment_status_details(child_detail)['header']
+                    %div.allAcc
+                      %ul
+                        %li
+                          %span
+                            Student Name:
+                            %sup &nbsp;
+                          = child_detail.display_name
+                          %sup &nbsp;
+                        %li
+                          %span.mBot1
+                            Account Status:
+                            %sup &nbsp;
+                          %font.txtGreenBoldEm
+                            = get_payment_status_details(child_detail)['account_status']
+                          %sup &nbsp;
+                        - unless child_detail.status == 'pending'
+                          %li
+                            %span
+                              Next Billing Date:
+                              %sup &nbsp;
+                            = get_payment_status_details(child_detail)['next_billing_date']
+                            %sup &nbsp;
+                          %li.pRelative
+                            %span
+                              Most Recent Billing:
+                              %sup &nbsp;
+                            = child_detail.transaction_date
+                            %div{:class => child_detail.recur_status == 'approved'? 'paymentStatus' : 'paymentStatusError'}
+                              = get_payment_status_details(child_detail)['mrb_status']
+                          %li.pRelative
+                            %span
+                              Previous Billing:
+                              %sup &nbsp;
+                            = child_detail.transaction_date
+                            %div{:class => child_detail.recur_status == 'approved'? 'paymentStatus' : 'paymentStatusError'}
+                              = get_payment_status_details(child_detail)['mrb_status']
+                          %li
+                            %span
+                              Credit Card Type:
+                              %sup &nbsp;
+                            = child_detail.card_type
+                            %sup &nbsp;
+                          %li
+                            %span
+                              Card Number:
+                              %sup &nbsp;
+                            = child_detail.credit_card_number
+                            %sup &nbsp;
+                        %div.fRight
+                          - if (child_detail.status == 'onhold' || child_detail.status == 'inactive' || child_detail.status == 'pending')
+                            = link_to('<span>Make Payment</span>', new_payment_path, :class => child_detail.status == "pending" ? "bot30 pRelative linkButton" : "linkButton")
+                        - unless child_detail.status == 'pending'
+                          %li
+                            %span
+                              Card expiry date:
+                              %sup &nbsp;
+                            %font= child_detail.card_expiry
+                            %sup &nbsp;
+                      %div.mTop10{:class => get_payment_status_details(child_detail)['footer_class']}
+                        = get_payment_status_details(child_detail)['message']
+          %div
+            %span.layer2_botLeft
+            %span.layer2_botRight
+            %span.layer2_bot
+      - if show_payment_button?
+        %p.clear.alert
+          Click the
+          %strong Make a Payment
+          button to upgrade
+          %strong Trial Accounts
+  %div.botReport

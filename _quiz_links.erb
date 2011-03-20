@@ -1,0 +1,35 @@
+<div class="linkContainer">
+  <%
+     question_block_first = questions_links[0..(assessment.source_type.constantize::QUESTIONS_PER_ROW-1)]
+     question_block_second = questions_links - question_block_first
+  %>
+  <% unless question_block_first.blank? %>
+      <div style="width: 60%; height: 55px;">
+        <% question_block_first.each_with_index do |question_link, counter| %>
+            <% answer_class = question_link.assessment_answer_class(student_assessment) %>
+            <% present_class = "currentlyOn" if (question_link.id == approved_questions.first.id ) %>
+            <% unless present_class.nil? %>
+                <%= link_to  "<span class='currentlyOn' >#{counter + 1}</span>", assessment_links(assessment, :page => counter + 1, :course => course, :topic => (defined?(topic) ? topic : nil), :cluster => (defined?(cluster) ? cluster : nil), :passage => (defined?(passage) ? passage : nil)), :class => "#{answer_class} toolTipInfo remote", :title => "#{question_title(answer_class)}" %>
+            <% else %>
+                <%= link_to "<span >#{counter + 1}</span>", assessment_links(assessment, :page => counter + 1, :course => course, :topic => (defined?(topic) ? topic : nil), :cluster => (defined?(cluster) ? cluster : nil), :passage => (defined?(passage) ? passage : nil)), :class => "#{answer_class} toolTipInfo remote", :title => "#{question_title(answer_class)}" %>
+            <% end %>
+        <% end %>
+      </div>
+  <% end %>
+  <% unless question_block_second.blank? %>
+      <div style="width: 60%;">
+        <% question_block_second.each_with_index do |question_link, counter| %>
+            <% counter += assessment.source_type.constantize::QUESTIONS_PER_ROW %>
+            <% answer_class = question_link.assessment_answer_class(student_assessment) %>
+            <% present_class = "currentlyOn" if (question_link.id == approved_questions.first.id ) %>
+            <% unless present_class.nil? %>
+                <%= link_to "<span class='currentlyOn' >#{counter + 1}</span>", assessment_links(assessment, :page => counter + 1, :course => course, :topic => (defined?(topic) ? topic : nil), :cluster => (defined?(cluster) ? cluster : nil), :passage => (defined?(passage) ? passage : nil)), :class => "#{answer_class} toolTipInfo remote", :title => "#{question_title(answer_class)}" %>
+            <% else %>
+                <%= link_to "<span >#{counter + 1}</span>", assessment_links(assessment, :page => counter + 1, :course => course, :topic => (defined?(topic) ? topic : nil), :cluster => (defined?(cluster) ? cluster : nil), :passage => (defined?(passage) ? passage : nil)), :class => "#{answer_class} toolTipInfo remote", :title => "#{question_title(answer_class)}" %>
+            <% end %>
+        <% end %>
+      </div>
+  <% end %>
+</div>
+
+
