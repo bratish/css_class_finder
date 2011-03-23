@@ -9,6 +9,7 @@ x = content.
         map{|line| line.strip!.match(/[:]?class[ ]?=[ >]?[ ]*[\\]?["|']([\w <%=\->:,?@'"\.\(\)#{}]*)[ ]*[\\]?["|']/)[1]}
 
 x.each do|str|
+  
   p str.scan(/(<%[\w =\-:,?@'"\.\(\)#{}]*%>)/)
 end
 
