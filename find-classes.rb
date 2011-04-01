@@ -14,4 +14,6 @@ parser.each_selector do |selector, declarations, specificity|
   array_of_classes.push(selector) if selector.include? "."
 end
 
-pp array_of_classes
+pp array_of_classes.collect{|x| x.scan(/\.([a-zA-Z0-9\-]+)/)}.flatten
+
+#pp array_of_classes
