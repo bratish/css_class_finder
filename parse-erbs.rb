@@ -4,12 +4,22 @@ require 'pp'
 file = 'index.html.erb'
 content = File.open(file, 'r').read
 
-x = content.
-      grep(/[:]?class[ ]?=[ >]?/).
-        map{|line| line.strip!.match(/[:]?class[ ]?=[ >]?[ ]*[\\]?["|']([\w <%=\->:,?@'"\.\(\)#{}]*)[ ]*[\\]?["|']/)[1]}
 
-x.each do|str|
-  
-  p str.scan(/(<%[\w =\-:,?@'"\.\(\)#{}]*%>)/)
+class_references = content.grep(/[:]?class[ ]?=[ >]?/).map do |line|
+          line.strip!.match(/[:]?class[ ]?=[ >]?[ ]*[\\]?["|']([\w <%=\->:,?@'"\.\(\)#{}]*)[ ]*[\\]?["|']/)[1]
+      end
+
+#pp class_references
+
+class_references_with_script_tags = class_references.select do |str|
+  str.scan(/(<%[\w =\-:,?@'"\.\(\)#{}]*%>)/).size > 0
 end
+
+#pp class_references_with_script_tags
+
+pure_class_references =  (class_references - class_references_with_script_tags).collect{|c| c.split(/["|']/).first}
+
+pp class_references - class_references_with_script_tags
+pp "============================"
+pp pure_class_references
 
