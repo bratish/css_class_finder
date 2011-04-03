@@ -10,8 +10,12 @@ p a.first.index("<%")
 p a.first.index("%>")
 s = a.first
 interpolate_arr = []
+rest_of_the_str = ''
+
 loop do
   start_index = s.index("<%")
   end_index = s.index("%>")
+  break if start_index.nil? or end_index.nil?
+
 end
 
