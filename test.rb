@@ -14,15 +14,21 @@ interpolate_arr = []
 rest_of_the_str = ''
 
 loop do
-  p "loop"
+#  p "loop"
   start_index = s.index("<%")
   end_index = s.index("%>")
-  break if start_index.nil? or end_index.nil?
-  rest_of_the_str += s[0..start_index-1]
-  interpolate_arr.push(s[start_index +2..end_index-1])
+  p start_index
+  p end_index
+  p interpolate_arr
+  p rest_of_the_str
+  break if s.strip.size == 0 or start_index.nil? or end_index.nil?
+#  p "loop 2"
+  rest_of_the_str += s[0..start_index-1] if start_index-1 > -1
+  interpolate_arr.push(s[start_index +2..end_index-1]) # if start_index-1 > -1 and end_index > -1
   s = s[end_index + 2..s.size]
 end
 
-p interpolate_arr
-p rest_of_the_str
 
+
+  p interpolate_arr
+  p rest_of_the_str
