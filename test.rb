@@ -5,9 +5,9 @@ a = ["fLeft <%= @disable_child ? 'AddChildtabs' : 'tabs' : \'bad\"  -%> clearFix
  "<%= 'selectedBlue' if @topic.blank? %>",
  "<%= 'selectedBlue' if @topic and @topic.id == topic.id %>",
  "width16 pRight5 mLeft10 txt<%= student_assessment.status_to_sting.gsub(' ', '') -%> txtBold",
- "width16 pRight5 mLeft10 txt#{"student_assessment.status_to_sting.gsub(' ', '')"} txtBold"
+ "width16 pRight5 mLeft10 txt\#{student_assessment.status_to_sting.gsub(' ', '')} txtBold"
  ]
-
+# s.scan(/\#\{([\w]*)\}/)
 s = "#{a[0] } <% %>"
 interpolate_arr = []
 rest_of_the_str = ''
