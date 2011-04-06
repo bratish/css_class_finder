@@ -8,7 +8,6 @@ class PickCssClasses
     @content = ''
     @class_references = []
     @class_references_with_script_tags = []
-
   end
 
   def content
@@ -16,9 +15,10 @@ class PickCssClasses
   end
 
   def class_references
-    @class_references = @content.grep(/[:]?class[ ]?=[ >]?/).map do |line|
-      line.strip!.match(/[:]?class[ ]?=[ >]?[ ]*[\\]?["|']([\w <%=\->:,?@'"\.\(\)#{}]*)[ ]*[\\]?["|']/)[1]
-    end
+    @class_references = @content.grep(/[:]?class[ ]?=[ >]?/)#.map do |line|
+#      line.strip!.match(/[:]?class[ ]?=[ >]?[ ]*[\\]?["|']([\w <%=\->:,?@'"\.\(\)#{}]*)[ ]*[\\]?["|']/)[1]
+#    end
+    @class_references
   end
 
   def class_references_with_script_tags
@@ -37,5 +37,6 @@ class PickCssClasses
 end
 
 pcc = PickCssClasses.new('index.html.erb')
-pp pcc.pure_class_references
 pp pcc.class_references_with_script_tags
+#pp pcc.pure_class_references
+#pp pcc.class_references_with_script_tags
