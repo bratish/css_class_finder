@@ -8,9 +8,9 @@ class PickCssClasses
     @content = File.open(f, 'r').read
 
     @class_references ||= @content.grep(/[:]?class[ ]*=[ >]?/).map do |line|
-      line.match(/[:]?class[ ]*=[ >]?[ ]*[\\]?["|']([\w <%=\->:,?@'"\.\(\)#\{\}]*)[ ]*[\\]?["|']/)[1]
-    end
-
+      line.scan(/[:]?class[ ]*=[ >]?[ ]*[\\]?["|']([\w <%=\->:,?@'"\.\(\)#\{\}]*)[ ]*[\\]?["|']/)
+    end.flatten
+    
     @class_references_with_script_tags = @class_references.select do |str|
       str.scan(/(<%[\w =\-:,?@'"\.\(\)#\{\}]*%>)/).size > 0
     end
