@@ -44,6 +44,7 @@ div #tender_window .content{height:435px;}*/
 
 /* @group Generalised Elements */
 .resetContent{}
+.AddChildtabs{list-style: decimal outside;} /* ************* */
 .resetContent ol{list-style: decimal outside;}
 .resetContent ul{list-style: disc outside;}
 .resetContent {}
