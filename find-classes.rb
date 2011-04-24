@@ -4,6 +4,8 @@ require 'pp'
 require 'pick_css_classes'
 require 'util'
 require 'find_files'
+require 'abstract_printer'
+require 'flat_printer'
 
 include CssParser
 
@@ -37,19 +39,36 @@ ff.template_files.each do |f|
 end
 #pp css_classes_in_templates; exit
 
-css_class_hash.each do |file, classes_array|
-  puts "CSS file: #{file}"
-  classes_array.each do |css_class|
-    css_classes_in_templates.each do |template_file, used_class_hash|
-      puts "  Template file: #{template_file}"
-      used_class_hash.each do |ref_type, css_ref_name_array|
-#        pp ref_type
-#        pp css_ref_name_array
-#        p "css_class: #{css_class}"
-#        css_class = "newSubBtnXL"
-        puts "    #{css_class} present in #{ref_type}" if css_ref_name_array.include? css_class
-      end
+map_hash = {}
+css_class_hash.each do |file, classes_array| # For each css file
+  c_h = {}
+  classes_array.each do |css_class| # For each css class present in one file
+    class_hash = {}
+    css_classes_in_templates.each do |template_file, used_class_hash| # For each css classes in the template file     
+      used_class_hash.each do |ref_type, css_ref_name_array| # for each ref type
+        if ref_type == "partial_class_references" && css_ref_name_array.size > 0
+          p "here inside partial references"
+          css_class_array = Util.underscore(css_class).split(/[-_]/)
+          p css_class_array
+          css_class_array.each do |syllable| 
+            if css_ref_name_array.include?(syllable)
+              p "inside that very if"
+              class_hash.include?(ref_type)? (class_hash[ref_type].push(template_file)) : (class_hash[ref_type] = [template_file])  
+            end
+          end
+        else
+          if css_ref_name_array.include? css_class
+            class_hash.include?(ref_type)? (class_hash[ref_type].push(template_file)) : (class_hash[ref_type] = [template_file])
+	          #class_hash[css_class] = {:template_file => template_file, :ref_type => ref_type} 
+          end
+        end
+      end      
     end
-  end
-#  break
+    c_h[css_class] = class_hash
+
+  end  
+  map_hash[file] = c_h
 end
+
+FlatPrinter.new(map_hash, :file_name => "hola1.out").print
+

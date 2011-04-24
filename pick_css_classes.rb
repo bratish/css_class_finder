@@ -25,7 +25,7 @@ class PickCssClasses
       interpolate_arr = s.scan(/#\{([a-zA-Z0-9_\.'\(\) ,\?:"]*)\}/).flatten
       script_tag_arr = s.scan(/<%([\w =\-:,?@'"\.\(\)#\{\}]*)%>/).flatten
       @pure_class_references.push(s.gsub(/[a-zA-Z0-9_]*<%[=]?[ ]*[\w =\-:,?@'"\.\(\)#\{\}]*[ ]*[\-]?%>/, "").gsub(/[a-zA-Z0-9_]*#\{[a-zA-Z0-9_\.'\(\) ,\?:"]*\}/, "").split(" ").compact.uniq).flatten.uniq
-      @partial_class_references = (s.scan(/([a-zA-Z0-9]+)#\{[a-zA-Z0-9_\.'\(\) ,\?:"]*\}/)+ s.scan(/([a-zA-Z0-9]+)<%[\w =\-:,?@'"\.\(\)#\{\}]*%>/)).flatten
+      @partial_class_references = (s.scan(/([a-zA-Z0-9]+)#\{[a-zA-Z0-9_\.'\(\) ,\?:"]*\}([a-zA-Z0-9]+)?/)+ s.scan(/([a-zA-Z0-9]+)<%[\w =\-:,?@'"\.\(\)#\{\}]*%>([a-zA-Z0-9]+)?/)).flatten.compact
       class_references_inside_interpolations = (interpolate_arr.collect{|elem| elem.scan(/'([\w]+)'/)} + interpolate_arr.collect{|elem| elem.scan(/"([\w]+)"/)}).flatten.compact.uniq
       class_references_inside_script_tags = (script_tag_arr.collect{|elem| elem.scan(/'([\w]+)'/)} + script_tag_arr.collect{|elem| elem.scan(/"([\w]+)"/)}).flatten.compact.uniq
       @dynamic_class_references.push((class_references_inside_interpolations + class_references_inside_script_tags))

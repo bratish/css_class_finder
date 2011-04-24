@@ -5,7 +5,7 @@ class Util
     word.gsub!(/([A-Z]+)([A-Z][a-z])/,'\1_\2')
     word.gsub!(/([a-z\d])([A-Z])/,'\1_\2')
     word.tr!("-", "_")
-    word.downcase!
+    #word.downcase! # We need to maintain the casing
     word
   end
 end
