@@ -1,4 +1,5 @@
 class FlatPrinter < AbstractPrinter
+
   def print
     file = 'map.out'
     file = @options[:file_name] if @options[:file_name]

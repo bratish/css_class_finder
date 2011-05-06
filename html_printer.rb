@@ -1,0 +1,3 @@
+class HTMLPrinter < AbstractPrinter
+
+end

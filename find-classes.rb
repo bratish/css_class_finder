@@ -9,8 +9,8 @@ require 'flat_printer'
 
 include CssParser
 
-#rail_sroot = "/Users/bratish/solaro"
-rails_root = "/home/bratish/gnimmargorp/solaro-projects/solaro_old"
+rails_root = "/Users/bratish/p/solaro_copy"
+#rails_root = "/home/bratish/gnimmargorp/solaro-projects/solaro_old"
 css_class_hash = {}
 ff = FindFiles.new(rails_root)
 
@@ -47,12 +47,12 @@ css_class_hash.each do |file, classes_array| # For each css file
     css_classes_in_templates.each do |template_file, used_class_hash| # For each css classes in the template file     
       used_class_hash.each do |ref_type, css_ref_name_array| # for each ref type
         if ref_type == "partial_class_references" && css_ref_name_array.size > 0
-          p "here inside partial references"
+          #p "here inside partial references"
           css_class_array = Util.underscore(css_class).split(/[-_]/)
-          p css_class_array
+          #p css_class_array
           css_class_array.each do |syllable| 
             if css_ref_name_array.include?(syllable)
-              p "inside that very if"
+              #p "inside that very if"
               class_hash.include?(ref_type)? (class_hash[ref_type].push(template_file)) : (class_hash[ref_type] = [template_file])  
             end
           end
