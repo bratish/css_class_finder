@@ -6,6 +6,7 @@ require 'util'
 require 'find_files'
 require 'abstract_printer'
 require 'flat_printer'
+require 'html_printer'
 
 include CssParser
 
@@ -70,5 +71,6 @@ css_class_hash.each do |file, classes_array| # For each css file
   map_hash[file] = c_h
 end
 
-FlatPrinter.new(map_hash, :file_name => "hola1.out").print
+#FlatPrinter.new(map_hash, :file_name => "hola1.out").print
+HTMLPrinter.new(map_hash).print
 
